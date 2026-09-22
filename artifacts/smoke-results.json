@@ -1,0 +1,113 @@
+[
+  {
+    "label": "desktop",
+    "status": 200,
+    "title": "RP Usados",
+    "overflow": false,
+    "heading": "Desde\n1990.",
+    "empty": true,
+    "prices": 0,
+    "font": "\"Archivo Variable\", Arial, sans-serif",
+    "skipFocus": true,
+    "skipFocusStyle": {
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "clipPath": "none"
+    },
+    "focusOrder": [
+      "Saltar al contenido",
+      "RP Usados — Inicio",
+      "Vehículos",
+      "Servicios",
+      "Dónde estamos",
+      "Ver vehículos"
+    ],
+    "errors": []
+  },
+  {
+    "label": "tablet",
+    "status": 200,
+    "title": "RP Usados",
+    "overflow": false,
+    "heading": "Desde\n1990.",
+    "empty": true,
+    "prices": 0,
+    "font": "\"Archivo Variable\", Arial, sans-serif",
+    "skipFocus": true,
+    "skipFocusStyle": {
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "clipPath": "none"
+    },
+    "focusOrder": [
+      "Saltar al contenido",
+      "RP Usados — Inicio",
+      "Vehículos",
+      "Servicios",
+      "Dónde estamos",
+      "Ver vehículos"
+    ],
+    "errors": []
+  },
+  {
+    "label": "mobile",
+    "status": 200,
+    "title": "RP Usados",
+    "overflow": false,
+    "heading": "Desde\n1990.",
+    "empty": true,
+    "prices": 0,
+    "font": "\"Archivo Variable\", Arial, sans-serif",
+    "skipFocus": true,
+    "skipFocusStyle": {
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "clipPath": "none"
+    },
+    "focusOrder": [
+      "Saltar al contenido",
+      "RP Usados — Inicio",
+      "Vehículos",
+      "Servicios",
+      "Dónde estamos",
+      "Ver vehículos"
+    ],
+    "errors": []
+  },
+  {
+    "label": "compact",
+    "status": 200,
+    "title": "RP Usados",
+    "overflow": false,
+    "heading": "Desde\n1990.",
+    "empty": true,
+    "prices": 0,
+    "font": "\"Archivo Variable\", Arial, sans-serif",
+    "skipFocus": true,
+    "skipFocusStyle": {
+      "outlineStyle": "solid",
+      "outlineWidth": "3px",
+      "clipPath": "none"
+    },
+    "focusOrder": [
+      "Saltar al contenido",
+      "RP Usados — Inicio",
+      "Vehículos",
+      "Servicios",
+      "Dónde estamos",
+      "Ver vehículos"
+    ],
+    "errors": []
+  },
+  {
+    "noJavaScript": true,
+    "catalog": "http://127.0.0.1:9400/vehiculos/",
+    "empty": true,
+    "prices": 0
+  },
+  {
+    "cssZoom200": true,
+    "zoom": "2",
+    "overflow": false
+  }
+]

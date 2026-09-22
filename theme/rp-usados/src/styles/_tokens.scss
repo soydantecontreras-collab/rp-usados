@@ -1,0 +1,14 @@
+:root {
+  /* Provisional identity supplied by the client, not an official brand guide. */
+  --color-ink: #0b0b0d;
+  --color-surface: #17181c;
+  --color-brand: #e5262a;
+  --color-brand-bright: #ff4a4a;
+  --color-text: #f4f2f0;
+  --color-muted: #a7a7aa;
+  --color-line: #37383e;
+  --font-sans: "Archivo Variable", Arial, sans-serif;
+  --content-width: 82rem;
+  --gutter: clamp(1.25rem, 5.4vw, 6rem);
+  --section-space: clamp(4.5rem, 8vw, 8.5rem);
+}

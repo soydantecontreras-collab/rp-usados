@@ -1,0 +1,27 @@
+/*
+Theme Name: RP Usados
+Description: Tema clásico personalizado para el catálogo de RP Usados.
+Version: 0.2.0
+Requires at least: 6.8
+Requires PHP: 8.3
+Text Domain: rp-usados
+*/
+
+/*
+ * Esta hoja contiene sólo el fallback crítico y la metadata del tema.
+ * Los estilos de interfaz se compilan con Vite desde src/styles/main.scss.
+ */
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}

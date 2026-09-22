@@ -1,0 +1,26 @@
+{
+  "landingPage": "/",
+  "preferredVersions": {
+    "php": "8.3",
+    "wp": "6.8"
+  },
+  "steps": [
+    {
+      "step": "activateTheme",
+      "themeFolderName": "rp-usados"
+    },
+    {
+      "step": "setSiteOptions",
+      "options": {
+        "blogname": "RP Usados",
+        "blogdescription": "",
+        "permalink_structure": "/%postname%/",
+        "timezone_string": "America/Argentina/Buenos_Aires"
+      }
+    },
+    {
+      "step": "runPHP",
+      "code": "<?php require '/wordpress/wp-load.php'; foreach (get_posts(['post_type'=>'post','numberposts'=>-1]) as $post) { wp_delete_post($post->ID, true); } flush_rewrite_rules(); $dir = new RecursiveDirectoryIterator(get_template_directory(), FilesystemIterator::SKIP_DOTS); $filtered = new RecursiveCallbackFilterIterator($dir, static function ($file) { return $file->getFilename() !== 'node_modules'; }); $it = new RecursiveIteratorIterator($filtered); $count = 0; foreach ($it as $file) { if ($file->isFile() && $file->getExtension() === 'php' && strpos($file->getPathname(), 'node_modules') === false) { token_get_all(file_get_contents($file->getPathname()), TOKEN_PARSE); $count++; } } if (!post_type_exists('vehiculo')) { throw new Exception('CPT missing'); } if (rp_usados_vehicle_price(0) !== '') { throw new Exception('Price leaked outside single'); } if (rp_usados_vehicle_whatsapp_url(0) !== '') { throw new Exception('Unconfirmed contact linked'); } if (rp_usados_featured_vehicles()->post_count !== 0) { throw new Exception('Expected empty stock'); } echo 'RP CHECKS OK: PHP files parsed = ' . $count;"
+    }
+  ]
+}

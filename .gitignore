@@ -1,0 +1,53 @@
+# Dependencies and package-manager caches.
+**/node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+
+# Generated assets and distributable packages.
+theme/rp-usados/assets/dist/*
+!theme/rp-usados/assets/dist/.gitkeep
+dist/*
+!dist/.gitkeep
+
+# Local WordPress/runtime state. Never version databases, uploads or config.
+wp-config.php
+wp-config-local.php
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+tools/.preview/
+*.sql
+*.sqlite
+*.sqlite3
+*.db
+
+# Secrets and machine-local configuration.
+.env
+.env.*
+!.env.example
+.npmrc
+.pnpmrc
+auth.json
+credentials*.json
+secrets*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+
+# Logs, temporary files and editor metadata.
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+*~
+.idea/
+.vscode/
+.codex/
+.agents/
+.DS_Store
+Thumbs.db
+desktop.ini

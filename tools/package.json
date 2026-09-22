@@ -1,0 +1,8 @@
+{
+  "name": "rp-usados-local-preview",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@wp-playground/cli": "^3.0.0"
+  }
+}

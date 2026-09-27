@@ -1,0 +1,23 @@
+{
+  "parts": [
+    {
+      "object": "Ochava_MarcoAluminio",
+      "glassSlotsExcluded": []
+    },
+    {
+      "object": "Puerta_Acceso_HojaIzq",
+      "glassSlotsExcluded": [
+        1
+      ]
+    },
+    {
+      "object": "Puerta_Acceso_HojaDer",
+      "glassSlotsExcluded": [
+        1
+      ]
+    }
+  ],
+  "frames": 144,
+  "fps": 48,
+  "source": "C:\\Users\\dante.DESKTOP\\Downloads\\RP_Usados_Hero_v6_1.blend"
+}

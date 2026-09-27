@@ -1,0 +1,82 @@
+[
+  {
+    "asset": "painted_plaster_wall",
+    "map": "Rough",
+    "resolution": "1k",
+    "file": "painted_plaster_wall_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_rough_1k.jpg",
+    "source": "https://polyhaven.com/a/painted_plaster_wall",
+    "license": "CC0",
+    "bytes": 354762
+  },
+  {
+    "asset": "painted_plaster_wall",
+    "map": "nor_gl",
+    "resolution": "1k",
+    "file": "painted_plaster_wall_nor_gl_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/painted_plaster_wall/painted_plaster_wall_nor_gl_1k.jpg",
+    "source": "https://polyhaven.com/a/painted_plaster_wall",
+    "license": "CC0",
+    "bytes": 900461
+  },
+  {
+    "asset": "asphalt_02",
+    "map": "Diffuse",
+    "resolution": "2k",
+    "file": "asphalt_02_diff_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_diff_2k.jpg",
+    "source": "https://polyhaven.com/a/asphalt_02",
+    "license": "CC0",
+    "bytes": 3075676
+  },
+  {
+    "asset": "asphalt_02",
+    "map": "Rough",
+    "resolution": "2k",
+    "file": "asphalt_02_rough_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_rough_2k.jpg",
+    "source": "https://polyhaven.com/a/asphalt_02",
+    "license": "CC0",
+    "bytes": 2230457
+  },
+  {
+    "asset": "asphalt_02",
+    "map": "nor_gl",
+    "resolution": "2k",
+    "file": "asphalt_02_nor_gl_2k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/2k/asphalt_02/asphalt_02_nor_gl_2k.jpg",
+    "source": "https://polyhaven.com/a/asphalt_02",
+    "license": "CC0",
+    "bytes": 4943950
+  },
+  {
+    "asset": "concrete_floor_worn_001",
+    "map": "Diffuse",
+    "resolution": "1k",
+    "file": "concrete_floor_worn_001_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_diff_1k.jpg",
+    "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+    "license": "CC0",
+    "bytes": 118806
+  },
+  {
+    "asset": "concrete_floor_worn_001",
+    "map": "Rough",
+    "resolution": "1k",
+    "file": "concrete_floor_worn_001_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_rough_1k.jpg",
+    "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+    "license": "CC0",
+    "bytes": 181942
+  },
+  {
+    "asset": "concrete_floor_worn_001",
+    "map": "nor_gl",
+    "resolution": "1k",
+    "file": "concrete_floor_worn_001_nor_gl_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/concrete_floor_worn_001/concrete_floor_worn_001_nor_gl_1k.jpg",
+    "source": "https://polyhaven.com/a/concrete_floor_worn_001",
+    "license": "CC0",
+    "bytes": 110906
+  }
+]

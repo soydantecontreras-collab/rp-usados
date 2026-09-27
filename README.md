@@ -76,7 +76,9 @@ node tools/smoke-browser.mjs
 
 ## Documentación
 
+- [`HERO_WEB_INTEGRATION.md`](HERO_WEB_INTEGRATION.md): prueba local opt-in del hero Blender v6.1, métricas, diferencias visuales y verificaciones.
 - [`PROJECT_MAP.md`](PROJECT_MAP.md): frontera entre backend/lógica y frontend/diseño.
 - [`IMPLEMENTATION_PLAN.md`](IMPLEMENTATION_PLAN.md): arquitectura, modelo de datos y fases.
+- [`VISUAL_REFERENCES.md`](VISUAL_REFERENCES.md): fotos actuales del dueño, Street View y prioridad de referencias del local.
 - [`design-qa.md`](design-qa.md): auditoría de la versión visual respaldada.
 - [`AGENTS.md`](AGENTS.md): reglas permanentes del proyecto.

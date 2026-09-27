@@ -1,0 +1,75 @@
+{
+  "visible_duration_seconds": 3.5416666666666665,
+  "visible_frame_range": [
+    1,
+    85
+  ],
+  "fps": 24,
+  "all_115_camera_samples_unchanged": true,
+  "centerline_collisions": [],
+  "visible_mesh_objects": 360,
+  "evaluated_triangles": 59699,
+  "evaluated_vertices": 63027,
+  "used_materials": 22,
+  "used_texture_maps": 10,
+  "texture_files_bytes": 12992961,
+  "texture_rgba8_with_mipmaps_estimate_bytes": 106255701.33333333,
+  "geometry_vertex32_index32_estimate_bytes": 2733252,
+  "mesh_scales_not_one": [],
+  "texture_dimensions": {
+    "painted_plaster_wall_nor_gl_1k.jpg": [
+      1024,
+      1024
+    ],
+    "asphalt_02_nor_gl_2k.jpg": [
+      2048,
+      2048
+    ],
+    "asphalt_02_rough_2k.jpg": [
+      2048,
+      2048
+    ],
+    "VIS_02_PAINT_CHARCOAL_ALBEDO": [
+      1024,
+      1024
+    ],
+    "VIS_03_BLACK_CORNER_PAINT_ALBEDO": [
+      1024,
+      1024
+    ],
+    "concrete_floor_worn_001_rough_1k.jpg": [
+      1024,
+      1024
+    ],
+    "asphalt_02_diff_2k.jpg": [
+      2048,
+      2048
+    ],
+    "concrete_floor_worn_001_diff_1k.jpg": [
+      1024,
+      1024
+    ],
+    "concrete_floor_worn_001_nor_gl_1k.jpg": [
+      1024,
+      1024
+    ],
+    "VIS_01_PAINT_LIGHT_GREY_ALBEDO": [
+      1024,
+      1024
+    ]
+  },
+  "material_node_types": [
+    "BSDF_PRINCIPLED",
+    "NORMAL_MAP",
+    "OUTPUT_MATERIAL",
+    "TEX_IMAGE"
+  ],
+  "limits": [
+    "PBR shader structure checked; browser rendering not tested.",
+    "Area lights and blue-hour world must be baked/recreated for web.",
+    "No original logo, confirmed door mechanism or measured survey.",
+    "Diagnostic frames105/115 do not extend the approved visible movie."
+  ],
+  "blend_packed_bytes": 14040965,
+  "reopened_successfully": true
+}

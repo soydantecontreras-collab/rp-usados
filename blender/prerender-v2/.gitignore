@@ -1,0 +1,6 @@
+frames/
+transition-mattes/
+door-mattes/
+*.err
+*.log
+status.json

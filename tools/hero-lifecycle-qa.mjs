@@ -1,0 +1,42 @@
+import { createRequire } from 'node:module';
+import { writeFile } from 'node:fs/promises';
+import assert from 'node:assert/strict';
+const require = createRequire('C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
+const { chromium } = require('playwright');
+const browser = await chromium.launch({ channel:'msedge',headless:true });
+const url='http://127.0.0.1:9400/?rp_hero_preview=1&hero_debug=1';
+const results=[];
+try {
+ const page=await browser.newPage({viewport:{width:1440,height:900}});
+ page.on('pageerror',error=>results.push({pageError:error.message}));
+ page.on('console',message=>{if(message.type()==='error')results.push({consoleError:message.text()});});
+ await page.goto(url);
+ await page.waitForFunction(()=>window.__RP_HERO_DIAGNOSTICS__?.state==='ready',null,{timeout:65000});
+ await page.evaluate(()=>document.querySelector('canvas').getContext('webgl2').getExtension('WEBGL_lose_context').loseContext());
+ await page.waitForTimeout(1000);
+ results.push({afterLoss:await page.evaluate(()=>({state:window.__RP_HERO_DIAGNOSTICS__?.state,dom:document.querySelector('[data-hero-3d]').dataset.state,canvases:document.querySelectorAll('canvas').length}))});
+ await page.waitForFunction(()=>window.__RP_HERO_DIAGNOSTICS__?.state==='fallback');
+ assert.equal(await page.locator('canvas').count(),0);
+ assert(await page.locator('.hero-webgl__poster').isVisible());
+ results.push({case:'actual WebGL context loss',passed:true});
+ await page.close();
+ const slow=await browser.newPage();
+ await slow.route('**/hero.glb',async route=>{await new Promise(r=>setTimeout(r,31000));await route.abort().catch(()=>{});});
+ await slow.goto(url,{waitUntil:'domcontentloaded'});
+ await slow.waitForFunction(()=>window.__RP_HERO_DIAGNOSTICS__?.state==='fallback',null,{timeout:40000});
+ const state=await slow.evaluate(()=>window.__RP_HERO_DIAGNOSTICS__);
+ assert.equal(state.reason,'timeout');
+ assert.equal(await slow.locator('canvas').count(),0);
+ await slow.getByRole('link',{name:'Ver vehículos',exact:false}).first().click();
+ await slow.waitForURL('**/vehiculos/');
+ results.push({case:'30-second timeout and catalog access',passed:true});
+ await slow.close();
+ const zoom=await browser.newPage({viewport:{width:1440,height:900},reducedMotion:'reduce'});
+ await zoom.goto(url,{waitUntil:'networkidle'});
+ await zoom.evaluate(()=>document.documentElement.style.zoom='2');
+ assert(!await zoom.evaluate(()=>document.documentElement.scrollWidth>innerWidth));
+ assert(await zoom.getByRole('link',{name:'Ver vehículos',exact:false}).first().isVisible());
+ results.push({case:'preview at CSS zoom 200% with reduced motion',passed:true});
+ await zoom.close();
+} catch(error) {results.push({error:error.stack});process.exitCode=1;}
+finally{await writeFile('blender/web-integration-v6-1/qa/lifecycle-report.json',JSON.stringify(results,null,2));console.log(JSON.stringify(results));await browser.close();}

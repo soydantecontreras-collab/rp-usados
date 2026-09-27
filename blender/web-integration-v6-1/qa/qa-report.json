@@ -1,0 +1,374 @@
+{
+  "date": "2026-09-26T22:15:29.558Z",
+  "cases": [
+    {
+      "name": "single module initialization, GLB request and canvas",
+      "passed": true
+    },
+    {
+      "name": "forward and reverse camera",
+      "passed": true
+    },
+    {
+      "name": "preview keyboard first focus",
+      "passed": true
+    },
+    {
+      "name": "out of viewport pause",
+      "passed": true,
+      "frames": 152
+    },
+    {
+      "name": "desktop resize",
+      "passed": true,
+      "viewport": {
+        "width": 1200,
+        "height": 728,
+        "pixelRatio": 1
+      }
+    },
+    {
+      "name": "visibility event lifecycle (simulated hidden state)",
+      "passed": true
+    },
+    {
+      "name": "live reduced motion cleanup",
+      "passed": true
+    },
+    {
+      "name": "mobile",
+      "passed": true,
+      "requests3D": [],
+      "state": null
+    },
+    {
+      "name": "compact",
+      "passed": true,
+      "requests3D": [],
+      "state": null
+    },
+    {
+      "name": "reduced-motion",
+      "passed": true,
+      "requests3D": [],
+      "state": null
+    },
+    {
+      "name": "no-javascript",
+      "passed": true,
+      "requests3D": [],
+      "state": null
+    },
+    {
+      "name": "glb-failure",
+      "passed": true,
+      "requests3D": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/controller-CsEEoJ53.js",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/hero.glb"
+      ],
+      "state": "fallback"
+    },
+    {
+      "name": "webgl-failure",
+      "passed": true,
+      "requests3D": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/controller-CsEEoJ53.js",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/hero.glb"
+      ],
+      "state": "fallback"
+    },
+    {
+      "name": "no 3D requests /",
+      "passed": true
+    },
+    {
+      "name": "no 3D requests /vehiculos/",
+      "passed": true
+    },
+    {
+      "name": "no 3D requests /?s=auto",
+      "passed": true
+    },
+    {
+      "name": "no 3D requests /unidad-inexistente/",
+      "passed": true
+    },
+    {
+      "name": "catalog skip while GLB pending",
+      "passed": true
+    }
+  ],
+  "warnings": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ],
+  "initial": {
+    "state": "ready",
+    "frames": 3,
+    "progress": 0,
+    "events": [],
+    "reason": "",
+    "fetchMs": 52.80000001192093,
+    "glbBytes": 30433824,
+    "environmentBytes": 2097202,
+    "parseMs": 187,
+    "duration": 3,
+    "clips": [
+      {
+        "name": "CAM_A_Ochava",
+        "duration": 3,
+        "tracks": 2
+      },
+      {
+        "name": "Puerta_Acceso_HojaDer",
+        "duration": 3,
+        "tracks": 1
+      },
+      {
+        "name": "Puerta_Acceso_HojaIzq",
+        "duration": 3,
+        "tracks": 1
+      }
+    ],
+    "gpu": "ANGLE (AMD, AMD Radeon 760M Graphics (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "sourceCamera": {
+      "name": "CAM_A_Ochava",
+      "lens": 24,
+      "sensorWidth": 36,
+      "shiftX": 0,
+      "shiftY": 0.03999999910593033,
+      "aspect": 1.7777777777777777
+    },
+    "shadowLights": 3,
+    "renderSamples": [
+      202.89999997615814,
+      9.699999988079071,
+      8.700000047683716
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 828,
+      "pixelRatio": 1
+    },
+    "precompiledPrograms": 25,
+    "programsAfterRender": 28,
+    "rendererMemory": {
+      "geometries": 207,
+      "textures": 51
+    },
+    "drawCalls": 772,
+    "triangles": 518784,
+    "cameraPosition": [
+      6.174621105194092,
+      1.600000023841858,
+      6.174621105194092
+    ],
+    "readyMs": 8497.5,
+    "inViewport": true,
+    "jsHeap": 79312959
+  },
+  "poses": [
+    {
+      "name": "middle",
+      "progress": 0.5005847953216375,
+      "camera": [
+        1.5193005542867994,
+        1.721693517147589,
+        1.5193005542867994
+      ]
+    },
+    {
+      "name": "arrival",
+      "progress": 0.8304093567251462,
+      "camera": [
+        -0.8015003530171554,
+        1.7823608996727416,
+        -0.8014999483329642
+      ]
+    },
+    {
+      "name": "threshold",
+      "progress": 0.92046783625731,
+      "camera": [
+        -1.2630295864669283,
+        1.7944256812258206,
+        -1.2630291422554083
+      ]
+    },
+    {
+      "name": "inside",
+      "progress": 0.9988304093567252,
+      "camera": [
+        -1.4754184889798383,
+        1.799977596225213,
+        -1.4754187273984174
+      ]
+    }
+  ],
+  "motion": {
+    "durationMs": 3007.5,
+    "browserRafFps": 47.880299251870326,
+    "renderedFrames": 142,
+    "intervalP95": 27.80000000000109,
+    "intervals": [
+      6.899999999999636,
+      7,
+      6.899999999999636,
+      7,
+      6.899999999999636,
+      7,
+      7,
+      20.700000000000728,
+      34.79999999999927,
+      27.80000000000109,
+      27.69999999999891,
+      20.900000000001455,
+      13.899999999999636,
+      20.799999999999272,
+      20.80000000000109,
+      13.899999999999636,
+      27.799999999999272,
+      13.899999999999636,
+      20.900000000001455,
+      20.799999999999272,
+      20.799999999999272,
+      20.900000000001455,
+      20.799999999999272,
+      20.799999999999272,
+      13.900000000001455,
+      20.799999999999272,
+      20.899999999999636,
+      20.80000000000109,
+      27.799999999999272,
+      20.899999999999636,
+      20.80000000000109,
+      20.899999999999636,
+      20.69999999999891,
+      21,
+      20.80000000000109,
+      20.799999999999272,
+      21,
+      20.700000000000728,
+      20.799999999999272,
+      20.899999999999636,
+      27.80000000000109,
+      20.69999999999891,
+      27.80000000000109,
+      21,
+      20.69999999999891,
+      20.80000000000109,
+      20.799999999999272,
+      27.899999999999636,
+      20.700000000000728,
+      20.899999999999636,
+      27.899999999999636,
+      20.80000000000109,
+      20.799999999999272,
+      20.80000000000109,
+      20.899999999999636,
+      27.799999999999272,
+      20.80000000000109,
+      20.899999999999636,
+      20.799999999999272,
+      20.700000000000728,
+      27.899999999999636,
+      20.799999999999272,
+      20.900000000001455,
+      27.69999999999891,
+      20.899999999999636,
+      20.80000000000109,
+      20.899999999999636,
+      27.799999999999272,
+      20.80000000000109,
+      27.69999999999891,
+      20.900000000001455,
+      20.899999999999636,
+      20.69999999999891,
+      27.80000000000109,
+      20.899999999999636,
+      20.799999999999272,
+      27.80000000000109,
+      20.899999999999636,
+      27.799999999999272,
+      20.80000000000109,
+      20.799999999999272,
+      27.80000000000109,
+      20.799999999999272,
+      27.799999999999272,
+      20.80000000000109,
+      20.799999999999272,
+      27.80000000000109,
+      20.899999999999636,
+      27.69999999999891,
+      21,
+      20.700000000000728,
+      20.899999999999636,
+      20.80000000000109,
+      27.799999999999272,
+      20.899999999999636,
+      20.80000000000109,
+      20.799999999999272,
+      20.899999999999636,
+      27.700000000000728,
+      21,
+      20.799999999999272,
+      20.700000000000728,
+      27.799999999999272,
+      20.899999999999636,
+      20.900000000001455,
+      20.799999999999272,
+      20.799999999999272,
+      20.80000000000109,
+      20.799999999999272,
+      20.899999999999636,
+      20.80000000000109,
+      20.799999999999272,
+      20.899999999999636,
+      20.900000000001455,
+      20.799999999999272,
+      20.799999999999272,
+      20.900000000001455,
+      13.799999999999272,
+      20.899999999999636,
+      20.80000000000109,
+      20.899999999999636,
+      20.69999999999891,
+      21,
+      13.900000000001455,
+      20.69999999999891,
+      20.899999999999636,
+      20.900000000001455,
+      13.799999999999272,
+      27.899999999999636,
+      20.700000000000728,
+      20.899999999999636,
+      13.899999999999636,
+      20.899999999999636,
+      20.700000000000728,
+      13.899999999999636,
+      20.899999999999636,
+      20.80000000000109,
+      20.899999999999636,
+      13.799999999999272,
+      20.900000000001455,
+      20.799999999999272,
+      13.899999999999636,
+      20.899999999999636,
+      20.80000000000109
+    ]
+  },
+  "longTasks": [
+    {
+      "start": 1150,
+      "duration": 61
+    },
+    {
+      "start": 1313.2999999523163,
+      "duration": 445
+    },
+    {
+      "start": 9389.399999976158,
+      "duration": 206
+    }
+  ],
+  "errors": []
+}

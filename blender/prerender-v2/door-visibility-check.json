@@ -1,0 +1,44 @@
+[
+  {
+    "frame": 35,
+    "doorPixels": 5241,
+    "oldDoorMeanRGB": 8.002798448133309,
+    "newDoorMeanRGB": 87.32296635502131,
+    "interiorMeanRGB": 7.929851689279063
+  },
+  {
+    "frame": 50,
+    "doorPixels": 3645,
+    "oldDoorMeanRGB": 7.937814357567444,
+    "newDoorMeanRGB": 54.70891632373114,
+    "interiorMeanRGB": 7.981873834766397
+  },
+  {
+    "frame": 65,
+    "doorPixels": 9046,
+    "oldDoorMeanRGB": 7.87541454786646,
+    "newDoorMeanRGB": 51.699646252487284,
+    "interiorMeanRGB": 7.995476735010499
+  },
+  {
+    "frame": 80,
+    "doorPixels": 14129,
+    "oldDoorMeanRGB": 7.996083704909524,
+    "newDoorMeanRGB": 43.60091537499705,
+    "interiorMeanRGB": 7.993225182427723
+  },
+  {
+    "frame": 100,
+    "doorPixels": 38449,
+    "oldDoorMeanRGB": 8.002202051202024,
+    "newDoorMeanRGB": 38.20611719420531,
+    "interiorMeanRGB": 7.994528602168279
+  },
+  {
+    "frame": 115,
+    "doorPixels": 171698,
+    "oldDoorMeanRGB": 8.00189868257056,
+    "newDoorMeanRGB": 40.74240624041437,
+    "interiorMeanRGB": 7.990583766718534
+  }
+]

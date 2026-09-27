@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RP Usados · cierre visible del 3D</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#192128;color:#edf1f1;font:16px/1.55 system-ui,sans-serif}header{min-height:56px;padding:12px max(20px,calc((100vw - 1260px)/2));background:#10161b;display:flex;gap:18px;justify-content:space-between;align-items:center}header small{color:#b7c6ca}main{max-width:1260px;margin:auto;padding:28px 20px 65px}h1{font-size:clamp(30px,3.8vw,54px);line-height:1.07;letter-spacing:-.04em;margin:0 0 16px}h2{font-size:clamp(22px,2.1vw,30px);margin:38px 0 12px}p{max-width:80ch;color:#d2dddd;margin:0 0 17px}.lede{font-size:19px}.numbers{display:flex;gap:1px;background:#56646a;margin:24px 0}.numbers>div{background:#27333b;padding:15px 20px;flex:1}.numbers span{display:block;color:#becbd0}.numbers strong{font-size:clamp(24px,2.4vw,36px)}.videos{display:grid;grid-template-columns:1.5fr 1fr;gap:18px}.videos figure,.frame{margin:0}.videos video{display:block;width:100%;aspect-ratio:960/562;background:#101619}.videos h3{margin:0 0 9px;font-size:18px}.videos figcaption,.frame figcaption{color:#bdcccf;padding:9px 0}.frame img{width:100%;display:block}.note{border-left:3px solid #e1bb7f;background:#2b2d2a;color:#ece4d6;padding:14px 18px;margin:24px 0}a{color:#d8e9ef}a:focus-visible,video:focus-visible{outline:3px solid #e1bb7f;outline-offset:3px}.links{display:flex;flex-wrap:wrap;gap:10px 22px;margin:20px 0}footer{border-top:1px solid #526168;padding-top:18px;margin-top:38px;color:#c1ced1}@media(max-width:700px){header{padding:10px 16px;font-size:13px}main{padding:22px 16px 50px}.videos{grid-template-columns:1fr}.numbers{display:block}.numbers>div{border-bottom:1px solid #56646a}}
+</style>
+<header><strong>RP Usados · Blender 2A</strong><small>Recorte del tramo interior</small></header>
+<main>
+<h1>La escena entrega el cuadro en la entrada.</h1>
+<p class="lede">El video visible termina a los 3,5 segundos, mientras el marco del acceso aún está en pantalla. El avance posterior queda reservado para la futura integración con la interfaz.</p>
+<div class="numbers"><div><span>Prueba anterior</span><strong>4,79 s</strong></div><div><span>Nuevo video 3D visible</span><strong>3,54 s</strong></div><div><span>Recorte</span><strong>1,25 s</strong></div></div>
+<div class="videos">
+<figure><h3>Nuevo · entrega en el acceso</h3><video controls playsinline preload="metadata" poster="../../iteration-2/review/01-exterior-A.png" aria-label="Recorrido visible de 3,54 segundos, con entrega en el acceso"><source src="RP-2A-A-visible-3_5s-HANDOFF.mp4" type="video/mp4"></video><figcaption>La vista termina donde la futura interfaz debería tomar el relevo.</figcaption></figure>
+<figure><h3>Referencia · prueba completa</h3><video controls playsinline preload="metadata" poster="../../iteration-2/review/01-exterior-A.png" aria-label="Recorrido de 4,79 segundos, con interior esquemático al final"><source src="../../iteration-2/review/RP-2A-A-4_75s-20cm-PROVISIONAL.mp4" type="video/mp4"></video><figcaption>Conservada para comparar el tramo que se quitó de la presentación visible.</figcaption></figure>
+</div>
+<p class="note"><strong>Precisión espacial:</strong> en el último fotograma visible la cámara todavía está aproximadamente 2 m afuera. El archivo Blender conserva la trayectoria completa, que cruza la entrada y termina 20 cm dentro. Aquí sólo se recorta lo que vería el usuario antes de una futura transición. No hay animación de puerta ni interfaz.</p>
+<h2>Último fotograma visible</h2>
+<figure class="frame"><a href="../../iteration-2/review/candidate-85.png"><img src="../../iteration-2/review/candidate-85.png" alt="Marco de entrada todavía visible, con el interior esquemático detrás"></a><figcaption>Frame 85 · 3,50 s de trayectoria · punto propuesto de entrega visual.</figcaption></figure>
+<p class="links"><a href="../../RP_Usados_Blockout_2A_v003_handoff.blend" download>Archivo Blender v003</a><a href="RP-2A-A-visible-3_5s-HANDOFF.mp4" download>Video recortado</a><a href="../NOTAS.md">Qué queda visible y qué sigue en Blender</a></p>
+<footer>La transición física → interfaz, la apertura real y el acceso directo «Ver vehículos» siguen pendientes de una etapa aprobada.</footer>
+</main>
+</html>

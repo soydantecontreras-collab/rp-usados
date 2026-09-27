@@ -1,6 +1,11 @@
 <?php
 /** Media slot remains intentional until approved assets exist. @package RP_Usados */
 defined( 'ABSPATH' ) || exit;
+// Opt-in integration trial. No settings, content or commerce data are changed.
+if ( isset( $_GET['rp_hero_preview'] ) && '1' === sanitize_text_field( wp_unslash( $_GET['rp_hero_preview'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only presentation flag.
+	get_template_part( 'template-parts/home/hero-webgl' );
+	return;
+}
 $image = absint( get_theme_mod( 'rp_hero_image', 0 ) );
 $video = absint( get_theme_mod( 'rp_hero_video', 0 ) );
 $has_image = $image && wp_attachment_is_image( $image );

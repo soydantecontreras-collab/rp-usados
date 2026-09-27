@@ -41,7 +41,9 @@ No reemplazar el marcador por ejemplos que parezcan reales. Los textos de prueba
 
 La fase actual está autorizada por el pedido de continuación: primera versión de la Home, catálogo dinámico y ficha individual con administración nativa. Aplicar el concepto “Trayectoria en movimiento” con la paleta provisional negro/rojo/blanco indicada por el cliente. No crear stock, imágenes de vehículos ni contenido comercial ficticio.
 
-Logo original, fotografías, video o render, WhatsApp y condiciones específicas siguen pendientes. La falta de estos materiales no bloquea esta versión visual: dejar espacios intencionales y el marcador de dato pendiente donde sea necesario. Instagram @rpusados es una referencia pública aportada por el usuario, no una confirmación de sus horarios o teléfono.
+Las fotografías actuales del local tomadas por el dueño fueron recibidas como referencia el 22 de septiembre de 2026. Tienen prioridad sobre Street View para colores, fachada, cartel, materiales y estado actual; Street View sólo es referencia secundaria para geometría, proporciones y contexto urbano. Ante diferencias, prevalecen las fotos actuales: el acceso de la esquina es negro en ellas, aunque aparece rojo en Street View. Consultar `VISUAL_REFERENCES.md` y sus archivos de referencia.
+
+Logo original, fotografías y datos confirmados de unidades, video o render aprobado, WhatsApp y condiciones específicas siguen pendientes. La falta de estos materiales no bloquea esta versión visual: dejar espacios intencionales y el marcador de dato pendiente donde sea necesario. Instagram @rpusados es una referencia pública aportada por el usuario, no una confirmación de sus horarios o teléfono.
 
 Usar frontend-design primero y apple-design para principios. La primera auditoría design-qa de la Home sin stock quedó autorizada y completada; repetirla cuando se incorporen stock y media reales.
 

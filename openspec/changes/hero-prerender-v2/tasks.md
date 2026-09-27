@@ -1,0 +1,6 @@
+- [x] Render approved source independently and verify first/mid/last frames.
+- [x] Encode and compare seek/compact MP4; extract matching posters and reduced candidate.
+- [x] Build stable independent Vite preview from approved UI.
+- [x] Implement single-progress scroll, presentation-aware seek queue, fallback, lifecycle and transition.
+- [x] Run real-browser forward/reverse/fast/reload/failure/mobile/reduced-motion/keyboard tests and visual checks. Safari unavailable, documented.
+- [x] Measure weights, preparation, seeking, memory estimates; document limits and recommendation in HERO_PRERENDER_V2.md. 34 primary + 11 lifecycle checks, isolated production build passed.

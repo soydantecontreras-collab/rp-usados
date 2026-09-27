@@ -1,0 +1,22 @@
+{
+  "widths": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "video": {
+    "duration": 3.541667,
+    "width": 960,
+    "height": 562
+  },
+  "comparisonDuration": 4.791667,
+  "playedToEnd": true,
+  "errors": []
+}

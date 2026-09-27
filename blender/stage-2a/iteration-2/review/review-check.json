@@ -1,0 +1,28 @@
+{
+  "findings": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "brokenImages": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "brokenImages": []
+    }
+  ],
+  "media": [
+    {
+      "duration": 4.791667,
+      "width": 960,
+      "height": 562
+    },
+    {
+      "duration": 12.041667,
+      "width": 960,
+      "height": 562
+    }
+  ],
+  "newVideoPlayedToEnd": true,
+  "errors": []
+}

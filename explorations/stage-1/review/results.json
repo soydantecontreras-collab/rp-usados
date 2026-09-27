@@ -1,0 +1,201 @@
+[
+  {
+    "route": "a",
+    "width": 1440,
+    "overflow": false,
+    "display": "Bricolage, sans-serif",
+    "body": "Manrope, sans-serif",
+    "fonts": [
+      "Bricolage",
+      "Manrope"
+    ],
+    "heroWidth": 1440,
+    "gridColumns": "419.078px 419.094px 419.078px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "a",
+    "width": 768,
+    "overflow": false,
+    "display": "Bricolage, sans-serif",
+    "body": "Manrope, sans-serif",
+    "fonts": [
+      "Bricolage",
+      "Manrope"
+    ],
+    "heroWidth": 768,
+    "gridColumns": "340.203px 340.203px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "a",
+    "width": 390,
+    "overflow": false,
+    "display": "Bricolage, sans-serif",
+    "body": "Manrope, sans-serif",
+    "fonts": [
+      "Bricolage",
+      "Manrope"
+    ],
+    "heroWidth": 390,
+    "gridColumns": "350px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "a",
+    "width": 320,
+    "overflow": false,
+    "display": "Bricolage, sans-serif",
+    "body": "Manrope, sans-serif",
+    "fonts": [
+      "Bricolage",
+      "Manrope"
+    ],
+    "heroWidth": 320,
+    "gridColumns": "280px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "b",
+    "width": 1440,
+    "overflow": false,
+    "display": "Newsreader, serif",
+    "body": "Instrument, sans-serif",
+    "fonts": [
+      "Newsreader",
+      "Instrument"
+    ],
+    "heroWidth": 1440,
+    "gridColumns": "419.078px 419.094px 419.078px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "b",
+    "width": 768,
+    "overflow": false,
+    "display": "Newsreader, serif",
+    "body": "Instrument, sans-serif",
+    "fonts": [
+      "Newsreader",
+      "Instrument"
+    ],
+    "heroWidth": 768,
+    "gridColumns": "340.203px 340.203px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "b",
+    "width": 390,
+    "overflow": false,
+    "display": "Newsreader, serif",
+    "body": "Instrument, sans-serif",
+    "fonts": [
+      "Newsreader",
+      "Instrument"
+    ],
+    "heroWidth": 390,
+    "gridColumns": "350px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "b",
+    "width": 320,
+    "overflow": false,
+    "display": "Newsreader, serif",
+    "body": "Instrument, sans-serif",
+    "fonts": [
+      "Newsreader",
+      "Instrument"
+    ],
+    "heroWidth": 320,
+    "gridColumns": "280px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "c",
+    "width": 1440,
+    "overflow": false,
+    "display": "Manrope, sans-serif",
+    "body": "Archivo, sans-serif",
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "heroWidth": 1440,
+    "gridColumns": "419.078px 419.094px 419.078px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "c",
+    "width": 768,
+    "overflow": false,
+    "display": "Manrope, sans-serif",
+    "body": "Archivo, sans-serif",
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "heroWidth": 768,
+    "gridColumns": "340.203px 340.203px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "c",
+    "width": 390,
+    "overflow": false,
+    "display": "Manrope, sans-serif",
+    "body": "Archivo, sans-serif",
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "heroWidth": 390,
+    "gridColumns": "350px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "route": "c",
+    "width": 320,
+    "overflow": false,
+    "display": "Manrope, sans-serif",
+    "body": "Archivo, sans-serif",
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "heroWidth": 320,
+    "gridColumns": "280px",
+    "scrollBehavior": "auto",
+    "badImages": 0,
+    "errors": []
+  },
+  {
+    "interactions": "route, filters, reset, reserved state, gallery, CTA feedback, focus trap, Escape, focus restoration passed",
+    "zoom": "CSS 200%, no overflow; 768/390/320 viewports separately checked"
+  },
+  {
+    "noJs": "Content and catalog anchor available. Interactive comparison and demo dialog intentionally JS-dependent."
+  }
+]

@@ -1,0 +1,57 @@
+[
+  {
+    "family": "Bricolage Grotesque:opsz,wght@12..96,200..800",
+    "file": "bricolage.woff2",
+    "bytes": 76888,
+    "sha256": "a79fdb52d4a5c76552452f69202add96e287401fff03d3e8c0e38b4dcb5a99cd",
+    "css": "https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap",
+    "source": "https://fonts.gstatic.com/s/bricolagegrotesque/v9/3y9K6as8bTXq_nANBjzKo3IeZx8z6up5BeSl9D4dj_x9PpZBMlGIInE.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/bricolagegrotesque/OFL.txt",
+    "subset": "latin",
+    "downloaded": "2026-09-23"
+  },
+  {
+    "family": "Manrope:wght@200..800",
+    "file": "manrope.woff2",
+    "bytes": 24836,
+    "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972",
+    "css": "https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap",
+    "source": "https://fonts.gstatic.com/s/manrope/v20/xn7gYHE41ni1AdIRggexSg.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/manrope/OFL.txt",
+    "subset": "latin",
+    "downloaded": "2026-09-23"
+  },
+  {
+    "family": "Newsreader:opsz,wght@6..72,200..800",
+    "file": "newsreader.woff2",
+    "bytes": 132000,
+    "sha256": "6e4f2958c3a7c4a80acde4e5a679abe7e01bc1e30b92be3c7a8b696ef401d101",
+    "css": "https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&display=swap",
+    "source": "https://fonts.gstatic.com/s/newsreader/v26/cY9AfjOCX1hbuyalUrK4397yjA.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/newsreader/OFL.txt",
+    "subset": "latin",
+    "downloaded": "2026-09-23"
+  },
+  {
+    "family": "Instrument Sans:wght@400..700",
+    "file": "instrument.woff2",
+    "bytes": 30092,
+    "sha256": "2ee17598a98d8a59e4df8152d015bec9ab8e4d5672cc0ab42bef806b568e3971",
+    "css": "https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400..700&display=swap",
+    "source": "https://fonts.gstatic.com/s/instrumentsans/v4/pxiTypc9vsFDm051Uf6KVwgkfoSxQ0GsQv8ToedPibnr0SZe1Q.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/instrumentsans/OFL.txt",
+    "subset": "latin",
+    "downloaded": "2026-09-23"
+  },
+  {
+    "family": "Archivo:wght@100..900",
+    "file": "archivo.woff2",
+    "bytes": 34928,
+    "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967",
+    "css": "https://fonts.googleapis.com/css2?family=Archivo:wght@100..900&display=swap",
+    "source": "https://fonts.gstatic.com/s/archivo/v25/k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sLydOxI.woff2",
+    "license": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "subset": "latin",
+    "downloaded": "2026-09-23"
+  }
+]

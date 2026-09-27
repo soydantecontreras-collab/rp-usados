@@ -27,6 +27,8 @@ Contrastes calculados con luminancia relativa WCAG: texto/fondo 17.61:1; secunda
 
 Paleta provisional proporcionada por el usuario, no manual de marca oficial.
 
+Actualización del 22 de septiembre de 2026: se recibieron fotos actuales del local tomadas por el dueño y capturas históricas de Street View. La jerarquía y lectura visual están en [`VISUAL_REFERENCES.md`](VISUAL_REFERENCES.md). Para representar el local, priorizar siempre las fotos actuales: fachada gris clara, zócalo gris oscuro y acceso negro. El acceso rojo de Street View no representa su color actual. Esta evidencia no modifica automáticamente los tokens de la web ni los convierte en colores oficiales.
+
 ### Tipo, ritmo y composición
 
 Archivo Variable autoalojada (SIL OFL, licencia incluida), pesos regulares y firmes, cifras tabulares para datos, cuerpo mínimo 16px. El hero utiliza un tratamiento amplio de “Desde 1990”; los títulos se alinean a la izquierda y escalan con clamp(). Texto de lectura limitado a 72ch.
@@ -160,6 +162,6 @@ Criterios de esta versión: PHP válido, Home y estado vacío renderizados, buil
 
 ## Pendientes
 
-Logo original; fotografías reales del local/unidades o render de Blender aprobado; WebM si se decide utilizarlo; WhatsApp confirmado; formato y moneda reales de los importes; condiciones de financiación; horarios y email sólo si el cliente los confirma y pide mostrarlos; nueva revisión design-qa con stock y media reales; instalación en el hosting definitivo.
+Fotos actuales del local recibidas como referencia; selección e integración en la web pendientes. Logo original; fotografías y datos confirmados de unidades o render de Blender aprobado; WebM si se decide utilizarlo; WhatsApp confirmado; formato y moneda reales de los importes; condiciones de financiación; horarios y email sólo si el cliente los confirma y pide mostrarlos; nueva revisión design-qa con stock y media reales; instalación en el hosting definitivo.
 
 Para datos necesarios sin confirmar: `[dato pendiente — confirmar con el cliente]`.

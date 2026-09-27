@@ -1,0 +1,21 @@
+[
+  {
+    "afterLoss": {
+      "state": "fallback",
+      "dom": "fallback",
+      "canvases": 0
+    }
+  },
+  {
+    "case": "actual WebGL context loss",
+    "passed": true
+  },
+  {
+    "case": "30-second timeout and catalog access",
+    "passed": true
+  },
+  {
+    "case": "preview at CSS zoom 200% with reduced motion",
+    "passed": true
+  }
+]

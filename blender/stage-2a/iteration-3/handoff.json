@@ -1,0 +1,17 @@
+{
+  "stage": "2A, iteration 3",
+  "visible_scene": "RP_2A_VISIBLE_UNTIL_PORTAL_F85",
+  "visible_frames": 85,
+  "visible_video_duration_seconds": 3.5416666666666665,
+  "last_visible_frame_time_seconds": 3.5,
+  "visible_camera_distance_to_threshold_m": -1.9968,
+  "continued_offscreen_scene": "RP_2A_PATH_A_4_75S_PROVISIONAL",
+  "continued_offscreen_frames": 30,
+  "continued_offscreen_seconds": 1.25,
+  "physical_crossing_in_continuation_seconds": 4.5,
+  "physical_end_depth_inside_m": 0.2,
+  "door_animated": false,
+  "ui_animated": false,
+  "model_changed": false,
+  "v002_preserved": true
+}

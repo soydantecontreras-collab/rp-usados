@@ -1,0 +1,151 @@
+[
+  {
+    "width": 1440,
+    "mapState": "Combinaciones de teclas\nDatos del mapa ©2026 Google\nTérminos\nNotificar un problema de Maps"
+  },
+  {
+    "width": 1440,
+    "file": "index.html",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Tu próximo auto.Un lugar de siempre.",
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "file": "vehiculo.html?estado=reservado",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Marca / Modelo",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "file": "index.html",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Tu próximo auto.Un lugar de siempre.",
+    "errors": []
+  },
+  {
+    "width": 768,
+    "file": "vehiculo.html?estado=reservado",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Marca / Modelo",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "mapState": "Datos del mapa\nTérminos\nNotificar un problema de Maps"
+  },
+  {
+    "width": 390,
+    "file": "index.html",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Tu próximo auto.Un lugar de siempre.",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "file": "vehiculo.html?estado=reservado",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Marca / Modelo",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "file": "index.html",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Tu próximo auto.Un lugar de siempre.",
+    "errors": []
+  },
+  {
+    "width": 320,
+    "file": "vehiculo.html?estado=reservado",
+    "overflow": false,
+    "bodyFont": "Manrope, sans-serif",
+    "dataFont": "Archivo, sans-serif",
+    "filters": 0,
+    "badImages": 0,
+    "fonts": [
+      "Manrope",
+      "Archivo"
+    ],
+    "reduced": "0s",
+    "heading": "Marca / Modelo",
+    "errors": []
+  },
+  {
+    "cardSurfaceClicks": [
+      "image",
+      "title",
+      "specs"
+    ],
+    "hover": "matrix(1.015, 0, 0, 1.015, 0, 0)",
+    "whatsapp": "dialog, no outbound contact, focus and Escape passed",
+    "zoomCss200Overflow": false
+  },
+  {
+    "noJs": "Catalog links open standalone detail without JavaScript"
+  }
+]

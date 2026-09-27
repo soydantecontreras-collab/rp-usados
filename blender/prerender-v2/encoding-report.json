@@ -1,0 +1,230 @@
+[
+  {
+    "name": "fast",
+    "width": 1600,
+    "height": 900,
+    "fps": 48,
+    "frames": 144,
+    "duration": 3,
+    "gop": 4,
+    "crf": 18,
+    "bytes": 5618460,
+    "posterBytes": 1110991,
+    "encodeSeconds": 2.9748387336730957,
+    "ssim": "[Parsed_ssim_3 @ 000002469d77f040] SSIM Y:0.983196 (17.745810) U:0.990686 (20.308608) V:0.991030 (20.472235) All:0.985750 (18.461815)",
+    "atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 1618
+      },
+      {
+        "type": "free",
+        "offset": 1650,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 1658,
+        "size": 5616802
+      }
+    ],
+    "command": [
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\tools\\.preview\\ffmpeg\\unpacked\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+      "-y",
+      "-hide_banner",
+      "-loglevel",
+      "warning",
+      "-framerate",
+      "48",
+      "-i",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\prerender-v2\\frames\\%04d.png",
+      "-vf",
+      "scale=1600:-2:flags=lanczos:out_color_matrix=bt709:out_range=tv,format=yuv420p",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "18",
+      "-g",
+      "4",
+      "-keyint_min",
+      "4",
+      "-sc_threshold",
+      "0",
+      "-bf",
+      "0",
+      "-an",
+      "-movflags",
+      "+faststart",
+      "-color_primaries",
+      "bt709",
+      "-color_trc",
+      "iec61966-2-1",
+      "-colorspace",
+      "bt709",
+      "-color_range",
+      "tv",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\explorations\\hero-v2\\public\\hero-v2\\media\\hero-fast.mp4"
+    ],
+    "sha256": "8de7dc798fb30f3f930ef1736dc36325f79b0ed60494f7644b5785a63508af59"
+  },
+  {
+    "name": "compact",
+    "width": 1600,
+    "height": 900,
+    "fps": 48,
+    "frames": 144,
+    "duration": 3,
+    "gop": 48,
+    "crf": 20,
+    "bytes": 2460801,
+    "posterBytes": 1084747,
+    "encodeSeconds": 2.860191583633423,
+    "ssim": "[Parsed_ssim_3 @ 0000020c8c303000] SSIM Y:0.976170 (16.228697) U:0.987170 (18.917824) V:0.988024 (19.216941) All:0.979979 (16.985108)",
+    "atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 2273
+      },
+      {
+        "type": "free",
+        "offset": 2305,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 2313,
+        "size": 2458488
+      }
+    ],
+    "command": [
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\tools\\.preview\\ffmpeg\\unpacked\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+      "-y",
+      "-hide_banner",
+      "-loglevel",
+      "warning",
+      "-framerate",
+      "48",
+      "-i",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\prerender-v2\\frames\\%04d.png",
+      "-vf",
+      "scale=1600:-2:flags=lanczos:out_color_matrix=bt709:out_range=tv,format=yuv420p",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "20",
+      "-g",
+      "48",
+      "-keyint_min",
+      "48",
+      "-sc_threshold",
+      "0",
+      "-bf",
+      "2",
+      "-an",
+      "-movflags",
+      "+faststart",
+      "-color_primaries",
+      "bt709",
+      "-color_trc",
+      "iec61966-2-1",
+      "-colorspace",
+      "bt709",
+      "-color_range",
+      "tv",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\explorations\\hero-v2\\public\\hero-v2\\media\\hero-compact.mp4"
+    ],
+    "sha256": "2a5d788dd266f322cb6e2c79d34b2e4f95a2b9b99cce5c34e2c8eeab4dabbec3"
+  },
+  {
+    "name": "mobile",
+    "width": 960,
+    "height": 540,
+    "fps": 48,
+    "frames": 144,
+    "duration": 3,
+    "gop": 4,
+    "crf": 20,
+    "bytes": 1802673,
+    "posterBytes": 470646,
+    "encodeSeconds": 1.5769953727722168,
+    "ssim": "[Parsed_ssim_3 @ 0000020c79a92500] SSIM Y:0.978848 (16.746474) U:0.987670 (19.090511) V:0.988538 (19.407512) All:0.981933 (17.431239)",
+    "atoms": [
+      {
+        "type": "ftyp",
+        "offset": 0,
+        "size": 32
+      },
+      {
+        "type": "moov",
+        "offset": 32,
+        "size": 1565
+      },
+      {
+        "type": "free",
+        "offset": 1597,
+        "size": 8
+      },
+      {
+        "type": "mdat",
+        "offset": 1605,
+        "size": 1801068
+      }
+    ],
+    "command": [
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\tools\\.preview\\ffmpeg\\unpacked\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+      "-y",
+      "-hide_banner",
+      "-loglevel",
+      "warning",
+      "-framerate",
+      "48",
+      "-i",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\prerender-v2\\frames\\%04d.png",
+      "-vf",
+      "scale=960:-2:flags=lanczos:out_color_matrix=bt709:out_range=tv,format=yuv420p",
+      "-c:v",
+      "libx264",
+      "-preset",
+      "slow",
+      "-crf",
+      "20",
+      "-g",
+      "4",
+      "-keyint_min",
+      "4",
+      "-sc_threshold",
+      "0",
+      "-bf",
+      "0",
+      "-an",
+      "-movflags",
+      "+faststart",
+      "-color_primaries",
+      "bt709",
+      "-color_trc",
+      "iec61966-2-1",
+      "-colorspace",
+      "bt709",
+      "-color_range",
+      "tv",
+      "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\explorations\\hero-v2\\public\\hero-v2\\media\\hero-mobile.mp4"
+    ],
+    "sha256": "2f0daf048d3c3ca8f3c5ffe4ee92f2893c482389e8686a5bf3c343d0218395c3"
+  }
+]

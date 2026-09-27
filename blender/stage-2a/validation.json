@@ -1,0 +1,33 @@
+{
+  "scenes": [
+    "RP_2A_CLOSED",
+    "RP_2A_PATH_OPEN_PROVISIONAL",
+    "Scene"
+  ],
+  "base_objects": 194,
+  "base_meshes": 184,
+  "triangles": 2244,
+  "materials_in_stage": 11,
+  "non_unit_mesh_scales": [],
+  "camera_center_path_collisions": [],
+  "max_camera_right_vector_vertical_component": 2.384185791015625e-07,
+  "animated_channels": 6,
+  "textures": 0,
+  "door_animation": false,
+  "render_resolution": [
+    1440,
+    844
+  ],
+  "validation_limit": "Centerline collision check only; dimensions and real door clearance unverified.",
+  "first_position": [
+    -11.699999809265137,
+    -12.09999942779541,
+    1.7799999713897705
+  ],
+  "last_position": [
+    1.7803300619125366,
+    1.7803300619125366,
+    1.7799999713897705
+  ],
+  "blend_file": "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\stage-2a\\RP_Usados_Blockout_2A_v001.blend"
+}

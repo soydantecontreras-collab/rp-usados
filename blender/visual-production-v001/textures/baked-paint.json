@@ -1,0 +1,10 @@
+{
+  "source": "https://polyhaven.com/a/painted_plaster_wall",
+  "license": "CC0",
+  "method": "Blender emission bake, subdued luminance modulation around owner-photo-based paint colors",
+  "outputs": [
+    "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\visual-production-v001\\textures\\VIS_01_PAINT_LIGHT_GREY_albedo.png",
+    "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\visual-production-v001\\textures\\VIS_02_PAINT_CHARCOAL_albedo.png",
+    "C:\\Users\\dante.DESKTOP\\Desktop\\rp-usados-gpt\\rp-usados\\blender\\visual-production-v001\\textures\\VIS_03_BLACK_CORNER_PAINT_albedo.png"
+  ]
+}

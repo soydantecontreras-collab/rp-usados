@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" role="img" aria-labelledby="title desc">
+<title id="title">Esquema de planta del blockout y cámaras</title><desc id="desc">Edificio en esquina con frente del portón a la izquierda, Chacabuco abajo, ochava diagonal y recorrido de A hasta 75 centímetros dentro del acceso. Escala y geometría aproximadas.</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10" fill="#e8bd7d"/></marker></defs>
+<rect width="900" height="650" fill="#1c252c"/>
+<g fill="#dce6ea" font-family="system-ui,sans-serif"><text x="35" y="40" font-size="23">Relación espacial · hipótesis de blockout</text><text x="35" y="67" fill="#aebdc5" font-size="15">Planta de orientación. No es un plano medido del inmueble.</text></g>
+<path d="M420 302V83H724V365H483Z" fill="#414c52" stroke="#9a865f" stroke-width="3"/>
+<path d="M495 335H677V142H450V290Z" fill="#828c90" stroke="#d5ddde" stroke-width="2"/>
+<path d="M459 299 486 326" stroke="#11171b" stroke-width="10"/>
+<path d="M462 302 483 323" stroke="#edcf9d" stroke-width="6"/>
+<path d="M239 553C330 459 424 361 482 303" fill="none" stroke="#e8bd7d" stroke-width="4" marker-end="url(#arrow)"/>
+<path d="M306 600 472 313M198 479 472 313" stroke="#78909b" stroke-width="1.5" stroke-dasharray="6 8"/>
+<g fill="#e7eff1" font-family="system-ui,sans-serif" font-size="17">
+<text x="512" y="208" fill="#18242b">RP Usados</text><text x="512" y="231" fill="#24323b" font-size="14">Volumen aproximado</text>
+<text x="520" y="396">Frente Chacabuco</text><text x="270" y="160">Frente del portón</text><path d="M402 170 441 223" fill="none" stroke="#aebdc5"/>
+<text x="520" y="278">Acceso / ochava</text><path d="M518 284 490 306" fill="none" stroke="#d4b782"/>
+<text x="490" y="443" fill="#e8bd7d">A → ingreso breve</text><text x="490" y="466" fill="#b9c6cc" font-size="14">12 s de ensayo · sin apertura</text>
+</g>
+<g font-family="system-ui,sans-serif" font-size="17" fill="#edf2f3">
+<circle cx="239" cy="553" r="9" fill="#e8bd7d"/><text x="130" y="580">A · equilibrado</text>
+<circle cx="306" cy="600" r="7" fill="#a5bbc7"/><text x="322" y="610">B · Chacabuco</text>
+<circle cx="198" cy="479" r="7" fill="#a5bbc7"/><text x="75" y="461">C · portón</text>
+<circle cx="482" cy="303" r="5" fill="#fff1d9"/>
+</g>
+<text x="535" y="582" fill="#aebdc5" font-family="system-ui,sans-serif" font-size="14">Trayectoria esquemática. Coordenadas exactas</text><text x="535" y="603" fill="#aebdc5" font-family="system-ui,sans-serif" font-size="14">del ensayo disponibles en camera-path.json.</text>
+</svg>

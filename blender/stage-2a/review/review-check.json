@@ -1,0 +1,36 @@
+{
+  "results": [
+    {
+      "option": "A",
+      "src": "01-A-equilibrado.png",
+      "pressed": "true"
+    },
+    {
+      "option": "B",
+      "src": "02-B-chacabuco.png",
+      "pressed": "true"
+    },
+    {
+      "option": "C",
+      "src": "03-C-porton.png",
+      "pressed": "true"
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "broken": []
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "broken": []
+    }
+  ],
+  "media": {
+    "duration": 12.041667,
+    "width": 960,
+    "height": 562,
+    "completedPlayback": true
+  },
+  "errors": []
+}

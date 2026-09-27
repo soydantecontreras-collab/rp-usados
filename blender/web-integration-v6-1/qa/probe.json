@@ -1,0 +1,228 @@
+{
+  "initial": {
+    "state": "ready",
+    "frames": 3,
+    "progress": 0,
+    "events": [],
+    "reason": "",
+    "fetchMs": 67,
+    "glbBytes": 30436792,
+    "environmentBytes": 2097202,
+    "parseMs": 302.5,
+    "duration": 3,
+    "clips": [
+      {
+        "name": "CAM_A_Ochava",
+        "duration": 3,
+        "tracks": 2
+      },
+      {
+        "name": "Puerta_Acceso_HojaDer",
+        "duration": 3,
+        "tracks": 1
+      },
+      {
+        "name": "Puerta_Acceso_HojaIzq",
+        "duration": 3,
+        "tracks": 1
+      }
+    ],
+    "gpu": "ANGLE (AMD, AMD Radeon 760M Graphics (0x000015BF) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "sourceCamera": {
+      "name": "CAM_A_Ochava",
+      "lens": 24,
+      "sensorWidth": 36,
+      "shiftX": 0,
+      "shiftY": 0.03999999910593033,
+      "aspect": 1.7777777777777777
+    },
+    "shadowLights": 3,
+    "renderSamples": [
+      210.5,
+      12.5,
+      11.800000011920929
+    ],
+    "viewport": {
+      "width": 1440,
+      "height": 828,
+      "pixelRatio": 1
+    },
+    "programKeysBefore": [
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388752,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8393730,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8389634,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv2,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388816,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv2,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8555522,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388752,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8393730,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8389634,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv2,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388816,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv2,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8555522,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8557570,srgb,onBeforeCompile(){}"
+    ],
+    "programKeysAfter": [
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388752,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8393730,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8389634,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv2,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388816,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,uv2,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388624,8555522,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb,306,1024,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388752,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8393730,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8389634,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv2,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,uv,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388816,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,uv2,false,false,false,false,uv,false,false,uv,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8396880,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8555522,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,highp,srgb-linear,306,1024,false,false,false,false,false,uv,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388688,8522754,srgb,onBeforeCompile(){}",
+      "physical,STANDARD,,PHYSICAL,,highp,srgb-linear,306,1024,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,8388624,8557570,srgb,onBeforeCompile(){}",
+      "depth,highp,srgb-linear,false,,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,3200,8388608,8530944,srgb,onBeforeCompile(){}",
+      "8,9,highp,srgb-linear,301,,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,0,0,0,0,16,8524800,srgb,onBeforeCompile(){}",
+      "8,9,highp,srgb,301,,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,false,,false,false,0,,0,1,0,25,0,0,6,0,0,0,3,0,0,1,6,0,0,0,16,8524800,srgb,onBeforeCompile(){}"
+    ],
+    "rendererMemory": {
+      "geometries": 207,
+      "textures": 51
+    },
+    "drawCalls": 772,
+    "triangles": 518784,
+    "cameraPosition": [
+      6.174621105194092,
+      1.600000023841858,
+      6.174621105194092
+    ],
+    "readyMs": 16203.799999952316,
+    "inViewport": true,
+    "resources": [
+      {
+        "name": "http://127.0.0.1:9400/wp-includes/css/dist/block-library/style.min.css?ver=6.8.10",
+        "duration": 4.699999988079071,
+        "transferSize": 116645,
+        "encodedBodySize": 116345
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/poster.webp",
+        "duration": 5.5,
+        "transferSize": 147194,
+        "encodedBodySize": 146894
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/style.css?ver=0.2.0",
+        "duration": 6.199999988079071,
+        "transferSize": 747,
+        "encodedBodySize": 447
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/app-YxcBQxAT.css?ver=0.2.0",
+        "duration": 6.899999976158142,
+        "transferSize": 16207,
+        "encodedBodySize": 15907
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/app-CPOzeG28.js?ver=0.2.0",
+        "duration": 3,
+        "transferSize": 1758,
+        "encodedBodySize": 1458
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/bootstrap-EHlPlC_L.js",
+        "duration": 6.5,
+        "transferSize": 2286,
+        "encodedBodySize": 1986
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/archivo-latin-standard-normal-DY7AcnAa.woff2",
+        "duration": 7,
+        "transferSize": 90404,
+        "encodedBodySize": 90104
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/app-CPOzeG28.js",
+        "duration": 3.099999964237213,
+        "transferSize": 1758,
+        "encodedBodySize": 1458
+      },
+      {
+        "name": "http://127.0.0.1:9400/favicon.ico",
+        "duration": 3708.199999988079,
+        "transferSize": 4419,
+        "encodedBodySize": 4119
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/dist/assets/controller-CcHJRnZF.js",
+        "duration": 5.300000011920929,
+        "transferSize": 1008244,
+        "encodedBodySize": 1007944
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-includes/js/wp-emoji-release.min.js?ver=6.8.10",
+        "duration": 2.700000047683716,
+        "transferSize": 19551,
+        "encodedBodySize": 19251
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/hero.glb",
+        "duration": 55.59999996423721,
+        "transferSize": 30437092,
+        "encodedBodySize": 30436792
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/scene.json",
+        "duration": 2.899999976158142,
+        "transferSize": 4523,
+        "encodedBodySize": 4223
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/environment.hdr",
+        "duration": 13.799999952316284,
+        "transferSize": 2097502,
+        "encodedBodySize": 2097202
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/hero.glb",
+        "duration": 159.69999998807907,
+        "transferSize": 30437092,
+        "encodedBodySize": 30436792
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/scene.json",
+        "duration": 6.5,
+        "transferSize": 4523,
+        "encodedBodySize": 4223
+      },
+      {
+        "name": "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v6-1/environment.hdr",
+        "duration": 15.300000011920929,
+        "transferSize": 2097502,
+        "encodedBodySize": 2097202
+      }
+    ]
+  },
+  "messages": [
+    "THREE.WebGLProgram: Program Info Log: (210,81-129): warning X4122: sum of 0.996094 and -2.98545e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.49272e-017 cannot be represented accurately in double precision\n(209,37-61): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision\n(210,82-106): warning X4122: sum of 1 and -1.66644e-018 cannot be represented accurately in double precision"
+  ]
+}

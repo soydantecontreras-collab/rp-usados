@@ -83,7 +83,9 @@ function rp_usados_enqueue_assets(): void {
 		'rp-usados-app',
 		RP_USADOS_URL . '/assets/dist/' . ltrim( (string) $entry['file'], '/' ),
 		array(),
-		RP_USADOS_VERSION,
+		// Vite filenames already contain a content hash. A ?ver= query makes
+		// imports back into this entry a second ES module with duplicate side effects.
+		null,
 		true
 	);
 }
@@ -105,4 +107,3 @@ function rp_usados_module_script_tag( string $tag, string $handle, string $src )
 	);
 }
 add_filter( 'script_loader_tag', 'rp_usados_module_script_tag', 10, 3 );
-

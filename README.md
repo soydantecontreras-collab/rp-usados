@@ -1,6 +1,6 @@
 # RP Usados
 
-Base funcional y visual actual del sitio de RP Usados. El repositorio conserva el frontend existente como respaldo, aunque su dirección visual se reemplazará más adelante. No incluye stock, credenciales ni datos comerciales no confirmados.
+Tema productivo local de RP Usados: Hero V2 responsive aprobado y frontend Stage 1 / Iteración 02 conectados al CPT existente. Sin deploy ni stock comercial ficticio. Ver [`PRODUCTION_FRONTEND.md`](PRODUCTION_FRONTEND.md) para preview, QA, archivos y datos pendientes. Las exploraciones y V1 se conservan como referencia, fuera de la ejecución productiva.
 
 ## Stack
 
@@ -64,7 +64,7 @@ Desde la raíz, con la vista local activa:
 
 ```bash
 node tools/check-php.mjs
-node tools/smoke-browser.mjs
+node tools/production-qa.mjs
 ```
 
 ## Seguridad y datos

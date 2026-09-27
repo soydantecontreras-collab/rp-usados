@@ -1,0 +1,24 @@
+{
+  "reloads": 300,
+  "failures": 0,
+  "perWidth": {
+    "375": 100,
+    "390": 100,
+    "430": 100
+  },
+  "cachedResponses": 60,
+  "protected": {
+    "inc/vehicle-admin.php": true,
+    "inc/vehicle-data.php": true,
+    "header.php": true,
+    "template-parts/home/hero.php": true,
+    "src/styles/hero-v2.css": true,
+    "src/scripts/hero-v2/responsive-media.js": true,
+    "assets/hero/v2/hero-fast-dark-doors.mp4": true,
+    "assets/hero/v2/hero-mobile-portrait-crf18.mp4": true
+  },
+  "preparationMs": {
+    "median": 1294,
+    "max": 1598
+  }
+}

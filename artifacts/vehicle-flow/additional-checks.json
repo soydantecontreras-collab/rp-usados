@@ -1,0 +1,5 @@
+{
+  "touchSwipe": true,
+  "cssZoom200Overflow": false,
+  "zoomLimit": "CSS 200% zoom, not browser UI zoom"
+}

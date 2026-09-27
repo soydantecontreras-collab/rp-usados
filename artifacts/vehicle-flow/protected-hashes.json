@@ -1,0 +1,12 @@
+{
+  "inc/vehicle-admin.php": "07bbf22c17cb430b15ead8580354fc4b386f8bc8addd1e0a8895160a5e7b6a03",
+  "inc/vehicle-data.php": "3ea851a1e8afa00f1ec975f12c5722bd4500fd721f07a7550f8ce907f444220c",
+  "header.php": "2961bd3de5e767ddaa7cafb9afa7522738f6db0bdc54dad185a76877acdd125c",
+  "template-parts/home/hero.php": "27e6b500811fcfa6722c8920ece89eaeda892b1389f8df44aa379a58d19c3246",
+  "src/styles/hero-v2.css": "7676e8eb3bcbeaf435ed439e30367efcf2a1ad439621eed3984533a0aeea39e9",
+  "src/scripts/hero-v2/main.js": "4d9a9f98a67484538fb4d7d612f26e2148b9f7d91d8a2f6629bc1c283d909573",
+  "src/scripts/hero-v2/responsive-media.js": "a1eacde21054d14a004110370ce0bac215d9c5ed94750c1f62cc11afdbbc16d5",
+  "src/scripts/hero-v2/seek-controller.js": "85d31357e711964fe34f24cd27a4d48162e95c76ea83f9b5cb31b9b8eff1ab6e",
+  "assets/hero/v2/hero-fast-dark-doors.mp4": "f30f7e95c357e39601dfa14f2052b2bc6a6e6f49cff2d72c2598aabec01ded64",
+  "assets/hero/v2/hero-mobile-portrait-crf18.mp4": "281f59a01ee41f84ec5ee831426ebdad76af1b088c0d89957c1b436788af03da"
+}

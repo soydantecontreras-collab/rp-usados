@@ -1,0 +1,47 @@
+{
+  "checks": [
+    "375: reduced motion stays static, no MP4",
+    "375: correct mobile poster",
+    "375: reduced motion catalog reachable",
+    "390: reduced motion stays static, no MP4",
+    "390: correct mobile poster",
+    "390: reduced motion catalog reachable",
+    "430: reduced motion stays static, no MP4",
+    "430: correct mobile poster",
+    "430: reduced motion catalog reachable",
+    "background initialization has no source yet",
+    "visible initialization true",
+    "hidden scroll does not issue seek true",
+    "visible resumes latest desired frame true",
+    "visible initialization false",
+    "hidden scroll does not issue seek false",
+    "visible resumes latest desired frame false",
+    "history back restores frame and progress",
+    "persisted lifecycle resumes controller",
+    "return from catalog resumes video",
+    "orientation retains vertical source on touch device",
+    "seeked + paint fallback without rVFC",
+    "real media failure retains poster"
+  ],
+  "restores": [
+    {
+      "pages": [
+        {
+          "persisted": false
+        },
+        {
+          "persisted": true
+        }
+      ],
+      "navigation": "navigate",
+      "touchAfterRestore": {
+        "points": 0,
+        "coarse": false
+      }
+    }
+  ],
+  "limits": [
+    "Visibility states are injected: headless tabs all report visible.",
+    "Physical Safari/iPhone unavailable; Chromium mobile emulation."
+  ]
+}

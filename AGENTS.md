@@ -39,6 +39,8 @@ No reemplazar el marcador por ejemplos que parezcan reales. Los textos de prueba
 
 ## Estado actual y límites de fase
 
+Actualización aprobada 27/09/2026: Hero V2 A desktop y render vertical mobile cerrados; Stage 1 / Iteración 02 es la fuente visual productiva, con Manrope + Archivo. La Home normal usa prerender responsive, negro, puente web, curva sutil y catálogo completo del CPT sin filtros/destacados/precios. Esta actualización sustituye la dirección visual provisional descrita más abajo. No rediseñar ni rerenderizar heroes, no volver a Three.js, no deploy sin aprobación. Ver `PRODUCTION_FRONTEND.md` para implementación y datos pendientes. Usar frontend-design-codex y ui-ux-pro-max para este frontend, sin skills redundantes.
+
 La fase actual está autorizada por el pedido de continuación: primera versión de la Home, catálogo dinámico y ficha individual con administración nativa. Aplicar el concepto “Trayectoria en movimiento” con la paleta provisional negro/rojo/blanco indicada por el cliente. No crear stock, imágenes de vehículos ni contenido comercial ficticio.
 
 Las fotografías actuales del local tomadas por el dueño fueron recibidas como referencia el 22 de septiembre de 2026. Tienen prioridad sobre Street View para colores, fachada, cartel, materiales y estado actual; Street View sólo es referencia secundaria para geometría, proporciones y contexto urbano. Ante diferencias, prevalecen las fotos actuales: el acceso de la esquina es negro en ellas, aunque aparece rojo en Street View. Consultar `VISUAL_REFERENCES.md` y sus archivos de referencia.

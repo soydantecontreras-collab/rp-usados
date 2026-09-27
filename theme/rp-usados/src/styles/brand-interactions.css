@@ -1,0 +1,86 @@
+/* Controlled brand pass. Deliberately excludes the approved header and hero. */
+:root {
+  --rp-red:#b51f2b;
+  --rp-red-deep:#8f1721;
+  --rp-response:240ms cubic-bezier(.22,.68,.3,1);
+}
+
+/* Small identity signals; existing neutral surfaces and warm reserved state stay. */
+:is(.catalog,.options,.location,.unit-description,.unit-enquiry) .label,
+.options .service-no { color:var(--rp-red-deep); }
+:is(.catalog,.heritage,.options,.location,.contact) .label::before {
+  content:"";display:inline-block;width:14px;height:3px;background:var(--rp-red);
+  margin-right:10px;vertical-align:middle;
+}
+.options .service-no { font-weight:600; }
+.vehicle .stock-state:not(.reserved) { box-shadow:inset 3px 0 var(--rp-red); }
+.vehicle-arrow {
+  color:var(--rp-red);width:34px;height:34px;flex:0 0 34px;
+  display:grid;place-items:center;border:1px solid transparent;
+  transition:transform var(--rp-response),background-color var(--rp-response),color var(--rp-response),border-color var(--rp-response);
+}
+.vehicle-link { transition:background-color var(--rp-response),box-shadow var(--rp-response); }
+.vehicle-photo { transition:transform 260ms cubic-bezier(.22,.68,.3,1); }
+
+/* 1. CTA / WhatsApp: lateral surface, stable readable label, directional icon. */
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action {
+  --button-fill:var(--rp-red-deep);
+  position:relative;isolation:isolate;overflow:hidden;
+  transition:transform 160ms ease-out,border-color var(--rp-response),color var(--rp-response);
+}
+:is(.catalog,.options,.contact,.unit-enquiry,.unit-contact-bar) .action:not(.action-outline) {
+  color:var(--white);background:var(--rp-red);border-color:var(--rp-red);
+}
+:is(.catalog,.options,.contact,.unit-enquiry,.unit-contact-bar) .action .wa-icon { filter:invert(1); }
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action::before {
+  content:"";position:absolute;inset:0;background:var(--button-fill);z-index:-1;
+  transform:translateX(-101%);transition:transform var(--rp-response);pointer-events:none;
+}
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action>span:not(.arrow) {
+  transition:transform var(--rp-response);
+}
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action .arrow {
+  transition:transform var(--rp-response);
+}
+
+/* 2. Secondary surfaces and gallery controls: contained contrast and edge response. */
+.heritage .action-outline { --button-fill:#434647; }
+.location .action-light { --button-fill:#deded7; }
+.location .action-light .arrow { color:var(--rp-red); }
+:is(.unit-information,.location) .inline-link .arrow { color:var(--rp-red); }
+.gallery :is(.icon-button,.gallery-choices a) {
+  transition:background-color var(--rp-response),border-color var(--rp-response),transform 160ms ease-out;
+}
+.gallery-choices a[aria-current] { border-bottom:3px solid var(--rp-red); }
+
+@media(hover:hover) {
+  :is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:hover::before { transform:translateX(0); }
+  :is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:hover>span:not(.arrow) { transform:translateX(2px); }
+  :is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:hover .arrow { transform:translate(3px,-2px); }
+  .heritage .action-outline:hover { background:transparent;border-color:#d0d3d1; }
+  .location .action-light:hover { background:var(--white);border-color:var(--white); }
+  .vehicle-link:hover { background:var(--white);box-shadow:inset 0 0 0 1px #a9adaa; }
+  .vehicle-link:hover .vehicle-arrow { background:var(--rp-red);color:var(--white);border-color:var(--rp-red);transform:translate(2px,-2px); }
+  .gallery .icon-button:hover:not(:disabled) { background:var(--rp-red);color:var(--white);border-color:var(--rp-red); }
+  .gallery-choices a:hover { border-color:var(--rp-red); }
+}
+
+/* Equivalent keyboard feedback; the focus ring is independent of the animation. */
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:focus-visible::before { transform:translateX(0); }
+:is(.catalog,.options,.unit-enquiry,.unit-contact-bar) .action:focus-visible { outline:3px solid var(--focus);outline-offset:4px; }
+:is(.heritage,.contact,.location) .action:focus-visible { outline:3px solid var(--white);outline-offset:4px; }
+.vehicle-link:focus-visible .vehicle-arrow { background:var(--rp-red);color:var(--white); }
+.gallery .icon-button:focus-visible { outline-color:var(--white);border-color:var(--rp-red); }
+
+/* Shared touch / pointer press: no hover dependency and no layout shift. */
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:active { transform:translateY(1px);filter:none; }
+:is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action:active::before { transform:translateX(0); }
+.vehicle-link:active .vehicle-arrow { background:var(--rp-red);color:var(--white); }
+.gallery .icon-button:active:not(:disabled) { transform:translateY(1px); }
+
+@media(prefers-reduced-motion:reduce) {
+  :is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action,
+  :is(.catalog,.heritage,.options,.location,.contact,.unit-enquiry,.unit-contact-bar) .action>span,
+  .vehicle-arrow,.vehicle-photo,.gallery .icon-button { transform:none!important; }
+  /* State feedback remains immediate; only movement is removed. */
+}

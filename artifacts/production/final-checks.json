@@ -1,0 +1,13 @@
+{
+  "queryIndependent": true,
+  "adminBarOffset": {
+    "top": 96,
+    "headerBottom": 96,
+    "focus": "catalogo"
+  },
+  "pendingContrast": {
+    "bg": "rgb(229, 229, 224)",
+    "color": "rgb(32, 35, 36)",
+    "visible": true
+  }
+}

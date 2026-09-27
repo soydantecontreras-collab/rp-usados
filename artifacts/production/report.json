@@ -1,0 +1,169 @@
+{
+  "browser": "154.0.4258.37",
+  "checks": [
+    {
+      "name": "wide: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "wide: one correct video",
+      "passed": true
+    },
+    {
+      "name": "wide: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "wide: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "wide: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "wide: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "wide: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "wide: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "wide: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "wide: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "wide: institutional order",
+      "passed": true
+    },
+    {
+      "name": "wide: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "wide: no overflow",
+      "passed": true
+    },
+    {
+      "name": "wide: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "desktop: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "desktop: one correct video",
+      "passed": true
+    },
+    {
+      "name": "desktop: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "desktop: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "desktop: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "desktop: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "desktop: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "desktop: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "desktop: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "desktop: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "desktop: institutional order",
+      "passed": true
+    },
+    {
+      "name": "desktop: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "desktop: no overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "laptop: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "laptop: one correct video",
+      "passed": true
+    },
+    {
+      "name": "laptop: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "laptop: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "laptop: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "laptop: forward reverse slow and return top",
+      "passed": true
+    }
+  ],
+  "profiles": [
+    {
+      "name": "wide",
+      "preparedMs": 149.4000000357628,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "desktop",
+      "preparedMs": 123.19999998807907,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ],
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Stock fixtures run only on 9430; 9400 has no fabricated inventory.",
+    "Touch/viewport emulation, not a physical iPhone or Safari."
+  ]
+}

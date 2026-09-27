@@ -1,34 +1,9 @@
-<?php
-/** Media slot remains intentional until approved assets exist. @package RP_Usados */
-defined( 'ABSPATH' ) || exit;
-// Opt-in integration trial. No settings, content or commerce data are changed.
-if ( isset( $_GET['rp_hero_preview'] ) && '1' === sanitize_text_field( wp_unslash( $_GET['rp_hero_preview'] ) ) ) { // phpcs:ignore WordPress.Security.NonceVerification.Recommended -- Read-only presentation flag.
-	get_template_part( 'template-parts/home/hero-webgl' );
-	return;
-}
-$image = absint( get_theme_mod( 'rp_hero_image', 0 ) );
-$video = absint( get_theme_mod( 'rp_hero_video', 0 ) );
-$has_image = $image && wp_attachment_is_image( $image );
-?>
-<section class="hero<?php echo $has_image ? ' hero--with-media' : ''; ?>" aria-labelledby="hero-title" data-motion="hero">
-	<div class="hero-media" data-hero-media>
-		<?php if ( $has_image ) : ?>
-			<?php echo wp_get_attachment_image( $image, 'full', false, array( 'class' => 'hero-media__image', 'fetchpriority' => 'high', 'loading' => 'eager', 'alt' => '' ) ); ?>
-		<?php endif; ?>
-	</div>
-	<div class="hero-contour" aria-hidden="true" data-motion="contour">
-		<svg viewBox="0 0 1440 700" fill="none" preserveAspectRatio="xMidYMid slice"><path d="M-100 590H460C590 590 621 571 708 467L911 222C952 175 994 158 1067 158H1520"/><path class="hero-contour__echo" d="M-100 604H460C597 604 631 585 719 476L922 231C960 188 996 172 1067 172H1520"/></svg>
-	</div>
-	<div class="container hero-content">
-		<p class="hero-intro">RP Usados <span>Ciudadela, Buenos Aires</span></p>
-		<h1 id="hero-title" class="hero-title" data-motion="hero-title"><span>Desde</span>1990<span class="hero-title__dot">.</span></h1>
-		<div class="hero-actions" data-motion="hero-actions">
-			<a class="button button--primary" href="<?php echo esc_url( rp_usados_catalog_url() ); ?>"><?php esc_html_e( 'Ver vehículos', 'rp-usados' ); ?></a>
-			<span class="hero-caption"><?php esc_html_e( 'Autos usados.', 'rp-usados' ); ?><br><?php esc_html_e( 'Ciudadela.', 'rp-usados' ); ?></span>
-		</div>
-		<div class="hero-bottom"><span><?php esc_html_e( '36 años de trayectoria', 'rp-usados' ); ?></span><a href="#trayectoria"><?php esc_html_e( 'Conocé RP Usados', 'rp-usados' ); ?></a></div>
-	</div>
+<?php defined( 'ABSPATH' ) || exit; $media = RP_USADOS_URL . '/assets/hero/v2/'; ?>
+<section class="hero-track" aria-label="<?php esc_attr_e( 'RP Usados, recorrido por la concesionaria', 'rp-usados' ); ?>">
+    <div class="hero-stage"><div class="hero-visual">
+        <video class="hero-video" muted playsinline preload="none" aria-hidden="true" disablepictureinpicture data-desktop-src="<?php echo esc_url( $media . 'hero-fast-dark-doors.mp4' ); ?>" data-mobile-src="<?php echo esc_url( $media . 'hero-mobile-portrait-crf18.mp4' ); ?>"></video>
+        <picture><source media="(max-width: 899px), (hover: none) and (pointer: coarse)" srcset="<?php echo esc_url( $media . 'hero-mobile-portrait-crf18-poster.png' ); ?>" width="720" height="1280"><img class="hero-poster" src="<?php echo esc_url( $media . 'poster-fast-dark-doors.png' ); ?>" alt="<?php esc_attr_e( 'Fachada de RP Usados al anochecer, vista desde la esquina', 'rp-usados' ); ?>" width="1600" height="900" fetchpriority="high"></picture>
+    </div><div class="hero-caption"><div><h1>RP Usados</h1><p>Ciudadela · Desde 1990</p></div><a class="action action-light" href="#catalogo" data-skip><span>Ver vehículos</span><span class="arrow" aria-hidden="true">↗</span></a></div>
+    <span class="scroll-cue label" aria-hidden="true">Deslizá para entrar <span>↓</span></span>
+    <p class="media-status" role="status"></p></div>
 </section>
-<?php if ( $has_image && 'video/webm' === get_post_mime_type( $video ) ) : ?>
-<div class="container hero-video"><video controls playsinline preload="none" poster="<?php echo esc_url( wp_get_attachment_image_url( $image, 'full' ) ); ?>" aria-label="<?php esc_attr_e( 'Video de RP Usados', 'rp-usados' ); ?>"><source src="<?php echo esc_url( wp_get_attachment_url( $video ) ); ?>" type="video/webm"></video></div>
-<?php endif; ?>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 210" fill="none">
+  <!-- Simplified contour from the supplied September 26 reference. Decorative asset, not a new logo. -->
+  <g stroke="#f5f4ef" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M22 174C71 139 113 115 171 104C229 92 305 96 369 101C440 61 516 23 580 20C681 13 782 50 864 76C905 89 948 91 978 89"/>
+    <path d="M386 100C461 63 516 31 579 31C633 28 699 39 754 58C781 67 737 87 708 91" stroke-width="2.5"/>
+    <path d="M337 151C512 127 714 92 900 94L978 89L951 113" stroke-width="3"/>
+    <path d="M28 174L110 152L141 128M156 153C182 108 248 109 285 148M760 150C795 105 848 112 873 145" stroke-width="2.5"/>
+  </g>
+  <g stroke="#b51f2b" stroke-width="3" stroke-linecap="round">
+    <path d="M361 113C451 67 519 32 579 29M403 156C547 135 691 113 824 107"/>
+    <path d="M166 158C194 122 241 123 270 153M773 155C802 126 837 129 860 150"/>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+[
+  {
+    "width": 1440,
+    "i": 0,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    }
+  },
+  {
+    "width": 1440,
+    "i": 1,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    }
+  },
+  {
+    "width": 1440,
+    "i": 2,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    }
+  },
+  {
+    "width": 390,
+    "i": 0,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    }
+  },
+  {
+    "width": 390,
+    "i": 1,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "poster"
+    }
+  },
+  {
+    "width": 390,
+    "i": 2,
+    "before": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "poster"
+    },
+    "after": {
+      "scrollY": 554,
+      "progress": 0.5595959595959596,
+      "state": "ready"
+    }
+  }
+]

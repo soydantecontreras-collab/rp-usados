@@ -1,0 +1,808 @@
+{
+  "browser": "154.0.4258.37",
+  "checks": [
+    {
+      "name": "wide: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "wide: one correct video",
+      "passed": true
+    },
+    {
+      "name": "wide: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "wide: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "wide: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "wide: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "wide: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "wide: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "wide: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "wide: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "wide: institutional order",
+      "passed": true
+    },
+    {
+      "name": "wide: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "wide: no overflow",
+      "passed": true
+    },
+    {
+      "name": "wide: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "desktop: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "desktop: one correct video",
+      "passed": true
+    },
+    {
+      "name": "desktop: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "desktop: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "desktop: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "desktop: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "desktop: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "desktop: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "desktop: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "desktop: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "desktop: institutional order",
+      "passed": true
+    },
+    {
+      "name": "desktop: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "desktop: no overflow",
+      "passed": true
+    },
+    {
+      "name": "desktop: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "laptop: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "laptop: one correct video",
+      "passed": true
+    },
+    {
+      "name": "laptop: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "laptop: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "laptop: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "laptop: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "laptop: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "laptop: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "laptop: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "laptop: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "laptop: institutional order",
+      "passed": true
+    },
+    {
+      "name": "laptop: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "laptop: no overflow",
+      "passed": true
+    },
+    {
+      "name": "laptop: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "tablet: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "tablet: one correct video",
+      "passed": true
+    },
+    {
+      "name": "tablet: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "tablet: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "tablet: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "tablet: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "tablet: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "tablet: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "tablet: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "tablet: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "tablet: institutional order",
+      "passed": true
+    },
+    {
+      "name": "tablet: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "tablet: no overflow",
+      "passed": true
+    },
+    {
+      "name": "tablet: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: one correct video",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: institutional order",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: no overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-430: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: one correct video",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "orientation: vertical stays selected",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: institutional order",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: no overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-390: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: WordPress home and approved hero ready",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: one correct video",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: correct poster only",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: Manrope/Archivo",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: native custom-logo support/fallback does not use silhouette as logo",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: forward reverse slow and return top",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: refresh midpoint restored",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: abrupt reversal latest frame",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: skip focuses catalog",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: institutional order",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: map embed and directions",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: no overflow",
+      "passed": true
+    },
+    {
+      "name": "mobile-375: no errors or V1 resources",
+      "passed": true
+    },
+    {
+      "name": "reduced: mobile poster visible",
+      "passed": true
+    },
+    {
+      "name": "reduced: no video requested",
+      "passed": true
+    },
+    {
+      "name": "reduced: catalog reachable",
+      "passed": true
+    },
+    {
+      "name": "reduced: no overflow",
+      "passed": true
+    },
+    {
+      "name": "no-js: mobile poster visible",
+      "passed": true
+    },
+    {
+      "name": "no-js: no video requested",
+      "passed": true
+    },
+    {
+      "name": "no-js: catalog reachable",
+      "passed": true
+    },
+    {
+      "name": "no-js: no overflow",
+      "passed": true
+    },
+    {
+      "name": "failed-video: mobile poster visible",
+      "passed": true
+    },
+    {
+      "name": "failed-video: catalog reachable",
+      "passed": true
+    },
+    {
+      "name": "failed-video: no overflow",
+      "passed": true
+    },
+    {
+      "name": "1440: all 15 eligible records, no 12-item limit",
+      "passed": true
+    },
+    {
+      "name": "1440: reserved present and sold absent",
+      "passed": true
+    },
+    {
+      "name": "1440: no catalog price/filter/search/featured",
+      "passed": true
+    },
+    {
+      "name": "1440: entire card is one link",
+      "passed": true
+    },
+    {
+      "name": "1440: archive all eligible without prices",
+      "passed": true
+    },
+    {
+      "name": "1440: individual price",
+      "passed": true
+    },
+    {
+      "name": "1440: three gallery photos with full framing",
+      "passed": true
+    },
+    {
+      "name": "1440: unit WhatsApp includes title and canonical URL",
+      "passed": true
+    },
+    {
+      "name": "1440: gallery pointer and keyboard",
+      "passed": true
+    },
+    {
+      "name": "1440: detail no overflow/errors",
+      "passed": true
+    },
+    {
+      "name": "1440: single no hero/V1 downloads",
+      "passed": true
+    },
+    {
+      "name": "1440: reserved single state",
+      "passed": true
+    },
+    {
+      "name": "1440: absent facts not fabricated",
+      "passed": true
+    },
+    {
+      "name": "768: all 15 eligible records, no 12-item limit",
+      "passed": true
+    },
+    {
+      "name": "768: reserved present and sold absent",
+      "passed": true
+    },
+    {
+      "name": "768: no catalog price/filter/search/featured",
+      "passed": true
+    },
+    {
+      "name": "768: entire card is one link",
+      "passed": true
+    },
+    {
+      "name": "768: archive all eligible without prices",
+      "passed": true
+    },
+    {
+      "name": "768: individual price",
+      "passed": true
+    },
+    {
+      "name": "768: three gallery photos with full framing",
+      "passed": true
+    },
+    {
+      "name": "768: unit WhatsApp includes title and canonical URL",
+      "passed": true
+    },
+    {
+      "name": "768: gallery pointer and keyboard",
+      "passed": true
+    },
+    {
+      "name": "768: detail no overflow/errors",
+      "passed": true
+    },
+    {
+      "name": "768: single no hero/V1 downloads",
+      "passed": true
+    },
+    {
+      "name": "768: reserved single state",
+      "passed": true
+    },
+    {
+      "name": "768: absent facts not fabricated",
+      "passed": true
+    },
+    {
+      "name": "430: all 15 eligible records, no 12-item limit",
+      "passed": true
+    },
+    {
+      "name": "430: reserved present and sold absent",
+      "passed": true
+    },
+    {
+      "name": "430: no catalog price/filter/search/featured",
+      "passed": true
+    },
+    {
+      "name": "430: entire card is one link",
+      "passed": true
+    },
+    {
+      "name": "430: archive all eligible without prices",
+      "passed": true
+    },
+    {
+      "name": "430: individual price",
+      "passed": true
+    },
+    {
+      "name": "430: three gallery photos with full framing",
+      "passed": true
+    },
+    {
+      "name": "430: unit WhatsApp includes title and canonical URL",
+      "passed": true
+    },
+    {
+      "name": "430: gallery pointer and keyboard",
+      "passed": true
+    },
+    {
+      "name": "430: detail no overflow/errors",
+      "passed": true
+    },
+    {
+      "name": "430: single no hero/V1 downloads",
+      "passed": true
+    },
+    {
+      "name": "430: reserved single state",
+      "passed": true
+    },
+    {
+      "name": "430: absent facts not fabricated",
+      "passed": true
+    },
+    {
+      "name": "390: all 15 eligible records, no 12-item limit",
+      "passed": true
+    },
+    {
+      "name": "390: reserved present and sold absent",
+      "passed": true
+    },
+    {
+      "name": "390: no catalog price/filter/search/featured",
+      "passed": true
+    },
+    {
+      "name": "390: entire card is one link",
+      "passed": true
+    },
+    {
+      "name": "390: archive all eligible without prices",
+      "passed": true
+    },
+    {
+      "name": "390: individual price",
+      "passed": true
+    },
+    {
+      "name": "390: three gallery photos with full framing",
+      "passed": true
+    },
+    {
+      "name": "390: unit WhatsApp includes title and canonical URL",
+      "passed": true
+    },
+    {
+      "name": "390: gallery pointer and keyboard",
+      "passed": true
+    },
+    {
+      "name": "390: detail no overflow/errors",
+      "passed": true
+    },
+    {
+      "name": "390: single no hero/V1 downloads",
+      "passed": true
+    },
+    {
+      "name": "390: reserved single state",
+      "passed": true
+    },
+    {
+      "name": "390: absent facts not fabricated",
+      "passed": true
+    },
+    {
+      "name": "375: all 15 eligible records, no 12-item limit",
+      "passed": true
+    },
+    {
+      "name": "375: reserved present and sold absent",
+      "passed": true
+    },
+    {
+      "name": "375: no catalog price/filter/search/featured",
+      "passed": true
+    },
+    {
+      "name": "375: entire card is one link",
+      "passed": true
+    },
+    {
+      "name": "375: archive all eligible without prices",
+      "passed": true
+    },
+    {
+      "name": "375: individual price",
+      "passed": true
+    },
+    {
+      "name": "375: three gallery photos with full framing",
+      "passed": true
+    },
+    {
+      "name": "375: unit WhatsApp includes title and canonical URL",
+      "passed": true
+    },
+    {
+      "name": "375: gallery pointer and keyboard",
+      "passed": true
+    },
+    {
+      "name": "375: detail no overflow/errors",
+      "passed": true
+    },
+    {
+      "name": "375: single no hero/V1 downloads",
+      "passed": true
+    },
+    {
+      "name": "375: reserved single state",
+      "passed": true
+    },
+    {
+      "name": "375: absent facts not fabricated",
+      "passed": true
+    },
+    {
+      "name": "skip first keyboard target",
+      "passed": true
+    },
+    {
+      "name": "skip keyboard focuses stock",
+      "passed": true
+    },
+    {
+      "name": "200 percent zoom no overflow",
+      "passed": true
+    },
+    {
+      "name": "pending WhatsApp honest and reachable",
+      "passed": true
+    },
+    {
+      "name": "single without JS has gallery, price and WhatsApp",
+      "passed": true
+    }
+  ],
+  "profiles": [
+    {
+      "name": "wide",
+      "preparedMs": 139.60000002384186,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "desktop",
+      "preparedMs": 123.10000002384186,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "laptop",
+      "preparedMs": 153.89999997615814,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "preparedMs": 136.69999998807907,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-430",
+      "preparedMs": 255.30000001192093,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-390",
+      "preparedMs": 125,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-375",
+      "preparedMs": 147.19999998807907,
+      "requests": [
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9400/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ],
+      "errors": []
+    }
+  ],
+  "limitations": [
+    "Stock fixtures run only on 9430; 9400 has no fabricated inventory.",
+    "Touch/viewport emulation, not a physical iPhone or Safari."
+  ]
+}

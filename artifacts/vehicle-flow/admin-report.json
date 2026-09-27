@@ -1,0 +1,51 @@
+{
+  "method": "Native WordPress editor and media dialogs; isolated localhost:9440. Not real inventory.",
+  "vehicles": [
+    {
+      "name": "Disponible",
+      "state": "disponible",
+      "id": "6",
+      "url": "http://127.0.0.1:9440/vehiculos/qa-local-disponible-no-es-stock/"
+    },
+    {
+      "name": "Reservado",
+      "state": "reservado",
+      "id": "14",
+      "url": "http://127.0.0.1:9440/vehiculos/qa-local-reservado-no-es-stock/"
+    },
+    {
+      "name": "Vendido",
+      "state": "vendido",
+      "id": "17",
+      "url": "http://127.0.0.1:9440/vehiculos/qa-local-vendido-no-es-stock/"
+    },
+    {
+      "name": "Opcionales vacíos",
+      "state": "disponible",
+      "id": "20",
+      "url": "http://127.0.0.1:9440/vehiculos/qa-local-opcionales-vacios-no-es-stock/"
+    },
+    {
+      "name": "Galería",
+      "state": "disponible",
+      "id": "32",
+      "url": "http://127.0.0.1:9440/vehiculos/qa-local-galeria-no-es-stock/"
+    }
+  ],
+  "checks": [
+    "Disponible: no mandatory meta fields in form",
+    "Disponible: state persists after publishing",
+    "Reservado: no mandatory meta fields in form",
+    "Reservado: state persists after publishing",
+    "Vendido: no mandatory meta fields in form",
+    "Vendido: state persists after publishing",
+    "Opcionales vacíos: no mandatory meta fields in form",
+    "Opcionales vacíos: state persists after publishing",
+    "Galería: no mandatory meta fields in form",
+    "gallery IDs populated from visual library",
+    "Galería: state persists after publishing",
+    "gallery survives save",
+    "invalid km retains previous value",
+    "invalid km has visible explanation"
+  ]
+}

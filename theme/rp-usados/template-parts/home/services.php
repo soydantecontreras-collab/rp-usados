@@ -1,10 +1,2 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="servicios" class="services section-space" aria-labelledby="services-title">
-	<div class="container">
-		<div class="section-heading"><h2 id="services-title"><?php esc_html_e( 'Parte de pago.', 'rp-usados' ); ?><br><?php esc_html_e( 'Venta en cuotas.', 'rp-usados' ); ?></h2></div>
-		<div class="services-grid">
-			<article class="service"><h3><?php esc_html_e( 'Tomamos tu usado', 'rp-usados' ); ?></h3><p><?php esc_html_e( 'Podés entregar tu vehículo usado como parte de pago.', 'rp-usados' ); ?></p></article>
-			<article class="service"><h3><?php esc_html_e( 'Financiación / venta en cuotas', 'rp-usados' ); ?></h3><p><?php esc_html_e( 'Consultá las opciones y condiciones de financiación para la unidad que te interesa.', 'rp-usados' ); ?></p></article>
-		</div>
-	</div>
-</section>
+<section id="opciones" class="options section"><div class="wrap options-grid"><div><p class="label">03 / Financiación y permutas</p><h2>Más formas<br>de dar el paso.</h2></div><div><article class="service"><span class="service-no">01</span><div><h3>Tu usado, parte de pago.</h3><p>Tomamos vehículos usados como parte de pago.</p></div></article><article class="service"><span class="service-no">02</span><div><h3>Financiación y cuotas.</h3><p>Consultanos por financiación y venta en cuotas.</p></div></article><?php rp_usados_contact_action( 'Consultar por WhatsApp', '' ); ?><p class="pending">Condiciones: [dato pendiente — confirmar con el cliente]</p></div></div></section>

@@ -1,7 +1,2 @@
 <?php defined( 'ABSPATH' ) || exit; ?>
-<section id="trayectoria" class="trajectory section-space" aria-labelledby="trajectory-title" data-motion="trajectory">
-	<div class="container trajectory-layout">
-		<h2 id="trajectory-title"><?php esc_html_e( 'Desde 1990', 'rp-usados' ); ?><span class="section-rule" aria-hidden="true"></span></h2>
-		<p class="trajectory-stat"><span class="trajectory-stat__number">36</span><span><?php esc_html_e( 'años de', 'rp-usados' ); ?><br><?php esc_html_e( 'trayectoria', 'rp-usados' ); ?><small><?php esc_html_e( 'a 2026', 'rp-usados' ); ?></small></span></p>
-	</div>
-</section>
+<section id="nosotros" class="heritage section"><div class="wrap heritage-grid"><div><p class="label">02 / RP Usados</p><h2>La confianza<br>tiene un lugar.</h2><p>Desde 1990, en Ciudadela. Conocé nuestros vehículos y acercate a Chacabuco 399.</p><a href="#ubicacion" class="action action-outline"><span>Encontranos</span><span class="arrow" aria-hidden="true">↗</span></a></div><div class="heritage-type"><span>Desde</span><strong>1990</strong><span>36 años de trayectoria a 2026</span></div></div></section>

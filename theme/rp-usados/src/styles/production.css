@@ -1,0 +1,80 @@
+/* WordPress adapters; visual tokens remain Stage 1 Iteration 02. */
+:root { --header-height:64px; --night:#080809; --wp-bar:0px; }
+html { scroll-padding-top:calc(var(--header-height) + var(--wp-bar)); }
+[hidden] { display:none!important; }
+.screen-reader-text { position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap; }
+.site-header .custom-logo-link { display:flex;align-items:center;min-height:44px; }
+.site-header .custom-logo { width:auto;max-width:170px;max-height:40px;object-fit:contain; }
+.v2-header { top:var(--wp-bar); }
+body.admin-bar { --wp-bar:32px; }
+.v2 { --stage-height:calc(100svh - var(--header-height) - var(--wp-bar)); }
+.v2[data-mode="scroll"] .hero-stage { top:calc(var(--header-height) + var(--wp-bar)); }
+.transition .v2-header { background:#080809; }
+.stock-empty { padding:44px 0 12px;border-top:1px solid var(--border); }
+.stock-empty p { margin:20px 0 28px;max-width:48ch; }
+.vehicle-photo { width:100%;height:100%;object-fit:cover;transition:transform 240ms var(--ease); }
+.vehicle-title h3 { overflow-wrap:anywhere; }
+.vehicle-info>p { font-size:13px; }
+.vehicle-info dd { overflow-wrap:anywhere; }
+@media(hover:hover) { .vehicle-link:hover .vehicle-photo { transform:scale(1.015); } }
+.site-footer { display:block;background:var(--black);color:var(--white);border-top:1px solid #555b58; }
+.footer-inner { display:grid;grid-template-columns:1fr 1fr 1.2fr;gap:40px;align-items:start; }
+.footer-inner>div>a { font-size:22px;letter-spacing:-.04em;font-weight:600; }
+.footer-inner p { margin-top:10px;color:#c4cac4; }
+.footer-inner address { font:14px/1.7 var(--body); }
+.footer-inner nav { display:flex;flex-wrap:wrap;gap:0 22px; }
+.footer-inner nav a { display:inline-flex;align-items:center;min-height:44px;font-size:13px; }
+.footer-inner a:focus-visible { outline-color:var(--white); }
+.contact-pending { display:none; }
+.contact-pending:target { display:block;padding:40px var(--gutter);scroll-margin-top:90px;background:var(--stone);color:var(--ink); }
+.contact-pending h2 { font-size:28px; }
+.contact-pending p { margin-top:20px; }
+.unit-back { padding-top:12px; }
+.unit-back .inline-link { color:var(--white); }
+.vehicle-stage { min-height:calc(100svh - var(--header-height)); }
+.unit-title { padding-top:16px; }
+.gallery-viewport { display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;background:var(--graphite);height:clamp(380px,53svh,700px); }
+.gallery-viewport:focus-visible { outline:3px solid var(--accent);outline-offset:-4px; }
+.gallery-slide { flex:0 0 100%;min-width:0;height:100%;scroll-snap-align:start; }
+.gallery-slide>a { display:block;height:100%;width:100%; }
+.gallery-slide img { width:100%;height:100%;object-fit:contain; }
+.gallery-navigation { bottom:24px; }
+.gallery-navigation p { color:var(--white);background:var(--black);padding:5px 10px; }
+.gallery-navigation button:disabled { opacity:.5;cursor:default; }
+.vehicle-stage .gallery button:focus-visible { outline-color:var(--white); }
+.gallery-choices { position:static;transform:none;justify-content:center;overflow:auto;max-width:100%;padding:12px var(--gutter);background:var(--graphite); }
+.gallery-choices a { flex-shrink:0;display:grid;place-items:center;min-width:44px;min-height:44px;border:1px solid #858d87;font-family:var(--data); }
+.gallery-choices a[aria-current] { background:var(--white);color:var(--black); }
+.gallery:has(.gallery-choices) .gallery-navigation { bottom:92px; }
+.unit-strip dl { grid-template-columns:repeat(2,minmax(0,1fr)); }
+.unit-strip dl>div:last-child { grid-column:auto; }
+.prose { margin-top:24px; }
+.prose p+p { margin-top:20px; }
+.prose img { max-width:100%;height:auto; }
+.prose a { text-decoration:underline; }
+.full-specs dd { font-size:15px;overflow-wrap:anywhere; }
+.unit-contact-bar .action { max-width:100%; }
+.unit-contact-bar .unit-price-link { text-decoration:underline;text-underline-offset:4px; }
+.unit-enquiry { min-width:0; }
+.unit-enquiry .action { max-width:100%; }
+.unit-information { scroll-margin-top:var(--header-height); }
+.container { width:min(1392px,100% - var(--gutter)*2);margin-inline:auto; }
+.section-space { padding-block:70px; }
+@media(max-width:899px), (hover:none) and (pointer:coarse) {
+  :root { --header-height:60px; }
+  .site-header .custom-logo { max-width:125px;max-height:36px; }
+  .transition .v2-header { min-height:60px;height:60px; }
+  .v2.transition[data-mode="scroll"] .hero-stage { top:calc(var(--header-height) + var(--wp-bar)); }
+}
+@media(max-width:782px) { body.admin-bar { --wp-bar:46px; } }
+@media(max-width:760px) {
+  .footer-inner { grid-template-columns:1fr;gap:24px; }
+  .gallery-viewport { height:clamp(300px,52svh,540px); }
+  .gallery-navigation { bottom:20px; }
+  .gallery:has(.gallery-choices) .gallery-navigation { bottom:88px; }
+  .unit-strip dl>div:last-child { grid-column:auto; }
+  .unit-title { padding-top:12px; }
+  .gallery-choices { justify-content:flex-start; }
+}
+@media(max-width:600px) { #wpadminbar { position:fixed; } }
+@media(prefers-reduced-motion:reduce) { .vehicle-photo { transform:none!important; } .gallery-viewport { scroll-behavior:auto; } }

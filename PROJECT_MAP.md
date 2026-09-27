@@ -1,5 +1,7 @@
 # RP Usados — mapa para continuidad y reemplazo del frontend
 
+Actualización: el reemplazo autorizado ya está implementado localmente. Ver `PRODUCTION_FRONTEND.md`. Las clasificaciones siguientes describen los contratos preservados; la Home activa usa catálogo completo y Hero V2, no destacados ni V1. `inc/frontend.php` contiene adaptadores de presentación y el tamaño completo del archivo; los módulos de datos/administración siguen intactos.
+
 Este documento identifica qué conviene conservar al rehacer la interfaz. La clasificación describe la responsabilidad principal; algunos archivos de plantillas son necesariamente híbridos.
 
 ## Núcleo funcional / backend a conservar

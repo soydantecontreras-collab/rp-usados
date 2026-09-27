@@ -46,7 +46,7 @@ archive.directory(themeRoot, "rp-usados", (entry) => {
   const localPath = entry.name.replaceAll("\\", "/");
   const [root] = localPath.split("/");
 
-  if (excludedRoots.has(root) || excludedFiles.has(localPath)) {
+  if (excludedRoots.has(root) || excludedFiles.has(localPath) || localPath.startsWith("assets/hero/v6-1") || localPath === "template-parts/home/hero-webgl.php" || localPath === "template-parts/home/featured.php") {
     return false;
   }
 

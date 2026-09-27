@@ -17,3 +17,5 @@ require_once RP_USADOS_PATH . '/inc/post-types/vehiculo.php';
 require_once RP_USADOS_PATH . '/inc/vehicle-data.php';
 require_once RP_USADOS_PATH . '/inc/vehicle-admin.php';
 require_once RP_USADOS_PATH . '/inc/customizer.php';
+
+require_once RP_USADOS_PATH . '/inc/frontend.php';

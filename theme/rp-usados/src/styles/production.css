@@ -66,6 +66,13 @@ body.admin-bar { --wp-bar:32px; }
   .transition .v2-header { min-height:60px;height:60px; }
   .v2.transition[data-mode="scroll"] .hero-stage { top:calc(var(--header-height) + var(--wp-bar)); }
 }
+/* Mobile browser chrome changes the visible viewport while scrolling. Keep the
+   sticky video flush with its lower edge; svh remains the fallback for older UAs. */
+@supports (height:100dvh) {
+  @media(max-width:899px), (hover:none) and (pointer:coarse) {
+    .v2 { --stage-height:calc(100dvh - var(--header-height) - var(--wp-bar)); }
+  }
+}
 @media(max-width:782px) { body.admin-bar { --wp-bar:46px; } }
 @media(max-width:760px) {
   .footer-inner { grid-template-columns:1fr;gap:24px; }

@@ -1,0 +1,37 @@
+/* Editorial refinement within Stage 1 / Iteration 02. The image slot can accept
+   a future owner archive photo at the same ratio without changing this layout. */
+.heritage-grid { grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr); gap:clamp(52px,8vw,130px); align-items:center; }
+.heritage-story { padding-block:12px; }
+.heritage-story p:not(.label) { max-width:48ch; margin:25px 0 0; }
+.heritage-story p:not(.label)+p { margin-top:14px; }
+.heritage-story .action { margin-top:32px; }
+.heritage-visual { min-width:0; }
+.heritage-media { margin:0; position:relative; aspect-ratio:6/5; overflow:hidden; background:#222728; }
+.heritage-media::before { content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(transparent 55%,rgb(10 12 12 / .64)); pointer-events:none; }
+.heritage-media img { width:100%; height:100%; object-fit:cover; object-position:50% 43%; }
+.heritage-media figcaption { position:absolute; z-index:2; bottom:20px; left:24px; right:24px; display:flex; justify-content:space-between; gap:20px; font:500 11px/1.5 var(--data); letter-spacing:.02em; color:var(--white); }
+.heritage-media figcaption span { text-align:right; }
+.options-intro { align-self:start; }
+.options-intro>p:not(.label) { margin-top:30px; max-width:43ch; color:#444a49; }
+.options-details { border-bottom:1px solid var(--border); }
+.service { grid-template-columns:42px 1fr; gap:20px; padding-block:27px 32px; }
+.service p { max-width:48ch; color:#48504e; }
+.options-contact { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:24px 0 30px; border-top:1px solid var(--border); }
+.options-contact p { max-width:29ch; font-size:13px; line-height:1.55; }
+.options-contact .action { flex-shrink:0; margin:0; }
+@media(max-width:900px) {
+  .heritage-grid,.options-grid { gap:40px; }
+  .options-contact { align-items:flex-start; flex-direction:column; }
+}
+@media(max-width:760px) {
+  .heritage-grid,.options-grid { grid-template-columns:1fr; }
+  .heritage-media { aspect-ratio:5/4; }
+  .heritage-story p:not(.label) { max-width:55ch; }
+  .options-intro>p:not(.label) { margin-top:22px; }
+}
+@media(max-width:430px) {
+  .heritage-media { aspect-ratio:4/5; }
+  .heritage-media figcaption { left:16px; right:16px; bottom:16px; display:block; }
+  .heritage-media figcaption span { display:block; text-align:left; opacity:.78; }
+  .options-contact .action { width:100%; }
+}

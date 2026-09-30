@@ -84,7 +84,9 @@ function initialize() {
 let resizeFrame = 0;
 function layoutChanged() {
   const previous = stableProgress;
-  const preserve = document.body.dataset.mode === 'scroll' && previous > 0 && previous < .995;
+  // An address-bar resize changes only viewport height. Native scroll must keep
+  // its position; restoring the pose with scrollTo here fights touch scrolling.
+  const preserve = innerWidth !== layoutWidth && document.body.dataset.mode === 'scroll' && previous > 0 && previous < .995;
   cancelAnimationFrame(resizeFrame);
   resizeFrame = requestAnimationFrame(() => {
     if (disposed) return;

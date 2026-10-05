@@ -78,7 +78,7 @@ try {
   for(const slug of ['demo-vento','demo-hilux','demo-duster']) {
     const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});const page=await context.newPage();
     const response=await page.goto(origin+`/vehiculos/${slug}/`);await page.evaluate(()=>document.fonts.ready);
-    check(`${slug}: static labelled detail`,response.status()===200&&await page.locator('aside[aria-label="Datos de prueba"]').isVisible()&&(await page.locator('#unit-title').innerText()).includes('DEMO VISUAL'));
+    check(`${slug}: static labelled detail`,response.status()===200&&(await page.locator('aside[aria-label="Datos de prueba"]').innerText()).includes('DEMO VISUAL · NO ES STOCK REAL')&&(await page.locator('#unit-title').innerText()).includes('DEMO'));
     check(`${slug}: price only here and no fabricated WhatsApp`,(await page.locator('.vehicle-price').innerText()).includes('TST')&&await page.locator('a[href^="https://wa.me/"]').count()===0);
     check(`${slug}: detail no overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth));
     if(slug==='demo-vento') {

@@ -1,0 +1,440 @@
+{
+  "browser": "154.0.4258.37",
+  "repeat": 2,
+  "reloads": [
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 502.1146000000001,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 458.17229999999995,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 437.3868000000002,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 542.7997,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 691.1967,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 586.3508000000002,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 517.7662999999993,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 579.8221000000003,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 516.5823,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 440.8825000000006,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 470.45939999999973,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 493.6100999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 541.6463999999996,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 489.7492999999995,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 498.6262999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 510.40300000000025,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 450.1774999999998,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 420.71140000000014,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 483.6428999999989,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 429.45670000000064,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 564.9207999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 561.2047999999995,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 506.873599999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 577.3041999999987,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "http://127.0.0.1:9461/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "conditions": "Mobile emulation; real MP4 and compositor. CPU 4x, autoplay restricted, play() rejects if called. No network routing in cache tests."
+}

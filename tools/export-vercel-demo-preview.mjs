@@ -21,7 +21,7 @@ const slugs = ['demo-vento','demo-hilux','demo-cronos','demo-fit','demo-duster',
 const routes = ['/', '/vehiculos/', ...slugs.map(slug => `/vehiculos/${slug}/`)];
 const files = new Map();
 const uploads = new Set();
-const allowed = new Set(['.html','.css','.js','.woff2','.svg','.png','.jpg','.jpeg','.mp4','.txt','.json']);
+const allowed = new Set(['.html','.css','.js','.woff2','.svg','.png','.jpg','.jpeg','.webp','.cur','.mp4','.txt','.json']);
 const sha256 = data => createHash('sha256').update(data).digest('hex');
 
 async function save(path, data) {
@@ -98,7 +98,8 @@ for (const path of files.keys()) {
     assert(!/-----BEGIN .*PRIVATE KEY|AKIA[0-9A-Z]{16}|gh[pousr]_[A-Za-z0-9]{30}|__RP_TRACE__|__NATIVE_TRACE__|__QA_VIDEO__/.test(value), `Sensitive/debug content: ${path}`);
   }
 }
-const report = { sourceCommit:commit, branch:execFileSync('git',['branch','--show-current'],{cwd:root,encoding:'utf8'}).trim(), kind:'static-demo-preview-noindex', out:relative(root,out), routes, files:Object.fromEntries(files), totalBytes:[...files.values()].reduce((n,item)=>n+item.bytes,0), limitations:['DEMO VISUAL / NO ES STOCK REAL on every page.','No WordPress runtime or administration.','No fabricated WhatsApp recipient.','Vehicles, prices and photos are visual test fixtures, not inventory.'] };
-await mkdir(resolve(root, 'artifacts/vercel-demo-preview'), {recursive:true});
-await writeFile(resolve(root, 'artifacts/vercel-demo-preview/export-report.json'), JSON.stringify(report,null,2));
+const report = { generatedAt:new Date().toISOString(), sourceCommit:commit, branch:execFileSync('git',['branch','--show-current'],{cwd:root,encoding:'utf8'}).trim(), kind:'static-demo-preview-noindex', out:relative(root,out), routes, files:Object.fromEntries(files), totalBytes:[...files.values()].reduce((n,item)=>n+item.bytes,0), limitations:['DEMO VISUAL / NO ES STOCK REAL on every page.','No WordPress runtime or administration.','No fabricated WhatsApp recipient.','Vehicles, prices and photos are visual test fixtures, not inventory.'] };
+const reportPath = resolve(root, process.env.RP_EXPORT_REPORT || 'artifacts/vercel-demo-preview/export-report.json');
+await mkdir(dirname(reportPath), {recursive:true});
+await writeFile(reportPath, JSON.stringify(report,null,2));
 console.log(JSON.stringify({out:report.out, commit, routes:routes.length, uploads:uploads.size, files:files.size, totalBytes:report.totalBytes}));

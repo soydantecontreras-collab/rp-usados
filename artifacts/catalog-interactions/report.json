@@ -1,0 +1,82 @@
+{
+  "url": "http://127.0.0.1:9480/",
+  "checks": [
+    "Three equal real DEMO cards",
+    "Matching card dimensions",
+    "Same cover, one image per card",
+    "No prices, cursor overlays or arrows",
+    "No production script or hero assets",
+    "A: no perpetual RAF at rest",
+    "B: no perpetual RAF at rest",
+    "C: no perpetual RAF at rest",
+    "A: counter-motion and fixed text",
+    "Minimal press, normal cursor",
+    "Enlarged selector works",
+    "Keyboard focus visible",
+    "Real DEMO detail opens immediately in another tab",
+    "No horizontal overflow",
+    "No JavaScript errors",
+    "Touch: clear desktop-only notice",
+    "Touch: static mask and no overflow",
+    "Reduced motion: no pointer animation"
+  ],
+  "profiles": [
+    {
+      "name": "desktop",
+      "dimensions": [
+        {
+          "width": 422,
+          "height": 457
+        },
+        {
+          "width": 422,
+          "height": 457
+        },
+        {
+          "width": 422,
+          "height": 457
+        }
+      ],
+      "requests": 6,
+      "errors": []
+    }
+  ],
+  "costs": {
+    "A": {
+      "rafSamples": 405,
+      "jsP95ms": 0.10000002384185791,
+      "frameP95ms": 7.100000000000136,
+      "observedFps": 143.9744045503022,
+      "paintEvents": 4,
+      "paintMs": 0.336,
+      "layoutEvents": 1,
+      "layoutMs": 0.058,
+      "rasterMs": 2.136,
+      "traceMs": 18.466
+    },
+    "B": {
+      "rafSamples": 0,
+      "jsP95ms": 0,
+      "frameP95ms": 7.100000000000364,
+      "observedFps": 143.96928655220222,
+      "paintEvents": 82,
+      "paintMs": 4.02,
+      "layoutEvents": 1,
+      "layoutMs": 0.082,
+      "rasterMs": 2.536,
+      "traceMs": 5.435
+    },
+    "C": {
+      "rafSamples": 418,
+      "jsP95ms": 0.10000002384185791,
+      "frameP95ms": 7.100000000000364,
+      "observedFps": 143.62780469367422,
+      "paintEvents": 0,
+      "paintMs": 0,
+      "layoutEvents": 0,
+      "layoutMs": 0,
+      "rasterMs": 0.163,
+      "traceMs": 25.856
+    }
+  }
+}

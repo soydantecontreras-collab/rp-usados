@@ -1,0 +1,178 @@
+{
+  "base": "http://127.0.0.1:9470/",
+  "checks": [
+    "1920: new owner photo, full portrait, lazy",
+    "1920: deliberate mobile/photo layout",
+    "1920: 1990 only in prose",
+    "1920: no section overflow",
+    "1920: explicit case/confirmation and WhatsApp",
+    "1920: no invented terms",
+    "1920: same approved pending-contact fallback",
+    "1920: no errors",
+    "1440: new owner photo, full portrait, lazy",
+    "1440: deliberate mobile/photo layout",
+    "1440: 1990 only in prose",
+    "1440: no section overflow",
+    "1440: explicit case/confirmation and WhatsApp",
+    "1440: no invented terms",
+    "1440: same approved pending-contact fallback",
+    "1440: no errors",
+    "1280: new owner photo, full portrait, lazy",
+    "1280: deliberate mobile/photo layout",
+    "1280: 1990 only in prose",
+    "1280: no section overflow",
+    "1280: explicit case/confirmation and WhatsApp",
+    "1280: no invented terms",
+    "1280: same approved pending-contact fallback",
+    "1280: no errors",
+    "768: new owner photo, full portrait, lazy",
+    "768: deliberate mobile/photo layout",
+    "768: 1990 only in prose",
+    "768: no section overflow",
+    "768: explicit case/confirmation and WhatsApp",
+    "768: no invented terms",
+    "768: same approved pending-contact fallback",
+    "768: no errors",
+    "430: new owner photo, full portrait, lazy",
+    "430: deliberate mobile/photo layout",
+    "430: 1990 only in prose",
+    "430: no section overflow",
+    "430: explicit case/confirmation and WhatsApp",
+    "430: no invented terms",
+    "430: same approved pending-contact fallback",
+    "430: no errors",
+    "390: new owner photo, full portrait, lazy",
+    "390: deliberate mobile/photo layout",
+    "390: 1990 only in prose",
+    "390: no section overflow",
+    "390: explicit case/confirmation and WhatsApp",
+    "390: no invented terms",
+    "390: same approved pending-contact fallback",
+    "390: no errors",
+    "375: new owner photo, full portrait, lazy",
+    "375: deliberate mobile/photo layout",
+    "375: 1990 only in prose",
+    "375: no section overflow",
+    "375: explicit case/confirmation and WhatsApp",
+    "375: no invented terms",
+    "375: same approved pending-contact fallback",
+    "375: no errors",
+    "keyboard CTA reaches existing pending contact",
+    "reduced motion leaves image/copy present",
+    "200% zoom without horizontal overflow"
+  ],
+  "profiles": [
+    {
+      "width": 1920,
+      "height": 1080,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-720.webp",
+        "w": 649,
+        "h": 866,
+        "fit": "contain"
+      },
+      "order": {
+        "h": 267.5625,
+        "m": 102.359375,
+        "c": 468.34375,
+        "cols": "615.594px 680.391px"
+      }
+    },
+    {
+      "width": 1440,
+      "height": 1000,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-720.webp",
+        "w": 676,
+        "h": 902,
+        "fit": "contain"
+      },
+      "order": {
+        "h": 228.109375,
+        "m": 86.84375,
+        "c": 428.390625,
+        "cols": "582.766px 644.109px"
+      }
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-720.webp",
+        "w": 601,
+        "h": 802,
+        "fit": "contain"
+      },
+      "order": {
+        "h": 184.8125,
+        "m": 84.09375,
+        "c": 370.75,
+        "cols": "518.016px 572.531px"
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-480.webp",
+        "w": 360,
+        "h": 481,
+        "fit": "contain"
+      },
+      "order": {
+        "h": 217.921875,
+        "m": 217.921875,
+        "c": 375.484375,
+        "cols": "313.688px 346.703px"
+      }
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-480.webp",
+        "w": 389,
+        "h": 519,
+        "fit": "contain"
+      },
+      "order": {
+        "h": -92.46875,
+        "m": 54.46875,
+        "c": 651.46875,
+        "cols": "390px"
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-480.webp",
+        "w": 349,
+        "h": 466,
+        "fit": "contain"
+      },
+      "order": {
+        "h": -123.3125,
+        "m": 23.625,
+        "c": 567.28125,
+        "cols": "350px"
+      }
+    },
+    {
+      "width": 375,
+      "height": 812,
+      "media": {
+        "src": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-480.webp",
+        "w": 335,
+        "h": 446,
+        "fit": "contain"
+      },
+      "order": {
+        "h": -144.359375,
+        "m": 2.578125,
+        "c": 526.234375,
+        "cols": "335px"
+      }
+    }
+  ]
+}

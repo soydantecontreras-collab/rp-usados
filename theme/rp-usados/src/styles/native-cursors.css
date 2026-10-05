@@ -1,0 +1,23 @@
+/* OS-rendered, static cursors. No JS, native pointer hiding or tracking loop. */
+@media (hover: hover) and (pointer: fine) {
+  html, body {
+    cursor: url('../assets/cursors/default.cur?no-inline') 1 1,
+      url('../assets/cursors/default.png?no-inline') 1 1, auto;
+  }
+
+  :any-link,
+  button:not(:disabled):not([aria-disabled="true"]),
+  [role="button"]:not([aria-disabled="true"]),
+  summary,
+  label[for],
+  input:is([type="button"], [type="submit"], [type="reset"], [type="checkbox"], [type="radio"]) {
+    cursor: url('../assets/cursors/pointer.cur?no-inline') 6 2,
+      url('../assets/cursors/pointer.png?no-inline') 6 2, pointer;
+  }
+
+  /* Preserve native feedback for text entry and unavailable controls. */
+  input:not([type="button"]):not([type="submit"]):not([type="reset"]):not([type="checkbox"]):not([type="radio"]),
+  textarea,
+  [contenteditable="true"] { cursor: text; }
+  :is(button:disabled, [aria-disabled="true"]) { cursor: not-allowed; }
+}

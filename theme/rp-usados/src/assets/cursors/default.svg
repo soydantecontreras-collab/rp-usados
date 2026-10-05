@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <title>RP Usados — cursor flecha</title>
+  <svg x="0" y="0" width="12" height="19" viewBox="3 1 21 29" preserveAspectRatio="none">
+  <defs><path id="arrow" d="M5 3V24L10.7 19.2L15 28L19.5 25.8L15.1 17.2H22Z"/></defs>
+  <use href="#arrow" fill="#b51f2b" stroke="#f5f3ef" stroke-width="2.5" stroke-linejoin="round"/>
+  <use href="#arrow" fill="#b51f2b" stroke="#111414" stroke-width="1.5" stroke-linejoin="round"/>
+  <path d="M10.7 19.2L15 28L19.5 25.8L15.1 17.2" fill="#111414" stroke="#111414" stroke-width=".5" stroke-linejoin="round"/>
+  </svg>
+</svg>

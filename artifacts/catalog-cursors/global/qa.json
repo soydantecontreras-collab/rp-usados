@@ -1,0 +1,80 @@
+{
+  "url": "http://127.0.0.1:9480/global.html",
+  "checks": [
+    "same three DEMO cards, all interaction B",
+    "one global engine and companion layer",
+    "A: .mini-hero context",
+    "A: .hero-caption-demo .mini-button context",
+    "A: .vehicle-link context",
+    "A: .gallery-picture context",
+    "A: .mini-footer .brand context",
+    "A: adapts to light surface",
+    "A: RAF stops at rest",
+    "B: .mini-hero context",
+    "B: .hero-caption-demo .mini-button context",
+    "B: .vehicle-link context",
+    "B: .gallery-picture context",
+    "B: .mini-footer .brand context",
+    "B: adapts to light surface",
+    "B: RAF stops at rest",
+    "C: .mini-hero context",
+    "C: .hero-caption-demo .mini-button context",
+    "C: .vehicle-link context",
+    "C: .gallery-picture context",
+    "C: .mini-footer .brand context",
+    "C: adapts to light surface",
+    "C: RAF stops at rest",
+    "D: .mini-hero context",
+    "D: .hero-caption-demo .mini-button context",
+    "D: .vehicle-link context",
+    "D: .gallery-picture context",
+    "D: .mini-footer .brand context",
+    "D: adapts to light surface",
+    "D: RAF stops at rest",
+    "native cursor restored for selectable body text",
+    "manual off restores native cursor",
+    "manual on restores selected system",
+    "gallery next works",
+    "gallery previous works",
+    "portrait gallery works",
+    "no fabricated WhatsApp",
+    "keyboard focus visible",
+    "no extra libraries or 3D assets",
+    "no page errors",
+    "desktop no overflow",
+    "reduced motion keeps native pointer",
+    "touch 375: native cursor only",
+    "touch 375: no overflow",
+    "touch 390: native cursor only",
+    "touch 390: no overflow",
+    "touch 430: native cursor only",
+    "touch 430: no overflow",
+    "without JS native links/cards remain"
+  ],
+  "timings": {
+    "A": {
+      "callbacks": 149,
+      "p50_ms": 0.09999990463256836,
+      "p95_ms": 0.19999992847442627,
+      "max_ms": 0.20000004768371582
+    },
+    "B": {
+      "callbacks": 238,
+      "p50_ms": 0,
+      "p95_ms": 0.10000002384185791,
+      "max_ms": 0.20000004768371582
+    },
+    "C": {
+      "callbacks": 240,
+      "p50_ms": 0,
+      "p95_ms": 0.10000002384185791,
+      "max_ms": 0.20000004768371582
+    },
+    "D": {
+      "callbacks": 223,
+      "p50_ms": 0.09999990463256836,
+      "p95_ms": 0.10000002384185791,
+      "max_ms": 0.20000004768371582
+    }
+  }
+}

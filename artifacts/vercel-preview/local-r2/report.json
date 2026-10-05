@@ -1,0 +1,677 @@
+{
+  "url": "http://127.0.0.1:9463",
+  "browser": "154.0.4258.37",
+  "checks": [
+    {
+      "name": "1440: video dimensions/duration",
+      "passed": true
+    },
+    {
+      "name": "1440: HTTP 200 and real empty catalog",
+      "passed": true
+    },
+    {
+      "name": "1440: correct single MP4 resource",
+      "passed": true
+    },
+    {
+      "name": "1440: correct single poster resource",
+      "passed": true
+    },
+    {
+      "name": "1440: font families",
+      "passed": true
+    },
+    {
+      "name": "1440: forward/reverse/return",
+      "passed": true
+    },
+    {
+      "name": "1440: reload p=0",
+      "passed": true
+    },
+    {
+      "name": "1440: reload p=0.56",
+      "passed": true
+    },
+    {
+      "name": "1440: fast reversal latest pose",
+      "passed": true
+    },
+    {
+      "name": "1440: dark terminal pose",
+      "passed": true
+    },
+    {
+      "name": "1440: skip catalog focus",
+      "passed": true
+    },
+    {
+      "name": "1440: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "1440: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1440: map and directions",
+      "passed": true
+    },
+    {
+      "name": "1440: honest pending contact",
+      "passed": true
+    },
+    {
+      "name": "1440: no V1/local resources or errors",
+      "passed": true
+    },
+    {
+      "name": "1280: video dimensions/duration",
+      "passed": true
+    },
+    {
+      "name": "1280: HTTP 200 and real empty catalog",
+      "passed": true
+    },
+    {
+      "name": "1280: correct single MP4 resource",
+      "passed": true
+    },
+    {
+      "name": "1280: correct single poster resource",
+      "passed": true
+    },
+    {
+      "name": "1280: font families",
+      "passed": true
+    },
+    {
+      "name": "1280: forward/reverse/return",
+      "passed": true
+    },
+    {
+      "name": "1280: reload p=0",
+      "passed": true
+    },
+    {
+      "name": "1280: reload p=0.56",
+      "passed": true
+    },
+    {
+      "name": "1280: fast reversal latest pose",
+      "passed": true
+    },
+    {
+      "name": "1280: dark terminal pose",
+      "passed": true
+    },
+    {
+      "name": "1280: skip catalog focus",
+      "passed": true
+    },
+    {
+      "name": "1280: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "1280: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "1280: map and directions",
+      "passed": true
+    },
+    {
+      "name": "1280: honest pending contact",
+      "passed": true
+    },
+    {
+      "name": "1280: no V1/local resources or errors",
+      "passed": true
+    },
+    {
+      "name": "375: video dimensions/duration",
+      "passed": true
+    },
+    {
+      "name": "375: HTTP 200 and real empty catalog",
+      "passed": true
+    },
+    {
+      "name": "375: correct single MP4 resource",
+      "passed": true
+    },
+    {
+      "name": "375: correct single poster resource",
+      "passed": true
+    },
+    {
+      "name": "375: font families",
+      "passed": true
+    },
+    {
+      "name": "375: forward/reverse/return",
+      "passed": true
+    },
+    {
+      "name": "375: reload p=0",
+      "passed": true
+    },
+    {
+      "name": "375: reload p=0.56",
+      "passed": true
+    },
+    {
+      "name": "375: fast reversal latest pose",
+      "passed": true
+    },
+    {
+      "name": "375: dark terminal pose",
+      "passed": true
+    },
+    {
+      "name": "375: skip catalog focus",
+      "passed": true
+    },
+    {
+      "name": "375: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "375: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "375: map and directions",
+      "passed": true
+    },
+    {
+      "name": "375: honest pending contact",
+      "passed": true
+    },
+    {
+      "name": "375: no V1/local resources or errors",
+      "passed": true
+    },
+    {
+      "name": "390: video dimensions/duration",
+      "passed": true
+    },
+    {
+      "name": "390: HTTP 200 and real empty catalog",
+      "passed": true
+    },
+    {
+      "name": "390: correct single MP4 resource",
+      "passed": true
+    },
+    {
+      "name": "390: correct single poster resource",
+      "passed": true
+    },
+    {
+      "name": "390: font families",
+      "passed": true
+    },
+    {
+      "name": "390: forward/reverse/return",
+      "passed": true
+    },
+    {
+      "name": "390: reload p=0",
+      "passed": true
+    },
+    {
+      "name": "390: reload p=0.56",
+      "passed": true
+    },
+    {
+      "name": "orientation retains vertical contain",
+      "passed": true
+    },
+    {
+      "name": "390: fast reversal latest pose",
+      "passed": true
+    },
+    {
+      "name": "390: dark terminal pose",
+      "passed": true
+    },
+    {
+      "name": "390: skip catalog focus",
+      "passed": true
+    },
+    {
+      "name": "390: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "390: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "390: map and directions",
+      "passed": true
+    },
+    {
+      "name": "390: honest pending contact",
+      "passed": true
+    },
+    {
+      "name": "390: no V1/local resources or errors",
+      "passed": true
+    },
+    {
+      "name": "430: video dimensions/duration",
+      "passed": true
+    },
+    {
+      "name": "430: HTTP 200 and real empty catalog",
+      "passed": true
+    },
+    {
+      "name": "430: correct single MP4 resource",
+      "passed": true
+    },
+    {
+      "name": "430: correct single poster resource",
+      "passed": true
+    },
+    {
+      "name": "430: font families",
+      "passed": true
+    },
+    {
+      "name": "430: forward/reverse/return",
+      "passed": true
+    },
+    {
+      "name": "430: reload p=0",
+      "passed": true
+    },
+    {
+      "name": "430: reload p=0.56",
+      "passed": true
+    },
+    {
+      "name": "430: fast reversal latest pose",
+      "passed": true
+    },
+    {
+      "name": "430: dark terminal pose",
+      "passed": true
+    },
+    {
+      "name": "430: skip catalog focus",
+      "passed": true
+    },
+    {
+      "name": "430: subtle curve",
+      "passed": true
+    },
+    {
+      "name": "430: no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "430: map and directions",
+      "passed": true
+    },
+    {
+      "name": "430: honest pending contact",
+      "passed": true
+    },
+    {
+      "name": "430: no V1/local resources or errors",
+      "passed": true
+    },
+    {
+      "name": "reduced: mobile poster",
+      "passed": true
+    },
+    {
+      "name": "reduced: no MP4",
+      "passed": true
+    },
+    {
+      "name": "reduced: accessible catalog",
+      "passed": true
+    },
+    {
+      "name": "no-js: mobile poster",
+      "passed": true
+    },
+    {
+      "name": "no-js: no MP4",
+      "passed": true
+    },
+    {
+      "name": "no-js: accessible catalog",
+      "passed": true
+    },
+    {
+      "name": "failed-video: mobile poster",
+      "passed": true
+    },
+    {
+      "name": "failed-video: accessible catalog",
+      "passed": true
+    },
+    {
+      "name": "archive HTTP 200, no hero media",
+      "passed": true
+    },
+    {
+      "name": "keyboard skip first target",
+      "passed": true
+    },
+    {
+      "name": "keyboard skip main",
+      "passed": true
+    },
+    {
+      "name": "1440: demo explicitly labelled",
+      "passed": true
+    },
+    {
+      "name": "1440: three labelled test patterns, initial loaded",
+      "passed": true
+    },
+    {
+      "name": "1440: demo gallery controls and lazy images",
+      "passed": true
+    },
+    {
+      "name": "1440: demo no invented price/contact",
+      "passed": true
+    },
+    {
+      "name": "1440: demo no hero downloads/errors/overflow",
+      "passed": true
+    },
+    {
+      "name": "390: demo explicitly labelled",
+      "passed": true
+    },
+    {
+      "name": "390: three labelled test patterns, initial loaded",
+      "passed": true
+    },
+    {
+      "name": "390: demo gallery controls and lazy images",
+      "passed": true
+    },
+    {
+      "name": "390: demo no invented price/contact",
+      "passed": true
+    },
+    {
+      "name": "390: demo no hero downloads/errors/overflow",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-includes/css/dist/block-library/style.min.css",
+      "passed": true
+    },
+    {
+      "name": "byte integrity index.html",
+      "passed": true
+    },
+    {
+      "name": "byte integrity vehiculos/index.html",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-wide.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-wide-300x169.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-wide-1024x576.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-wide-768x432.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-wide-1536x864.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-portrait.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-portrait-600x1067.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-portrait-169x300.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-portrait-576x1024.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-square.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-square-300x300.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-square-150x150.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/uploads/2026/09/demo-square-768x768.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity demo/ficha/index.html",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/style.css",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/dist/assets/app-DHf1VnOe.js",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/dist/assets/app-o9IATcWH.css",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/dist/assets/main-BJ07zQ2b.js",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/brand/silhouette.svg",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/brand/whatsapp.svg",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+      "passed": true
+    },
+    {
+      "name": "byte integrity wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+      "passed": true
+    },
+    {
+      "name": "byte integrity robots.txt",
+      "passed": true
+    },
+    {
+      "name": "MP4 byte ranges hero-fast-dark-doors.mp4",
+      "passed": true
+    },
+    {
+      "name": "MP4 byte ranges hero-mobile-portrait-crf18.mp4",
+      "passed": true
+    }
+  ],
+  "profiles": [
+    {
+      "width": 1440,
+      "media": {
+        "src": "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "width": 1600,
+        "height": 900,
+        "duration": 3
+      },
+      "firstPresentedMs": 109.40000003576279,
+      "seekLatencies": [
+        2.400000035762787,
+        1.5,
+        1.800000011920929
+      ],
+      "errors": [],
+      "failed": [],
+      "mediaRequests": [
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ]
+    },
+    {
+      "width": 1280,
+      "media": {
+        "src": "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "width": 1600,
+        "height": 900,
+        "duration": 3
+      },
+      "firstPresentedMs": 39.799999952316284,
+      "seekLatencies": [
+        5.5,
+        1,
+        1
+      ],
+      "errors": [],
+      "failed": [],
+      "mediaRequests": [
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+      ]
+    },
+    {
+      "width": 375,
+      "media": {
+        "src": "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "width": 720,
+        "height": 1280,
+        "duration": 3
+      },
+      "firstPresentedMs": 43.69999998807907,
+      "seekLatencies": [
+        1.199999988079071,
+        2.099999964237213,
+        1.5
+      ],
+      "errors": [],
+      "failed": [],
+      "mediaRequests": [
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ]
+    },
+    {
+      "width": 390,
+      "media": {
+        "src": "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "width": 720,
+        "height": 1280,
+        "duration": 3
+      },
+      "firstPresentedMs": 45.19999998807907,
+      "seekLatencies": [
+        1.600000023841858,
+        7,
+        5,
+        1.5,
+        1,
+        2,
+        1.7999999523162842
+      ],
+      "errors": [],
+      "failed": [],
+      "mediaRequests": [
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ]
+    },
+    {
+      "width": 430,
+      "media": {
+        "src": "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "width": 720,
+        "height": 1280,
+        "duration": 3
+      },
+      "firstPresentedMs": 35.80000001192093,
+      "seekLatencies": [
+        1.199999988079071,
+        1.600000023841858,
+        2
+      ],
+      "errors": [],
+      "failed": [],
+      "mediaRequests": [
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "http://127.0.0.1:9463/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+      ]
+    }
+  ],
+  "limitations": [
+    "Chromium touch emulation; not physical Safari/iPhone.",
+    "No confirmed inventory or WhatsApp recipient; detail/send paths cannot be commercially validated."
+  ]
+}

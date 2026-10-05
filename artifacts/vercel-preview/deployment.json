@@ -1,0 +1,22 @@
+{
+  "project": "vercel-testing-460b176-r2",
+  "gitConnected": false,
+  "protection": null,
+  "productionTarget": null,
+  "deployment": {
+    "id": "dpl_DRBAXfEzPoLCfCfY7Cc55txoFL7v",
+    "url": "vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app",
+    "target": "preview",
+    "state": "READY",
+    "commit": "460b17621cd6ebadd8c30ac862acc4d147aaee58",
+    "sourceCommit": "460b17621cd6ebadd8c30ac862acc4d147aaee58"
+  },
+  "activeDeployments": [
+    {
+      "id": "dpl_DRBAXfEzPoLCfCfY7Cc55txoFL7v",
+      "url": "vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app",
+      "target": null,
+      "state": "READY"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+@font-face{font-family:Manrope;src:url('./assets/manrope.woff2') format('woff2');font-weight:200 800;font-display:swap}
+@font-face{font-family:Archivo;src:url('./assets/archivo.woff2') format('woff2');font-weight:100 900;font-display:swap}
+:root{--ink:#202324;--muted:#535959;--stone:#e5e5e0;--ground:#c8cac7;--red:#b51f2b;--motion:260ms cubic-bezier(.2,.65,.3,1);--body:Manrope,sans-serif;--data:Archivo,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--ground);color:var(--ink);font:400 15px/1.55 var(--body);font-synthesis:none}
+a{color:inherit;text-decoration:none}button{font:600 12px/1.4 var(--body);cursor:pointer}button,a{touch-action:manipulation}
+h1,h2,h3,p,dl{margin:0}h1,h2,h3{font-weight:600;letter-spacing:-.045em}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #065ca4;outline-offset:5px}
+.lab-header{height:66px;background:#0c0d0d;color:#f5f4ef;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 4.4vw}
+.lab-header>a{font-size:16px;font-weight:750;letter-spacing:-.06em}.lab-header>a span{font-weight:450}
+.lab-header>p{font-size:12px;color:#c3c8c5}.demo-note{font:500 10px/1.4 var(--data);letter-spacing:.05em;color:#d4d8d4}
+main{max-width:1550px;margin:auto;padding:46px 4.4vw 35px}.intro{display:flex;justify-content:space-between;align-items:flex-end;gap:36px;margin-bottom:32px}
+.eyebrow{font:500 11px/1.4 var(--data);letter-spacing:.12em;text-transform:uppercase;color:#8f1721;margin-bottom:14px}
+h1{font-size:clamp(30px,3vw,48px);line-height:1.12}.intro>p{font-size:13px;line-height:1.7;max-width:40ch}
+.view-controls{display:flex;gap:0;border-bottom:1px solid #969e98;margin-bottom:27px}
+.view-controls button{min-height:46px;padding:10px 20px;border:0;background:transparent;color:#505753;border-bottom:2px solid transparent}
+.view-controls button[aria-pressed=true]{color:var(--ink);background:#d7d9d3;border-bottom-color:var(--red)}
+.view-controls button:hover{background:#dcded8;color:var(--ink)}
+.comparison{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}.concept{min-width:0}
+.concept-heading{display:flex;align-items:center;gap:12px;margin-bottom:18px}.concept-letter{font:500 12px/1 var(--data);color:#8f1721;padding-right:12px;border-right:1px solid #9aa19b}
+.concept-heading h2{font-size:16px;letter-spacing:-.02em;font-weight:550}
+.vehicle{min-width:0}.vehicle-link{display:block;position:relative;background:var(--stone);color:var(--ink);cursor:pointer;transition:transform 120ms ease-out;overflow:hidden}
+.vehicle-media{aspect-ratio:3/2;position:relative;isolation:isolate;background:#aeb3af;overflow:hidden}
+.vehicle-photo{display:block;width:100%;height:100%;object-fit:cover}
+.stock-state{position:absolute;left:16px;top:16px;z-index:3;display:inline-block;background:#191a1b;color:#f5f4ef;padding:7px 11px;box-shadow:inset 3px 0 var(--red);font:500 11px/1.5 var(--data)}
+.vehicle-info{position:relative;background:var(--stone);padding:18px 20px 20px}
+.vehicle-title h3{font-size:clamp(19px,1.8vw,25px);line-height:1.2;letter-spacing:-.05em;font-weight:600}
+.vehicle-info>p{font-size:11px;color:var(--muted);margin-top:10px}
+.vehicle-info dl{display:grid;grid-template-columns:1fr 1.3fr;gap:12px;padding-top:15px;border-top:1px solid #a5aaa4;margin-top:18px}
+dt{font:500 11px/1.4 var(--data);letter-spacing:.06em;text-transform:uppercase}
+dd{margin:6px 0 0;font:500 20px/1.25 var(--data);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.concept-description{font-size:12px;color:#3f4742;margin-top:16px;line-height:1.65;max-width:44ch}
+.lab-footer{display:flex;justify-content:space-between;gap:20px;padding-top:24px;margin-top:28px;border-top:1px solid #969e98;font-size:11px;color:#47504a}
+.technical-notes{margin-top:25px;font-size:12px;max-width:800px}.technical-notes summary{cursor:pointer;width:fit-content;min-height:44px;display:flex;align-items:center}
+.technical-notes>div{padding:12px 0;display:grid;gap:10px}.touch-note{display:none;font-size:13px;margin-bottom:24px}
+.comparison:not([data-view=all]){grid-template-columns:minmax(0,720px);justify-content:center}
+.comparison[data-view=A] .concept:not([data-concept=A]),.comparison[data-view=B] .concept:not([data-concept=B]),.comparison[data-view=C] .concept:not([data-concept=C]){display:none}
+.comparison:not([data-view=all]) .vehicle-title h3{font-size:30px}
+/* A: image movement against pointer; fixed lettering and discreet edge tension. */
+.variant-a .vehicle-photo{transform:scale(1.04) translate3d(var(--photo-x,0px),var(--photo-y,0px),0)}
+.variant-a .vehicle-link::after{content:"";position:absolute;inset:0;pointer-events:none;border:1px solid #727d76;opacity:0;transition:opacity var(--motion)}
+.variant-a .vehicle-info{transition:background-color var(--motion)}
+/* B: a staged plane change; no pointer tracking. */
+.variant-b .vehicle-photo{transition:transform var(--motion);transform:scale(1.04)}
+.variant-b .vehicle-info{transition:transform var(--motion),background-color var(--motion)}
+.variant-b h3{transform-origin:left center;transition:transform var(--motion)}
+.variant-b dl{position:relative;border-top:1px solid transparent}
+.variant-b dl::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:#a5aaa4;transform-origin:left;transition:transform var(--motion),background-color var(--motion)}
+/* C: the same photograph, sampled by a moving filtered layer. No added image. */
+.variant-c .vehicle-photo{transform:scale(1.04)}
+.light-band{position:absolute;left:-25%;top:0;bottom:0;width:38%;z-index:2;pointer-events:none;opacity:0;
+  backdrop-filter:brightness(1.18) contrast(1.07);-webkit-backdrop-filter:brightness(1.18) contrast(1.07);
+  mask-image:linear-gradient(90deg,transparent,#000 35%,#000 65%,transparent);
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 35%,#000 65%,transparent);
+  transform:translate3d(var(--beam-x,0px),0,0);transition:opacity 180ms ease-out}
+@media(hover:hover) and (pointer:fine){
+  .variant-a .vehicle-link:is(:hover,:focus-visible)::after{opacity:1}
+  .variant-a .vehicle-link:is(:hover,:focus-visible) .vehicle-info{background:#eeefea}
+  .variant-b .vehicle-link:is(:hover,:focus-visible) .vehicle-photo{transform:scale(1.085) translateY(-3px)}
+  .variant-b .vehicle-link:is(:hover,:focus-visible) .vehicle-info{transform:translateY(-8px);background:#f0f0ea}
+  .variant-b .vehicle-link:is(:hover,:focus-visible) h3{transform:scale(1.025)}
+  .variant-b .vehicle-link:is(:hover,:focus-visible) dl::before{background:#7b8580;transform:translateY(-3px) scaleX(.88)}
+  .variant-c .vehicle-link.is-over-photo .light-band{opacity:1}
+  .vehicle-link:active{transform:scale(.992)}
+}
+@media(max-width:1050px){main{padding-inline:24px}.comparison{gap:18px}.intro{align-items:flex-start;flex-direction:column;gap:20px}.intro>p{max-width:none}.concept-heading h2{font-size:13px}.vehicle-info{padding:17px 16px}.vehicle-title h3{font-size:20px}dd{font-size:18px}}
+@media(max-width:800px){.comparison{grid-template-columns:1fr;max-width:520px;margin:auto;gap:34px}.concept-heading h2{font-size:17px}.vehicle-title h3{font-size:25px}.intro{margin-bottom:20px}.view-controls{flex-wrap:wrap}.view-controls button{padding:10px 12px}.lab-header{padding:0 24px}.lab-header>p{display:none}.lab-footer{flex-direction:column;gap:8px}.variant-a .vehicle-photo{transform:scale(1.04)}}
+@media(hover:none),(pointer:coarse){.touch-note{display:block}.light-band{display:none}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}.vehicle-photo{transform:scale(1.04)!important}.variant-b .vehicle-info,.variant-b h3,.variant-b dl::before,.vehicle-link:active{transform:none!important}.light-band{display:none}}

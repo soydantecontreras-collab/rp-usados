@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>RP Usados — comparación de interacciones</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="lab-header"><a href="./" aria-label="RP Usados, comparación de interacciones">RP <span>Usados</span></a><p>Exploración local / catálogo</p><span class="demo-note">DEMO · NO ES STOCK REAL</span></header>
+  <main>
+    <div class="intro"><div><p class="eyebrow">Interacción / 01</p><h1>Tres formas de responder.</h1></div><p>Misma unidad. Misma foto. Tres comportamientos.<br>Recorré cada card con el mouse para compararlos.</p></div>
+    <div class="view-controls" role="group" aria-label="Tamaño de comparación">
+      <button type="button" data-view="all" aria-pressed="true">Comparar las tres</button>
+      <button type="button" data-view="A" aria-pressed="false">A ampliada</button>
+      <button type="button" data-view="B" aria-pressed="false">B ampliada</button>
+      <button type="button" data-view="C" aria-pressed="false">C ampliada</button>
+    </div>
+    <p class="touch-note">Esta exploración requiere mouse. En touch se conserva la card estática.</p>
+    <div class="comparison" data-view="all">
+      <!-- CARDS -->
+    </div>
+    <footer class="lab-footer"><p>Cursor normal en las tres. El click abre la ficha DEMO en otra pestaña.</p><p>Sin cambios en el catálogo productivo.</p></footer>
+    <details class="technical-notes"><summary>Notas de la comparación</summary><div><p><strong>A</strong> Movimiento inverso de hasta 7 px / 5 px, con suavizado en RAF sólo mientras responde.</p><p><strong>B</strong> Transiciones CSS de 260 ms al entrar y salir; sin loop de seguimiento.</p><p><strong>C</strong> Una sola portada: capa filtrada con máscara horizontal suave. Sin segunda fotografía.</p><p>Los efectos se desactivan con movimiento reducido. Estas intensidades son de evaluación y no una decisión productiva.</p></div></details>
+  </main>
+</body>
+</html>

@@ -1,0 +1,288 @@
+{
+  "sourceCommit": "bba6ec72a4de0ed0efa55a444611ffa3cec76613",
+  "branch": "main",
+  "kind": "static-demo-preview-noindex",
+  "out": "tools\\.preview\\vercel-demo-bba6ec72a-clean-20260930",
+  "routes": [
+    "/",
+    "/vehiculos/",
+    "/vehiculos/demo-vento/",
+    "/vehiculos/demo-hilux/",
+    "/vehiculos/demo-cronos/",
+    "/vehiculos/demo-fit/",
+    "/vehiculos/demo-duster/",
+    "/vehiculos/demo-208/",
+    "/vehiculos/demo-ranger/",
+    "/vehiculos/demo-kicks/",
+    "/vehiculos/demo-onix/"
+  ],
+  "files": {
+    "wp-includes/css/dist/block-library/style.min.css": {
+      "bytes": 116345,
+      "sha256": "838ede31a58a3cdb411d6dd7f13cbe65d4a26193d9fa31882854e63938f12bac"
+    },
+    "index.html": {
+      "bytes": 28570,
+      "sha256": "9e0b5cfd37a61c5395823ee976823a0a7b49ba5c771c8563bf1b852e6540fc2f"
+    },
+    "vehiculos/index.html": {
+      "bytes": 21492,
+      "sha256": "067a931c13c8c9ef8151bfd8c3284781162f4575b22dd2e3aa2adc91d346f56b"
+    },
+    "vehiculos/demo-vento/index.html": {
+      "bytes": 20188,
+      "sha256": "4a9e9d08c7e9f46ee954556ad62c0edbae4b4802004d15f428f7d8656d7d95c7"
+    },
+    "vehiculos/demo-hilux/index.html": {
+      "bytes": 18155,
+      "sha256": "f59d2ee1695fabdf1bcf8819746b1729bbedcfaad97151d8507e8f796525005c"
+    },
+    "vehiculos/demo-cronos/index.html": {
+      "bytes": 16724,
+      "sha256": "9f0aa7acc48cccb4857484731f13d2d032eb1d9ba94a3b7b959aa5bc2e1d33db"
+    },
+    "vehiculos/demo-fit/index.html": {
+      "bytes": 16649,
+      "sha256": "fe0f465cf5dd1b03e69a23159526469ff66fc0dab7d18273090f733829cdcfd6"
+    },
+    "vehiculos/demo-duster/index.html": {
+      "bytes": 16620,
+      "sha256": "06aa470becb32fc0ffa91e9bd7535054d9eff3b5dc104f72b49d2431e96887c1"
+    },
+    "vehiculos/demo-208/index.html": {
+      "bytes": 16722,
+      "sha256": "48a86eeba190b77e46ae8045b87fc6f3ffc7cb779c64ce8a1772488bb33ffbca"
+    },
+    "vehiculos/demo-ranger/index.html": {
+      "bytes": 16690,
+      "sha256": "93faa7b1cf27f435276952ecdaea67b4b7c5c33ae3f1b25196928f32f306041b"
+    },
+    "vehiculos/demo-kicks/index.html": {
+      "bytes": 16677,
+      "sha256": "f372b6d5dd2aa0c69e29b42575b3bda3a1a06e56f959da77ba8bde75d23268fc"
+    },
+    "vehiculos/demo-onix/index.html": {
+      "bytes": 16766,
+      "sha256": "b44bd74206f37fb0d46b898524f90df0e79b7c1114b9bbba2629eb50ae9b175b"
+    },
+    "wp-content/uploads/2026/09/demo-vento-side-960x640.jpg": {
+      "bytes": 137753,
+      "sha256": "a4f15dd72f9ba52b84a04f90b2e5a53d754c468673b1f28075053c0420348556"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-720x640.png": {
+      "bytes": 26887,
+      "sha256": "c2a0620808b100c03f27fce5652c46aee91ec896db08acf9a9712dd4d0edb13d"
+    },
+    "wp-content/uploads/2026/09/demo-wide-960x640.png": {
+      "bytes": 32780,
+      "sha256": "a54d97d91a638f18965448e3a5138ae62a22687657f8c56f192b5619683513e5"
+    },
+    "wp-content/uploads/2026/09/demo-square-900x640.png": {
+      "bytes": 27738,
+      "sha256": "af092d8c4dd323e3e99958a5c27ae3b4a27f90c1c6bf81f2eda6a3146db0ef68"
+    },
+    "wp-content/uploads/2026/09/demo-landscape-960x640.png": {
+      "bytes": 35126,
+      "sha256": "b271d2f607cda21dfeb38a2cd382ae38084fcda8bf76729d3852e4e6eceda161"
+    },
+    "wp-content/uploads/2026/09/demo-landscape-300x200.png": {
+      "bytes": 6501,
+      "sha256": "48da3ba8c59b5ce8830a7eb1d54a1d060c537b835130be7d104fb7873ffdd540"
+    },
+    "wp-content/uploads/2026/09/demo-landscape-1024x683.png": {
+      "bytes": 42780,
+      "sha256": "50d60fa38d4a7bcecbea1bebb001d86590abf5ccf5e32fcd6cd013580945ecd0"
+    },
+    "wp-content/uploads/2026/09/demo-landscape-768x512.png": {
+      "bytes": 28571,
+      "sha256": "ad7265c91ea2d1ba5fbc8d45465bd33e9dd24e4e966a6179537183a7a6264bbb"
+    },
+    "wp-content/uploads/2026/09/demo-landscape.png": {
+      "bytes": 27537,
+      "sha256": "47665aa634b6e45282394f19b491929212c98504e7be2093e6fc6d93fac068bd"
+    },
+    "wp-content/uploads/2026/09/demo-vento-side.jpg": {
+      "bytes": 319059,
+      "sha256": "4c9a922026515b8ab7188156edd890764a684a9462ab9e77568fa1ee3062d7b5"
+    },
+    "wp-content/uploads/2026/09/demo-vento-side-300x169.jpg": {
+      "bytes": 15283,
+      "sha256": "c137b57bdbe6d3609f9680515fca13e5c1d5cdb68107d1bc53dda602737a9627"
+    },
+    "wp-content/uploads/2026/09/demo-vento-side-1024x576.jpg": {
+      "bytes": 139326,
+      "sha256": "a264e1e15c7e7e7635ea0b372f47f918b214e0d654fcc52838a3bcb95c22c310"
+    },
+    "wp-content/uploads/2026/09/demo-vento-side-768x432.jpg": {
+      "bytes": 84484,
+      "sha256": "152138f15c6224e3219fa6e0529d3a4d41994b6b5587f1cffbae0ba69b3efee5"
+    },
+    "wp-content/uploads/2026/09/demo-vento-rear.jpg": {
+      "bytes": 259708,
+      "sha256": "21dfa5513d240c9e3463964cff8e9d8b5e7f176fb4d57e4a57d0d64e12a623cc"
+    },
+    "wp-content/uploads/2026/09/demo-vento-rear-300x169.jpg": {
+      "bytes": 14665,
+      "sha256": "02edc6238963968b399bf3acfa67630181def05213ca175d8dbae635fd89a280"
+    },
+    "wp-content/uploads/2026/09/demo-vento-rear-1024x576.jpg": {
+      "bytes": 116175,
+      "sha256": "86c4153680c5cf7efb58289688e464d86913409a460ceb68230fb0fe62ee2c4d"
+    },
+    "wp-content/uploads/2026/09/demo-vento-rear-768x432.jpg": {
+      "bytes": 72026,
+      "sha256": "8d44a2f030bd2adc70cc8b04df899d2d4891109db9d794a73ba1432792e3d6e5"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front.jpg": {
+      "bytes": 334083,
+      "sha256": "2394b36b5aa1eafabcc19da4ac03f1ee3ec712bfdf3057b7b6dc92645c678422"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-711x1067.jpg": {
+      "bytes": 76228,
+      "sha256": "23125e976e9138e1c0f0f5208e5227f6d896a85099bacfe7a8db9a53cafc88c4"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-200x300.jpg": {
+      "bytes": 10847,
+      "sha256": "2b66ed6cd52b646bff65afaa80f9ed6187393218b81f87796645c0e167c66ac2"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-683x1024.jpg": {
+      "bytes": 71906,
+      "sha256": "8e881eb05bee6ebd9a47ca205be95f9737348bb4d02d1d5b5280acd8ed601e73"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-768x1152.jpg": {
+      "bytes": 85607,
+      "sha256": "804956acc5556a537f43a8d1997a0a4bbcb47e55d4e603c3c3528ef1e65f69fb"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-1024x1536.jpg": {
+      "bytes": 136086,
+      "sha256": "1febb7a1359f234d2ff9a4be00e0796295c227f8ce225424da29dffd12f88b15"
+    },
+    "wp-content/uploads/2026/09/demo-vento-front-1365x2048.jpg": {
+      "bytes": 225581,
+      "sha256": "c0a31f46dbd14fa6329ce6ec2407b231132ab193f28755da52dbd2fde0083369"
+    },
+    "wp-content/uploads/2026/09/demo-portrait.png": {
+      "bytes": 28125,
+      "sha256": "840fdac700f545f156c508a04a4f666dbadd275a04a10898ee5d9dd5b9828cda"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-600x1067.png": {
+      "bytes": 41115,
+      "sha256": "54239e7248eb32bf18879f5b9d31b1611b5dce47c63df9e0699b6eaabbe8723f"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-169x300.png": {
+      "bytes": 8052,
+      "sha256": "373fa403872a96b3cc0c056de4f16377358405b361cb9591b77e4f45a81f7e6f"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-576x1024.png": {
+      "bytes": 34367,
+      "sha256": "65bdd03d12ed7f95efa2e815892c08c39e76f05ce6d178d0a06ce44958f11965"
+    },
+    "wp-content/uploads/2026/09/demo-wide.png": {
+      "bytes": 28426,
+      "sha256": "53a604c414d11f39e498df1b277af367775f3d93fe7733463d4b1f0ec01b88c5"
+    },
+    "wp-content/uploads/2026/09/demo-wide-300x169.png": {
+      "bytes": 5922,
+      "sha256": "92f88179239d61a85f395ad1fd6d814acf378d4fc49f3823d1cae106a7971021"
+    },
+    "wp-content/uploads/2026/09/demo-wide-1024x576.png": {
+      "bytes": 28318,
+      "sha256": "ffe55cc6b6b3c45a2f9158a7fa4c6042d145a8b7d34e403e120a7aea0370b0de"
+    },
+    "wp-content/uploads/2026/09/demo-wide-768x432.png": {
+      "bytes": 19426,
+      "sha256": "efafdf165658088f609ce3135d044cfbf561f72c1e82420859a2d6fb0c8503c7"
+    },
+    "wp-content/uploads/2026/09/demo-wide-1536x864.png": {
+      "bytes": 50083,
+      "sha256": "2be8fe4e04ff0f2717a573709081589ae16e87af7dbc853ab0095d9eecf2cc4a"
+    },
+    "wp-content/uploads/2026/09/demo-square.png": {
+      "bytes": 26421,
+      "sha256": "b9e27671304731391ca31124efdf233282419ccf62fe3e94f390a59f43d6a4f4"
+    },
+    "wp-content/uploads/2026/09/demo-square-300x300.png": {
+      "bytes": 9469,
+      "sha256": "b8ad9528b17cb6a5d65f0e3f7e80e77660c5676e432ccac6e2a1abd7633717f6"
+    },
+    "wp-content/uploads/2026/09/demo-square-150x150.png": {
+      "bytes": 3774,
+      "sha256": "f8151db90204e6b34c88e0f6daa9b660b6039609f0a76fbdf851a3298cfbd087"
+    },
+    "wp-content/uploads/2026/09/demo-square-768x768.png": {
+      "bytes": 41593,
+      "sha256": "948f680e4550a38b062fde523ad6438e006010a842584fdf446852a196aba998"
+    },
+    "wp-content/themes/rp-usados/style.css": {
+      "bytes": 447,
+      "sha256": "41f105ad8d547d0b85aa7b0a1530e79567de130d979dcdbca7c11af80af3029b"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/app-BKiV4p1s.css": {
+      "bytes": 34711,
+      "sha256": "b4fdfc28626c05f183eb1cc1a9ca25d0b8adc449c21f8b0e73ddc55f04b09d52"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/app-BRVwA9Lu.js": {
+      "bytes": 2969,
+      "sha256": "375210ce00eab07afadcbb7389cfb855da364a2a998d800968d8c10215645593"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2": {
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/main-CvXnZ-NT.js": {
+      "bytes": 121645,
+      "sha256": "221c7c45ab3c43882d035ed02aaef841c2cb1d0ce32cd7019db28292fb132d0e"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "wp-content/themes/rp-usados/assets/brand/silhouette.svg": {
+      "bytes": 953,
+      "sha256": "e51ead79dc506ab0b1436d62ff2bfb8d6acc5d459a84f4eab2530ded8f6e93c3"
+    },
+    "wp-content/themes/rp-usados/assets/brand/whatsapp.svg": {
+      "bytes": 1216,
+      "sha256": "8fb209a53a61618c3483594b3e070481a35575d6aaecbe00a6fe386670c8fb1c"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4": {
+      "bytes": 4779248,
+      "sha256": "f30f7e95c357e39601dfa14f2052b2bc6a6e6f49cff2d72c2598aabec01ded64"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png": {
+      "bytes": 581521,
+      "sha256": "dbb814819e80e4e9c00831e8eb41097adef8e77b0a765edacfeb6c082531957d"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4": {
+      "bytes": 2378680,
+      "sha256": "281f59a01ee41f84ec5ee831426ebdad76af1b088c0d89957c1b436788af03da"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png": {
+      "bytes": 1096506,
+      "sha256": "e30b83742bd70aa31366283614342ceca11cad912560563004a38c68b9b4b2aa"
+    },
+    "wp-content/themes/rp-usados/assets/institutional/local-actual.jpeg": {
+      "bytes": 279999,
+      "sha256": "a33854eb70c960660deb3ea19461b378197eb2dd502524f358b9570d62517470"
+    },
+    "robots.txt": {
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    "vercel.json": {
+      "bytes": 614,
+      "sha256": "cd09e85ab16a376cfd2213c0dad53eb3bc2a8e8e3ea095a423c14ff2a58852c5"
+    },
+    ".vercelignore": {
+      "bytes": 9,
+      "sha256": "290ac9a1c4bd2b574c2d54245f3a9f89e4c9e655bb127766f1819a16e9ca1de1"
+    }
+  },
+  "totalBytes": 12311734,
+  "limitations": [
+    "DEMO VISUAL / NO ES STOCK REAL on every page.",
+    "No WordPress runtime or administration.",
+    "No fabricated WhatsApp recipient.",
+    "Vehicles, prices and photos are visual test fixtures, not inventory."
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "url": "http://127.0.0.1:9470",
+  "checks": [
+    "default: 32x32 PNG and DIB CUR",
+    "default: embedded hotspot matches CSS",
+    "default: visible bounds equal measured Windows standard cursor",
+    "pointer: 32x32 PNG and DIB CUR",
+    "pointer: embedded hotspot matches CSS",
+    "pointer: visible bounds equal measured Windows standard cursor",
+    "chrome: default CUR / PNG / auto with hotspot",
+    "chrome: hero inherits arrow",
+    "chrome: hero CTA hand hotspot and terminal pointer",
+    "chrome: complete card and its photo use hand",
+    "chrome: card B remains intact",
+    "chrome: no tracking cursor layers",
+    "chrome: gallery controls use hand",
+    "chrome: text entry native",
+    "chrome: disabled native",
+    "chrome: footer remains arrow",
+    "chrome: contact action remains hand",
+    "chrome: keyboard focus remains visible",
+    "chrome: cursor files load successfully",
+    "chrome: no script errors",
+    "chrome: cursors and links work without JS",
+    "chrome: missing assets preserve terminal auto/pointer, never none",
+    "chrome: PNG alternative loads when CUR fails",
+    "chrome touch 375: no cursor requests",
+    "chrome touch 375: no cursor URLs applied",
+    "chrome touch 390: no cursor requests",
+    "chrome touch 390: no cursor URLs applied",
+    "chrome touch 430: no cursor requests",
+    "chrome touch 430: no cursor URLs applied",
+    "msedge: default CUR / PNG / auto with hotspot",
+    "msedge: hero inherits arrow",
+    "msedge: hero CTA hand hotspot and terminal pointer",
+    "msedge: complete card and its photo use hand",
+    "msedge: card B remains intact",
+    "msedge: no tracking cursor layers",
+    "msedge: gallery controls use hand",
+    "msedge: text entry native",
+    "msedge: disabled native",
+    "msedge: footer remains arrow",
+    "msedge: contact action remains hand",
+    "msedge: keyboard focus remains visible",
+    "msedge: cursor files load successfully",
+    "msedge: no script errors",
+    "msedge: cursors and links work without JS",
+    "msedge: missing assets preserve terminal auto/pointer, never none",
+    "msedge: PNG alternative loads when CUR fails",
+    "msedge touch 375: no cursor requests",
+    "msedge touch 375: no cursor URLs applied",
+    "msedge touch 390: no cursor requests",
+    "msedge touch 390: no cursor URLs applied",
+    "msedge touch 430: no cursor requests",
+    "msedge touch 430: no cursor URLs applied"
+  ],
+  "browsers": [
+    {
+      "channel": "chrome",
+      "version": "154.0.8037.93",
+      "cursorResources": [
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-BzkoBUlE.cur",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-h5rXNvWv.png",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-UlbLjace.cur",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-iOKRBKdZ.png"
+      ],
+      "errors": []
+    },
+    {
+      "channel": "msedge",
+      "version": "154.0.4258.53",
+      "cursorResources": [
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-BzkoBUlE.cur",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-h5rXNvWv.png",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-UlbLjace.cur",
+        "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-iOKRBKdZ.png"
+      ],
+      "errors": []
+    }
+  ],
+  "screenshots": "Actual page captures with the real cursor PNG composed at the tested hotspot. OS cursors are not captured by Playwright."
+}

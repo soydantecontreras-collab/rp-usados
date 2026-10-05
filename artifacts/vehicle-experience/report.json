@@ -1,0 +1,324 @@
+{
+  "base": "http://127.0.0.1:9470",
+  "profiles": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-1024x576.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-1024x1536.jpg"
+      ],
+      "errors": []
+    },
+    {
+      "name": "laptop-1280",
+      "width": 1280,
+      "height": 800,
+      "mobile": false,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-1024x576.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-1024x576.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-1024x1536.jpg"
+      ],
+      "errors": []
+    },
+    {
+      "name": "tablet-768",
+      "width": 768,
+      "height": 1024,
+      "mobile": true,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-768x1152.jpg"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-375",
+      "width": 375,
+      "height": 812,
+      "mobile": true,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-683x1024.jpg"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-390",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-683x1024.jpg"
+      ],
+      "errors": []
+    },
+    {
+      "name": "mobile-430",
+      "width": 430,
+      "height": 932,
+      "mobile": true,
+      "catalogInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png"
+      ],
+      "catalogScrolled": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-wide-768x432.png",
+        "/wp-content/uploads/2026/10/demo-square-768x768.png",
+        "/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+      ],
+      "detailInitial": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg"
+      ],
+      "detailBrowsed": [
+        "/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-rear-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-front-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-vento-side-150x150.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-150x150.png",
+        "/wp-content/uploads/2026/10/demo-vento-rear-768x432.jpg",
+        "/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+        "/wp-content/uploads/2026/10/demo-vento-front-683x1024.jpg"
+      ],
+      "errors": []
+    }
+  ],
+  "checks": [
+    "desktop: 9 price-free cards",
+    "desktop: only cover image URLs in archive",
+    "desktop: rejected contextual cursor disabled",
+    "desktop: ordinary cursor outside card",
+    "desktop: images work after scrolling",
+    "desktop: initial detail and four gallery photos",
+    "desktop: price only in detail",
+    "desktop: specific WhatsApp copy",
+    "desktop: no fake recipient",
+    "desktop: no overflow",
+    "desktop: fullscreen gallery",
+    "desktop: lightbox closes with Escape",
+    "desktop: no JavaScript errors",
+    "desktop: keyboard focus visible on gallery",
+    "laptop-1280: 9 price-free cards",
+    "laptop-1280: only cover image URLs in archive",
+    "desktop: rejected contextual cursor disabled",
+    "desktop: ordinary cursor outside card",
+    "laptop-1280: images work after scrolling",
+    "laptop-1280: initial detail and four gallery photos",
+    "laptop-1280: price only in detail",
+    "laptop-1280: specific WhatsApp copy",
+    "laptop-1280: no fake recipient",
+    "laptop-1280: no overflow",
+    "laptop-1280: fullscreen gallery",
+    "laptop-1280: lightbox closes with Escape",
+    "laptop-1280: no JavaScript errors",
+    "laptop-1280: keyboard focus visible on gallery",
+    "tablet-768: 9 price-free cards",
+    "tablet-768: only cover image URLs in archive",
+    "tablet-768: no custom cursor",
+    "tablet-768: images work after scrolling",
+    "tablet-768: initial detail and four gallery photos",
+    "tablet-768: price only in detail",
+    "tablet-768: specific WhatsApp copy",
+    "tablet-768: no fake recipient",
+    "tablet-768: no overflow",
+    "tablet-768: fullscreen gallery",
+    "tablet-768: lightbox closes with Escape",
+    "tablet-768: no JavaScript errors",
+    "tablet-768: keyboard focus visible on gallery",
+    "mobile-375: 9 price-free cards",
+    "mobile-375: only cover image URLs in archive",
+    "mobile-375: no custom cursor",
+    "mobile-375: images work after scrolling",
+    "mobile-375: initial detail and four gallery photos",
+    "mobile-375: price only in detail",
+    "mobile-375: specific WhatsApp copy",
+    "mobile-375: no fake recipient",
+    "mobile-375: no overflow",
+    "mobile-375: fullscreen gallery",
+    "mobile-375: lightbox closes with Escape",
+    "mobile-375: no JavaScript errors",
+    "mobile-375: keyboard focus visible on gallery",
+    "mobile-390: 9 price-free cards",
+    "mobile-390: only cover image URLs in archive",
+    "mobile-390: no custom cursor",
+    "mobile-390: images work after scrolling",
+    "mobile-390: initial detail and four gallery photos",
+    "mobile-390: price only in detail",
+    "mobile-390: specific WhatsApp copy",
+    "mobile-390: no fake recipient",
+    "mobile-390: no overflow",
+    "mobile-390: fullscreen gallery",
+    "mobile-390: lightbox closes with Escape",
+    "mobile-390: no JavaScript errors",
+    "mobile-390: keyboard focus visible on gallery",
+    "mobile-430: 9 price-free cards",
+    "mobile-430: only cover image URLs in archive",
+    "mobile-430: no custom cursor",
+    "mobile-430: images work after scrolling",
+    "mobile-430: initial detail and four gallery photos",
+    "mobile-430: price only in detail",
+    "mobile-430: specific WhatsApp copy",
+    "mobile-430: no fake recipient",
+    "mobile-430: no overflow",
+    "mobile-430: fullscreen gallery",
+    "mobile-430: lightbox closes with Escape",
+    "mobile-430: no JavaScript errors",
+    "mobile-430: keyboard focus visible on gallery",
+    "reduced motion: no custom cursor",
+    "no JS: gallery links remain usable",
+    "no JS: essential detail visible",
+    "portrait/reserved: image and state fit",
+    "missing optional facts: no empty rows"
+  ]
+}

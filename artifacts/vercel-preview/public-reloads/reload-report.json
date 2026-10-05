@@ -1,0 +1,656 @@
+{
+  "browser": "154.0.4258.37",
+  "repeat": 3,
+  "reloads": [
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 576.2637,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 625.4868999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 544.9636999999993,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 494.5714000000007,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 482.5753000000004,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 471.22330000000056,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 540.0830999999998,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 565.6078000000007,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 570.049,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 538.7862000000005,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 564.6387999999988,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 375,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 552.0763999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 542.1959999999999,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 538.1548000000003,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 469.2469999999994,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 539.6155999999992,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 504.47419999999875,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 488.3099000000002,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 727.8239000000012,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 565.9204999999984,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 576.2466999999997,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 596.7832000000017,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 538.4651999999987,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 553.3164999999972,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 544.8872999999985,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 481.4267,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 479.39849999999933,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 546.1441000000013,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 533.0915000000023,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "warm",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 478.5577999999987,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": true,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 1,
+      "preparedMs": 567.0542999999998,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 2,
+      "preparedMs": 557.0675999999985,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0,
+      "iteration": 3,
+      "preparedMs": 596.1872000000003,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 1,
+      "preparedMs": 577.3269,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 2,
+      "preparedMs": 625.2959999999985,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    },
+    {
+      "width": 430,
+      "cache": "cold",
+      "position": 0.56,
+      "iteration": 3,
+      "preparedMs": 558.2698999999993,
+      "readyState": 4,
+      "firstFrameTime": 0,
+      "firstSeekAfterFrame": true,
+      "videoResponses": [
+        {
+          "url": "https://vercel-testing-460b176-r2-822afy0ep-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+          "status": 206,
+          "fromDiskCache": false,
+          "fromServiceWorker": false
+        }
+      ]
+    }
+  ],
+  "failures": [],
+  "conditions": "Mobile emulation; real MP4 and compositor. CPU 4x, autoplay restricted, play() rejects if called. No network routing in cache tests."
+}

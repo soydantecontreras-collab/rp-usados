@@ -1,0 +1,33 @@
+.cursor-controls{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;border-bottom:1px solid #969e98;margin-bottom:27px}
+.cursor-controls .view-controls{border:0;margin:0}
+.cursor-switch{display:flex;align-items:center;gap:9px;min-height:46px;font-size:12px;white-space:nowrap;cursor:pointer}
+.cursor-switch input{accent-color:var(--red);width:16px;height:16px}
+.cursor-switch input:focus-visible{outline:3px solid #065ca4;outline-offset:4px}
+/* Native pointer is hidden only after the JS replacement is present. */
+@media(hover:hover) and (pointer:fine){.cursor-card.is-cursor-active .vehicle-link{cursor:none}}
+.lab-cursor{position:fixed;top:0;left:0;width:0;height:0;z-index:99;pointer-events:none;opacity:0;transition:opacity 85ms ease-out}
+.lab-cursor.is-visible{opacity:1}.lab-cursor *{pointer-events:none}
+/* A: max main trace 22 px, secondary 13 px; hard contrast edge, no blur. */
+.speed-direction{position:absolute;top:0;left:0;width:0;height:0}
+.speed-main,.speed-accent{position:absolute;right:3px;top:-1px;height:1px;width:22px;transform:scaleX(0);background:#f5f4ef;box-shadow:0 0 0 .55px #151818;transform-origin:right center}
+.speed-accent{right:6px;top:2px;width:13px;background:#cf3440;box-shadow:0 0 0 .35px #151818}
+.speed-tip{position:absolute;left:-2px;top:-2px;width:4px;height:4px;transform:rotate(45deg);background:#f5f4ef;border:.7px solid #141818;transition:scale 110ms ease-out}
+.cursor-speed.is-pressed .speed-tip{scale:.7}
+.cursor-speed.is-pressed .speed-main,.cursor-speed.is-pressed .speed-accent{scale:.65 1}
+/* B: opposing open corners, without crosshair or enclosed circle. */
+.frame-corner{position:absolute;width:8px;height:8px;overflow:visible;scale:.6;transition:scale 180ms cubic-bezier(.2,.65,.3,1)}
+.cursor-frame.is-visible .frame-corner{scale:1}
+.frame-first{left:-7px;top:-7px}.frame-second{left:0;top:0}
+.frame-corner path{fill:none;stroke-linecap:square;stroke-linejoin:miter}
+.frame-corner .outline{stroke:#151818;stroke-width:2.2}
+.frame-first .ink{stroke:#f5f4ef;stroke-width:1}
+.frame-second .ink{stroke:#c52b36;stroke-width:1}
+.cursor-frame.is-pressed .frame-first{scale:.72;transform-origin:bottom right}
+.cursor-frame.is-pressed .frame-second{scale:.72;transform-origin:top left}
+/* C: small two-face marker, hinged in 2D. */
+.facet{position:absolute;left:-6px;top:-7px;width:12px;height:14px;overflow:visible}
+.facet polygon{stroke:#141818;stroke-width:.7;stroke-linejoin:round;transform-box:fill-box;transform-origin:center;transition:scale 120ms ease-out}
+.facet-left{fill:#f5f4ef}.facet-right{fill:#b51f2b}
+.cursor-facet.is-pressed .facet polygon{scale:.78}
+@media(max-width:900px){.cursor-controls{flex-wrap:wrap;gap:0}.cursor-switch{padding:8px 12px}}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.lab-cursor{display:none!important}.cursor-card.is-cursor-active .vehicle-link{cursor:pointer}}

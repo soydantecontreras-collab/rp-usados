@@ -1,7 +1,9 @@
 import '../styles/main.scss';
 import { initGallery } from './gallery.js';
+import { initButtonFeedback } from './button-feedback.js';
 
 initGallery();
+initButtonFeedback();
 document.querySelectorAll('[data-contact-pending]').forEach(link => {
   link.addEventListener('click', () => requestAnimationFrame(() => document.querySelector('#contacto-pendiente')?.focus({ preventScroll: true })));
 });

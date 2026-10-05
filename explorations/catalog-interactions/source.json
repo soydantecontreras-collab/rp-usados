@@ -1,0 +1,12 @@
+{
+  "source": "http://127.0.0.1:9470/vehiculos/",
+  "captured": "2026-10-02T00:43:10.608Z",
+  "unit": "Volkswagen Vento · DEMO",
+  "covers": [
+    "demo-vento-side-1024x576.jpg",
+    "demo-vento-side-300x169.jpg",
+    "demo-vento-side-768x432.jpg",
+    "demo-vento-side.jpg"
+  ],
+  "purpose": "Local isolated interaction comparison. Not real stock."
+}

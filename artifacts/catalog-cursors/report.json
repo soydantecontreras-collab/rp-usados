@@ -1,0 +1,51 @@
+{
+  "url": "http://127.0.0.1:9480/cursors.html",
+  "checks": [
+    "Three identical cards with common B",
+    "One photo each, same resource",
+    "No V1, hero, GSAP or additional photo loaded",
+    "Speed Trace responds to speed, capped at 22 px",
+    "Speed Trace returns to tiny idle pointer and stops RAF",
+    "Normal cursor outside card",
+    "A: replacement only inside card",
+    "A: stops RAF while idle inside card",
+    "A: press feedback",
+    "A: no running loop outside",
+    "B: replacement only inside card",
+    "B: stops RAF while idle inside card",
+    "B: press feedback",
+    "B: no running loop outside",
+    "C: replacement only inside card",
+    "C: stops RAF while idle inside card",
+    "C: press feedback",
+    "C: no running loop outside",
+    "Toggle restores native pointer",
+    "Enlarged selector works",
+    "Native navigation opens real local DEMO detail",
+    "Keyboard focus maintained",
+    "No cursor text, overlay never intercepts pointer",
+    "No errors or overflow",
+    "touch: native cursor and no active overlay",
+    "reduced: native cursor and no active overlay",
+    "no-js: native cursor and no active overlay"
+  ],
+  "speed": {
+    "slow": 0,
+    "fastMax": 21.955308353991455,
+    "stopped": 0.05354471757053308
+  },
+  "callbacks": {
+    "A": {
+      "samples": 193,
+      "p95ms": 0.10000002384185791
+    },
+    "B": {
+      "samples": 1,
+      "p95ms": 0
+    },
+    "C": {
+      "samples": 12,
+      "p95ms": 0.09999990463256836
+    }
+  }
+}

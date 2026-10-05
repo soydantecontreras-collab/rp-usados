@@ -1,0 +1,148 @@
+{
+  "sourceCommit": "460b17621cd6ebadd8c30ac862acc4d147aaee58",
+  "branch": "main",
+  "kind": "static-presentation-only",
+  "out": "tools\\.preview\\vercel-testing-460b176-r2",
+  "routes": [
+    "/",
+    "/vehiculos/",
+    "/demo/ficha/"
+  ],
+  "files": {
+    "wp-includes/css/dist/block-library/style.min.css": {
+      "bytes": 116345,
+      "sha256": "838ede31a58a3cdb411d6dd7f13cbe65d4a26193d9fa31882854e63938f12bac"
+    },
+    "index.html": {
+      "bytes": 19048,
+      "sha256": "98c792dbe3efb77a7577906a928b1da2d8220cdcb4ac4f1b89f8d181cb523991"
+    },
+    "vehiculos/index.html": {
+      "bytes": 13274,
+      "sha256": "ff247743ebc5bdbecbb183b916fefc75b3d82724999b991019eee08da890405d"
+    },
+    "wp-content/uploads/2026/09/demo-wide.png": {
+      "bytes": 28426,
+      "sha256": "53a604c414d11f39e498df1b277af367775f3d93fe7733463d4b1f0ec01b88c5"
+    },
+    "wp-content/uploads/2026/09/demo-wide-300x169.png": {
+      "bytes": 5922,
+      "sha256": "92f88179239d61a85f395ad1fd6d814acf378d4fc49f3823d1cae106a7971021"
+    },
+    "wp-content/uploads/2026/09/demo-wide-1024x576.png": {
+      "bytes": 28318,
+      "sha256": "ffe55cc6b6b3c45a2f9158a7fa4c6042d145a8b7d34e403e120a7aea0370b0de"
+    },
+    "wp-content/uploads/2026/09/demo-wide-768x432.png": {
+      "bytes": 19426,
+      "sha256": "efafdf165658088f609ce3135d044cfbf561f72c1e82420859a2d6fb0c8503c7"
+    },
+    "wp-content/uploads/2026/09/demo-wide-1536x864.png": {
+      "bytes": 50083,
+      "sha256": "2be8fe4e04ff0f2717a573709081589ae16e87af7dbc853ab0095d9eecf2cc4a"
+    },
+    "wp-content/uploads/2026/09/demo-portrait.png": {
+      "bytes": 28125,
+      "sha256": "840fdac700f545f156c508a04a4f666dbadd275a04a10898ee5d9dd5b9828cda"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-600x1067.png": {
+      "bytes": 41115,
+      "sha256": "54239e7248eb32bf18879f5b9d31b1611b5dce47c63df9e0699b6eaabbe8723f"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-169x300.png": {
+      "bytes": 8052,
+      "sha256": "373fa403872a96b3cc0c056de4f16377358405b361cb9591b77e4f45a81f7e6f"
+    },
+    "wp-content/uploads/2026/09/demo-portrait-576x1024.png": {
+      "bytes": 34367,
+      "sha256": "65bdd03d12ed7f95efa2e815892c08c39e76f05ce6d178d0a06ce44958f11965"
+    },
+    "wp-content/uploads/2026/09/demo-square.png": {
+      "bytes": 26421,
+      "sha256": "b9e27671304731391ca31124efdf233282419ccf62fe3e94f390a59f43d6a4f4"
+    },
+    "wp-content/uploads/2026/09/demo-square-300x300.png": {
+      "bytes": 9469,
+      "sha256": "b8ad9528b17cb6a5d65f0e3f7e80e77660c5676e432ccac6e2a1abd7633717f6"
+    },
+    "wp-content/uploads/2026/09/demo-square-150x150.png": {
+      "bytes": 3774,
+      "sha256": "f8151db90204e6b34c88e0f6daa9b660b6039609f0a76fbdf851a3298cfbd087"
+    },
+    "wp-content/uploads/2026/09/demo-square-768x768.png": {
+      "bytes": 41593,
+      "sha256": "948f680e4550a38b062fde523ad6438e006010a842584fdf446852a196aba998"
+    },
+    "demo/ficha/index.html": {
+      "bytes": 18839,
+      "sha256": "ffa1aa29d608d047498f03bd0dd9a5853f9fba30f3994665db95bc924edad9f2"
+    },
+    "wp-content/themes/rp-usados/style.css": {
+      "bytes": 447,
+      "sha256": "41f105ad8d547d0b85aa7b0a1530e79567de130d979dcdbca7c11af80af3029b"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/app-DHf1VnOe.js": {
+      "bytes": 2969,
+      "sha256": "639835b6c8fb3e569c39ad9e4a2cc0e28059f86b997d0e3797812ebc12c66f8f"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/app-o9IATcWH.css": {
+      "bytes": 32523,
+      "sha256": "f3bebc84fe29aa8020e480f2fd5f864a91c5ab0abe4cd7a90a57cfda74ab5270"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2": {
+      "bytes": 34928,
+      "sha256": "8f704806dbedeaaeca334b11ec348bc3ac3a439d6431544b3afb54f534ee4967"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/main-BJ07zQ2b.js": {
+      "bytes": 121628,
+      "sha256": "a5249ad36502a449a21037c0241f994a81a7b600ad8af8d4fdf10d1969a5427f"
+    },
+    "wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2": {
+      "bytes": 24836,
+      "sha256": "a30ddcd349703aff7464c34bef3fffdff405ee50c113440d7c8693c02d210972"
+    },
+    "wp-content/themes/rp-usados/assets/brand/silhouette.svg": {
+      "bytes": 953,
+      "sha256": "e51ead79dc506ab0b1436d62ff2bfb8d6acc5d459a84f4eab2530ded8f6e93c3"
+    },
+    "wp-content/themes/rp-usados/assets/brand/whatsapp.svg": {
+      "bytes": 1216,
+      "sha256": "8fb209a53a61618c3483594b3e070481a35575d6aaecbe00a6fe386670c8fb1c"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4": {
+      "bytes": 4779248,
+      "sha256": "f30f7e95c357e39601dfa14f2052b2bc6a6e6f49cff2d72c2598aabec01ded64"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png": {
+      "bytes": 581521,
+      "sha256": "dbb814819e80e4e9c00831e8eb41097adef8e77b0a765edacfeb6c082531957d"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4": {
+      "bytes": 2378680,
+      "sha256": "281f59a01ee41f84ec5ee831426ebdad76af1b088c0d89957c1b436788af03da"
+    },
+    "wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png": {
+      "bytes": 1096506,
+      "sha256": "e30b83742bd70aa31366283614342ceca11cad912560563004a38c68b9b4b2aa"
+    },
+    "robots.txt": {
+      "bytes": 26,
+      "sha256": "331ea9090db0c9f6f597bd9840fd5b171830f6e0b3ba1cb24dfa91f0c95aedc1"
+    },
+    "vercel.json": {
+      "bytes": 614,
+      "sha256": "e0d8af5cc1f1604bd983595c778e4ad5e1c928daf3d44a4b4c305b71f3e439d2"
+    },
+    ".vercelignore": {
+      "bytes": 9,
+      "sha256": "290ac9a1c4bd2b574c2d54245f3a9f89e4c9e655bb127766f1819a16e9ca1de1"
+    }
+  },
+  "totalBytes": 9548701,
+  "limitations": [
+    "No WordPress runtime or administration.",
+    "Main catalog is empty; no QA records presented as real inventory.",
+    "WhatsApp number remains unconfirmed; no fabricated recipient.",
+    "Optional /demo/ficha/ is a labelled visual demonstration using image test patterns, not a real vehicle."
+  ]
+}

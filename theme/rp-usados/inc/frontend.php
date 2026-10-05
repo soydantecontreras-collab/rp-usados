@@ -16,7 +16,7 @@ function rp_usados_contact_url(): string {
 function rp_usados_contact_action( string $label = 'Consultar por WhatsApp', string $classes = '', int $id = 0 ): void {
     $url = $id ? rp_usados_vehicle_whatsapp_url( $id ) : rp_usados_contact_url();
     $aria = $id ? sprintf( __( 'Consultar por WhatsApp: %s', 'rp-usados' ), get_the_title( $id ) ) : $label;
-    printf( '<a class="action %s" href="%s" aria-label="%s"%s><img class="wa-icon" src="%s" alt="" width="22" height="22"><span>%s</span><span class="arrow" aria-hidden="true">↗</span></a>', esc_attr( $classes ), esc_url( $url ?: '#contacto-pendiente' ), esc_attr( $aria ), $url ? '' : ' data-contact-pending', esc_url( RP_USADOS_URL . '/assets/brand/whatsapp.svg' ), esc_html( $label ) );
+    printf( '<a class="action action-whatsapp %s" href="%s" aria-label="%s"%s><img class="wa-icon" src="%s" alt="" width="22" height="22"><span>%s</span></a>', esc_attr( $classes ), esc_url( $url ?: '#contacto-pendiente' ), esc_attr( $aria ), $url ? '' : ' data-contact-pending', esc_url( RP_USADOS_URL . '/assets/brand/whatsapp.svg' ), esc_html( $label ) );
 }
 add_filter( 'body_class', static function ( array $classes ): array {
     $classes[] = 'transition';

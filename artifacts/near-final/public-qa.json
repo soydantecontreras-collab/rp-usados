@@ -1,0 +1,215 @@
+{
+  "verifiedUrl": "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app",
+  "sourceCommit": "6417f5463f20314fc14a6d74cd73a3cfab55b4bc",
+  "profiles": [
+    {
+      "width": 375,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 4956.84375,
+          "height": 4199.453125,
+          "top": 757.390625,
+          "width": 360
+        },
+        "copy": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 360
+        },
+        "cta": {
+          "bottom": 689.390625,
+          "height": 50,
+          "top": 639.390625,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 360
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 1055,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 717.390625,
+          "height": 1712.390625,
+          "top": -995,
+          "width": 360
+        },
+        "video": "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 375,
+        "wrapper": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 360
+        }
+      }
+    },
+    {
+      "width": 390,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 5046.84375,
+          "height": 4289.453125,
+          "top": 757.390625,
+          "width": 375
+        },
+        "copy": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 375
+        },
+        "cta": {
+          "bottom": 689.390625,
+          "height": 50,
+          "top": 639.390625,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 375
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 1055,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 717.390625,
+          "height": 1712.390625,
+          "top": -995,
+          "width": 375
+        },
+        "video": "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 390,
+        "wrapper": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 375
+        }
+      }
+    },
+    {
+      "width": 430,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 5257.734375,
+          "height": 4500.34375,
+          "top": 757.390625,
+          "width": 415
+        },
+        "copy": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 415
+        },
+        "cta": {
+          "bottom": 689.390625,
+          "height": 50,
+          "top": 639.390625,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 415
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 1055,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 717.390625,
+          "height": 1712.390625,
+          "top": -995,
+          "width": 415
+        },
+        "video": "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 430,
+        "wrapper": {
+          "bottom": 717.390625,
+          "height": 784,
+          "top": -66.609375,
+          "width": 415
+        }
+      }
+    }
+  ],
+  "cleanMobileResources": [
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-includes/css/dist/block-library/style.min.css?ver=6.8.11",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/style.css?ver=0.2.0",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/app-BCtz9LQl.css?ver=0.2.0",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/app-mV1EbZFS.js",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/brand/silhouette.svg",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/brand/whatsapp.svg",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/main-DoyFKwQh.js",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4"
+  ],
+  "cleanDesktopResources": [
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/app-BCtz9LQl.css?ver=0.2.0",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/brand/silhouette.svg",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-includes/css/dist/block-library/style.min.css?ver=6.8.11",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/style.css?ver=0.2.0",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/brand/whatsapp.svg",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/app-mV1EbZFS.js",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/main-DoyFKwQh.js",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2",
+    "https://vercel-testing-460b176-r2-4ub26ghrz-dante42.vercel.app/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4"
+  ],
+  "checks": [
+    "75 exact-match asset/range checks",
+    "DEMO archive: 9 eligible units, reserved included, sold excluded, no prices",
+    "DEMO detail: price, four images, thumbnail 03/04, lightbox and Escape",
+    "reload in hero restores 1.8333s pose, visible video and aligned aperture",
+    "mobile visual opacity remains 1 at contextual terminal pose",
+    "desktop normal branded cursor and hidden aperture effect",
+    "no horizontal overflow at 375/390/430 and desktop",
+    "no secondary Vento gallery photo requested from initial Home",
+    "production target unchanged"
+  ],
+  "limitations": [
+    "Physical Android Chrome validation still required for this integrated build",
+    "Safari/iPhone not available in this environment",
+    "Static preview does not run WordPress/admin",
+    "WhatsApp number and real inventory are not supplied",
+    "Reduced-motion/no-JS inspected in implementation; this browser session cannot emulate OS media preferences"
+  ]
+}

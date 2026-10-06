@@ -5,5 +5,5 @@
 - [x] Encode and extract poster; record size, bitrate and provenance.
 - [x] Replace only mobile resource references/dimensions.
 - [x] Build/PHP/controller checks and local mobile/desktop QA.
-- [ ] Commit/push, fresh static DEMO export and testing preview deployment.
-- [ ] Public resource/seek/reload/page QA and verification report.
+- [x] Commit/push, fresh static DEMO export and testing preview deployment.
+- [x] Public resource/seek/reload/page QA and verification report.

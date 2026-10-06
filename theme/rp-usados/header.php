@@ -8,6 +8,7 @@ $catalog = is_front_page() ? '#catalogo' : home_url( '/#catalogo' );
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#080809">
+    <?php if ( is_front_page() ) { get_template_part( 'template-parts/home/hero-layout' ); } ?>
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?> data-curve="subtle">

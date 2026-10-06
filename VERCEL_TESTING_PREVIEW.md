@@ -2,6 +2,13 @@
 
 ## Estado actual (2026-10-05)
 
+Nueva preview autorizada: corrección aprobada del escenario mobile estable.
+Envolvente negra 100dvh, escena/media/copy/CTA con 100svh capturado antes del
+primer paint, sticky/travel estructurales antes del módulo de media.
+QA del export y publicación comprueban +16/+72 px y carga diferida del módulo
+sin salto, además de todo el contenido DEMO y la selección exclusiva de recursos.
+No cambios a videos, diseño, backend o contenido respecto al checkpoint aprobado.
+
 La nueva publicación usa el checkpoint de main creado con el mensaje "Refine vehicle experience, catalog interactions and business sections". Se genera un directorio NUEVO bajo tools/.preview/ después del commit y del build. Nunca se recicla un export anterior.
 
 Fuente: tema clásico WordPress aprobado + instalación DEMO aislada en http://127.0.0.1:9470/. Exportador: tools/export-vercel-demo-preview.mjs. Home, /vehiculos/ y nueve fichas DEMO: disponibles y reservados, vendido excluido; no precios en listado. Cada página identifica DEMO VISUAL / NO ES STOCK REAL; precios y fotografías son contenido de desarrollo. No se incorporan estos posts al tema ni al inventario real.

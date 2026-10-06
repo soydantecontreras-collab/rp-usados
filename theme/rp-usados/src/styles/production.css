@@ -8,6 +8,13 @@ html { scroll-padding-top:calc(var(--header-height) + var(--wp-bar)); }
 .v2-header { top:var(--wp-bar); }
 body.admin-bar { --wp-bar:32px; }
 .v2 { --stage-height:calc(100svh - var(--header-height) - var(--wp-bar)); }
+.hero-scene { position:relative;height:100%;width:100%; }
+/* Loading media never changes relative -> sticky. No JS / Save-Data retain
+   the original static document flow; reduced motion is static from first paint. */
+@media(prefers-reduced-motion:no-preference) {
+  html[data-hero-layout="scroll"] .v2:not([data-mode="static"]) .hero-track { height:calc(var(--stage-height) + var(--travel)); }
+  html[data-hero-layout="scroll"] .v2:not([data-mode="static"]) .hero-stage { position:sticky;top:calc(var(--header-height) + var(--wp-bar)); }
+}
 .v2[data-mode="scroll"] .hero-stage { top:calc(var(--header-height) + var(--wp-bar)); }
 .transition .v2-header { background:#080809; }
 .stock-empty { padding:44px 0 12px;border-top:1px solid var(--border); }
@@ -65,9 +72,13 @@ body.admin-bar { --wp-bar:32px; }
   .site-header .custom-logo { max-width:125px;max-height:36px; }
   .transition .v2-header { min-height:60px;height:60px; }
   .v2.transition[data-mode="scroll"] .hero-stage { top:calc(var(--header-height) + var(--wp-bar)); }
+  .v2 .hero-scene { height:calc(var(--hero-stable-viewport, 100svh) - var(--header-height) - var(--wp-bar)); }
+  /* Preserve the existing 110svh travel while browser chrome resizes DVH.
+     Capturing SVH also keeps ordinary height-only resize simulations stable. */
+  .v2 { --travel:clamp(800px, calc(var(--hero-stable-viewport, 100svh) * 1.1), 1100px); }
 }
-/* Mobile browser chrome changes the visible viewport while scrolling. Keep the
-   sticky video flush with its lower edge; svh remains the fallback for older UAs. */
+/* Browser chrome resizes the outer black envelope. The inner composition keeps
+   its captured small-viewport height; svh remains the outer fallback. */
 @supports (height:100dvh) {
   @media(max-width:899px), (hover:none) and (pointer:coarse) {
     .v2 { --stage-height:calc(100dvh - var(--header-height) - var(--wp-bar)); }

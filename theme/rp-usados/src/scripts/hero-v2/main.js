@@ -91,7 +91,9 @@ function layoutChanged() {
   resizeFrame = requestAnimationFrame(() => {
     if (disposed) return;
     if (device !== (mobileView.matches ? 'mobile' : 'desktop')) initialize();
-    ScrollTrigger.refresh();
+    // Height-only mobile chrome changes resize the black envelope, not the
+    // visual stage or scroll travel. No refresh/reset of native scroll is needed.
+    if (!mobileView.matches || innerWidth !== layoutWidth) ScrollTrigger.refresh();
     if (preserve && eligible()) {
       scrollTo({top: root.offsetTop - headerOffset() + previous * (root.offsetHeight-stage.offsetHeight), behavior:'instant'});
     }

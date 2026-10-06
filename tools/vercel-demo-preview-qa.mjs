@@ -8,7 +8,7 @@ const { chromium } = require('playwright');
 const origin = (process.env.RP_PREVIEW_URL || 'http://127.0.0.1:9480').replace(/\/$/, '');
 const out = process.env.RP_PREVIEW_QA_OUT || 'artifacts/vercel-demo-preview/local';
 await mkdir(out, {recursive:true});
-const report = {origin,checks:[],profiles:[],limitations:['Chromium touch emulation is not a physical iPhone/Safari test.','Demo vehicles and prices are test data; the static preview has no WordPress runtime.']};
+const report = {origin,checks:[],profiles:[],stableStage:[],limitations:['Chromium touch emulation is not a physical Android toolbar/iPhone/Safari test.','Demo vehicles and prices are test data; the static preview has no WordPress runtime.']};
 const check = (name,condition) => {assert(condition,name);report.checks.push(name);};
 const browser = await chromium.launch({channel:'msedge',headless:true,args:['--autoplay-policy=document-user-activation-required']});
 async function ready(page){await page.waitForFunction(()=>window.__RP_V2__?.state==='ready'&&document.querySelector('.hero-poster').hasAttribute('data-presented')&&!document.querySelector('video').seeking&&Math.abs(window.__RP_V2__.targetTime-window.__RP_V2__.presentedTime)<.013,null,{timeout:30000});}
@@ -54,15 +54,41 @@ try {
     check(`${width}: no V1/Three/GLB/HDR or errors`,!errors.length&&!failed.length&&!requests.some(url=>/\.glb|\.hdr|three[./-]|hero-webgl|127\.0\.0\.1:(?:9400|9470)/.test(url)));
     if(mobile){
       await pose(page,.42);
-      const before=await page.evaluate(()=>scrollY);
-      await page.setViewportSize({width,height:height+72});
-      await page.waitForTimeout(150);
-      const after=await page.evaluate(()=>({scroll:scrollY,bottom:document.querySelector('.hero-stage').getBoundingClientRect().bottom,viewport:visualViewport.height}));
-      check(`${width}: address-bar height change keeps native scroll`,Math.abs(after.scroll-before)<2&&Math.abs(after.bottom-after.viewport)<2);
+      const geometry=()=>page.evaluate(()=>{
+        const rect=selector=>{const box=document.querySelector(selector).getBoundingClientRect();return {top:box.top,height:box.height,bottom:box.bottom};};
+        return {scroll:scrollY,viewport:visualViewport.height,progress:__RP_V2__.progress,outer:rect('.hero-stage'),scene:rect('.hero-scene'),image:rect('.hero-video'),cta:rect('.hero-caption .action')};
+      });
+      const before=await geometry();
+      for(const delta of [16,72]){
+        await page.setViewportSize({width,height:height+delta});
+        await page.evaluate(()=>new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+        const after=await geometry();
+        check(`${width}: viewport +${delta} keeps native scroll and envelope`,Math.abs(after.scroll-before.scroll)<2&&Math.abs(after.outer.bottom-after.viewport)<2);
+        check(`${width}: viewport +${delta} stable image/CTA/stage`,after.scene.height===before.scene.height&&after.image.top===before.image.top&&after.cta.top===before.cta.top&&Math.abs(after.progress-before.progress)<.001);
+        report.stableStage.push({width,delta,before,after});
+      }
       await page.setViewportSize({width,height});
     }
     report.profiles.push({width,media,firstPresentedMs:await page.evaluate(()=>__RP_V2__.firstPresentedMs),seekLatencies:await page.evaluate(()=>__RP_V2__.seekLatencies),failed,errors});
     await context.close();
+  }
+  // Media/GSAP may load late, but sticky and travel must already exist at paint.
+  {
+    const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true});
+    const page=await context.newPage();let release;
+    const gate=new Promise(resolve=>{release=resolve;});
+    await page.route(/\/assets\/main-[^/]+\.js(?:\?.*)?$/,async route=>{await gate;await route.continue();});
+    try{
+      await page.goto(origin+'/',{waitUntil:'domcontentloaded'});
+      const before=await page.locator('.hero-stage').evaluate(node=>({top:node.getBoundingClientRect().top,position:getComputedStyle(node).position}));
+      check('pre-init: structural sticky before hero module',before.position==='sticky'&&before.top===60);
+      await page.mouse.wheel(0,12);await page.waitForFunction(()=>scrollY===12);
+      const pending=await page.locator('.hero-stage').evaluate(node=>node.getBoundingClientRect().top);
+      release();await ready(page);
+      const after=await page.locator('.hero-stage').evaluate(node=>node.getBoundingClientRect().top);
+      check('pre-init: 0px jump on first 12px scroll/module completion',pending===before.top&&after===before.top);
+      report.initialization={before,pending,after};
+    }finally{release();await context.close();}
   }
   for(const [mode,options] of [['reduced',{reducedMotion:'reduce'}],['no-js',{javaScriptEnabled:false}],['failed-video',{}]]) {
     const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,...options});

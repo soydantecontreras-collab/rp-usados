@@ -2,6 +2,16 @@
 
 Implementación del 27/09/2026. Sin deploy. Respaldo previo a cambios: **c84025a**.
 
+Actualización local 05/10/2026: envolvente negra mobile en 100dvh y escena visual
+compartida por media/copy/CTA con altura 100svh capturada antes del primer paint.
+Sólo cambios de ancho restablecen esa altura; los cambios de barras no recentran
+la imagen ni desplazan el CTA. Layout sticky/travel reservado antes del módulo
+GSAP, con fallback estático explícito. No refresh de aplicación ni compensación
+de scroll por cambios de altura mobile. Videos y composición inicial intactos.
+Preview DEMO local: http://127.0.0.1:9470/. Ajuste aprobado para guardar en main y
+publicar una nueva preview estática de testing; no es producción definitiva.
+Evidencia y límites: `HERO_MOBILE_VIEWPORT_QA.md`.
+
 ## Revisar
 
 - Home real del tema: http://127.0.0.1:9400/

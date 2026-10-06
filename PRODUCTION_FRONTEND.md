@@ -143,6 +143,8 @@ La validación física final en Android Chrome y Safari/iPhone sigue pendiente.
 
 ## Render mobile v3 completo — preview de testing, 06/10/2026
 
+Checkpoint histórico: esta fuente se sustituye por el v4 descrito debajo.
+
 Fuente existente: `Downloads/render/RP_hero_mobile_v3_0001-0144.mp4`,
 generado después del `.blend` v3 proporcionado. No se abrió/modificó Blender,
 no se renderizó ni se aplicaron filtros visuales. La fuente ya es un MP4
@@ -164,3 +166,33 @@ MP4 SHA256 `f30f7e95c357e39601dfa14f2052b2bc6a6e6f49cff2d72c2598aabec01ded64`.
 Verificación: build Vite, 26 archivos PHP y 23 assertions del controlador,
 incluyendo presentación del último frame y regreso al primero. La preview
 completa usa unidades explícitamente DEMO; no es producción definitiva.
+
+## Render mobile v4 nativo 1080×1920 — testing, 06/10/2026
+
+Tras confirmar que no existía un MP4 v4, el usuario autorizó generar el render
+desde `Downloads/RP_Usados_Hero_Mobile_v4.blend` al tamaño solicitado. La
+sesión de Blender es independiente y no guarda ni modifica el archivo original.
+Se conservan cámara CAM_Mobile, recorrido, puertas, geometría, materiales,
+luces, compositor y ajustes visuales: Cycles 64 muestras/adaptive 0,03,
+denoising, AgX Medium High Contrast, exposición 0,9, gamma 1.
+
+Los 144 PNG originales se generan directamente a 1080×1920 / 48 fps: no es
+una ampliación del MP4 de 720×1280. Sólo cambian salida/resolución en memoria
+y dispositivo de cálculo GPU. El master queda conservado localmente en
+`tools/.preview/mobile-v4-integration/master-frames/`; scripts reproducibles
+en `blender/mobile-v4-1080/`. El hash fuente comprueba que el `.blend` no cambia.
+
+Web: `hero-mobile-v4-1080-crf18.mp4` y poster dedicado. H.264 High / yuv420p,
+libx264 slow CRF 18, GOP 4, sin B-frames/audio, faststart. La conversión técnica
+RGB→YUV BT.709 es parte del codec; no hay crop, grade, máscara o degradado
+añadido al video. El controlador existente solicita todo el rango 0–143.
+No se toca JS/CSS, overscan, texto/CTA, puente, curva ni desktop.
+
+Métricas, procedencia y QA de esta preview: `artifacts/mobile-v4/`.
+MP4: 5.315.275 bytes, bitrate total 14,174 Mbps; High Level 4.2, tres referencias
+para compatibilidad móvil a 1080×1920 / 48 fps. Poster PNG: 1.329.701 bytes.
+El último PNG del v4 es negro total, sin puertas en cuadro; se conserva sin
+reinterpretación. Las puertas permanecen visibles durante el cruce anterior.
+La publicación es un export estático DEMO de testing, sin WordPress remoto ni
+promoción a producción. Android físico y sus barras siguen pendientes de
+validación por el usuario.

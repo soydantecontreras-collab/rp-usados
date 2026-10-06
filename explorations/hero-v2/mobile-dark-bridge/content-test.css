@@ -1,0 +1,18 @@
+/* Test-only content AFTER the approved curve. No hero/layout overrides. */
+.catalog-content.test-content { min-height:150vh;min-height:150svh;padding:64px var(--gutter) 72px;background:#f3f1ea;color:#151719; }
+.test-content-inner { width:min(1180px,100%);margin-inline:auto;min-height:inherit;display:flex;flex-direction:column;gap:56px; }
+.test-heading h2 { font-size:clamp(42px,7vw,88px);line-height:1.05;margin:20px 0 24px;letter-spacing:-.055em; }
+.test-heading>p:last-child { max-width:58ch;font-size:17px;line-height:1.6; }
+.test-blocks { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px; }
+.test-placeholder { aspect-ratio:16/10;background:#dedbd3;display:grid;place-items:center;font-family:var(--data);font-size:clamp(48px,5vw,72px);color:#78756e; }
+.test-block h3 { font-size:22px;margin:20px 0 10px; }
+.test-block p { font-size:13px;line-height:1.6;color:#5a5e5b; }
+.test-bottom { margin-top:auto;padding:40px 0 0;border-top:1px solid #bcb9b0; }
+.test-bottom h3 { font-size:clamp(32px,4vw,52px);margin:18px 0; }
+.test-bottom>p:last-child { max-width:55ch;font-size:17px;line-height:1.6; }
+@media(max-width:699px) {
+ .catalog-content.test-content { padding:46px 20px 64px; }
+ .test-content-inner { gap:40px; }
+ .test-blocks { grid-template-columns:1fr;gap:36px; }
+ .test-placeholder { aspect-ratio:16/9; }
+}

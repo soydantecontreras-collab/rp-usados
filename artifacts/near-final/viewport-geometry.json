@@ -1,0 +1,158 @@
+[
+  {
+    "cards": 9,
+    "catalog": {
+      "bottom": 6015.453125,
+      "height": 4379.453125,
+      "top": 1636,
+      "width": 390
+    },
+    "copy": {
+      "bottom": 760,
+      "height": 700,
+      "top": 60,
+      "width": 390
+    },
+    "cta": {
+      "bottom": 732,
+      "height": 50,
+      "top": 682,
+      "width": 154.015625
+    },
+    "height": 760,
+    "matteOpacity": "0",
+    "mattePoints": "",
+    "maximum": "832px",
+    "media": {
+      "bottom": 832,
+      "height": 772,
+      "top": 60,
+      "width": 390
+    },
+    "overflow": false,
+    "poster": false,
+    "priceCards": 0,
+    "scrollY": 0,
+    "stable": "760px",
+    "time": 0,
+    "track": {
+      "bottom": 1596,
+      "height": 1536,
+      "top": 60,
+      "width": 390
+    },
+    "video": "",
+    "visualOpacity": "1",
+    "width": 390,
+    "wrapper": {
+      "bottom": 760,
+      "height": 700,
+      "top": 60,
+      "width": 390
+    }
+  },
+  {
+    "cards": 9,
+    "catalog": {
+      "bottom": 6031.453125,
+      "height": 4379.453125,
+      "top": 1652,
+      "width": 390
+    },
+    "copy": {
+      "bottom": 760,
+      "height": 700,
+      "top": 60,
+      "width": 390
+    },
+    "cta": {
+      "bottom": 732,
+      "height": 50,
+      "top": 682,
+      "width": 154.015625
+    },
+    "height": 776,
+    "matteOpacity": "0",
+    "mattePoints": "",
+    "maximum": "832px",
+    "media": {
+      "bottom": 832,
+      "height": 772,
+      "top": 60,
+      "width": 390
+    },
+    "overflow": false,
+    "poster": false,
+    "priceCards": 0,
+    "scrollY": 0,
+    "stable": "760px",
+    "time": 0,
+    "track": {
+      "bottom": 1612,
+      "height": 1552,
+      "top": 60,
+      "width": 390
+    },
+    "video": "",
+    "visualOpacity": "1",
+    "width": 390,
+    "wrapper": {
+      "bottom": 776,
+      "height": 716,
+      "top": 60,
+      "width": 390
+    }
+  },
+  {
+    "cards": 9,
+    "catalog": {
+      "bottom": 6087.453125,
+      "height": 4379.453125,
+      "top": 1708,
+      "width": 390
+    },
+    "copy": {
+      "bottom": 760,
+      "height": 700,
+      "top": 60,
+      "width": 390
+    },
+    "cta": {
+      "bottom": 732,
+      "height": 50,
+      "top": 682,
+      "width": 154.015625
+    },
+    "height": 832,
+    "matteOpacity": "0",
+    "mattePoints": "",
+    "maximum": "832px",
+    "media": {
+      "bottom": 832,
+      "height": 772,
+      "top": 60,
+      "width": 390
+    },
+    "overflow": false,
+    "poster": false,
+    "priceCards": 0,
+    "scrollY": 0,
+    "stable": "760px",
+    "time": 0,
+    "track": {
+      "bottom": 1668,
+      "height": 1608,
+      "top": 60,
+      "width": 390
+    },
+    "video": "",
+    "visualOpacity": "1",
+    "width": 390,
+    "wrapper": {
+      "bottom": 832,
+      "height": 772,
+      "top": 60,
+      "width": 390
+    }
+  }
+]

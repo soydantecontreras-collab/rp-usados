@@ -1,0 +1,19 @@
+/* Portrait proposal only. Landscape keeps the approved complete vertical video. */
+@media (orientation:portrait) {
+  html[data-ab-variant="B"] .hero-visual {
+    height:calc(var(--ab-maximum-viewport, 100lvh) - var(--header-height) - var(--wp-bar));
+    bottom:auto;
+  }
+  html[data-ab-variant="B"] .hero-video,
+  html[data-ab-variant="B"] .hero-poster {
+    object-fit:cover;
+    object-position:50% 0;
+  }
+  /* Continue the existing caption gradient's terminal shade across the extra
+     media area; its text/CTA and gradient start never move. This is not a gap. */
+  html[data-ab-variant="B"] .hero-caption::after {
+    content:"";position:absolute;top:100%;left:0;right:0;
+    height:max(0px, calc(var(--ab-maximum-viewport, 100lvh) - var(--hero-stable-viewport, 100svh)));
+    background:rgb(10 12 13 / .78);pointer-events:none;
+  }
+}

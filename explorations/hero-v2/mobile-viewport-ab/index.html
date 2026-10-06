@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es-AR">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>RP Usados · Hero mobile A/B</title><link rel="stylesheet" href="lab.css"><script type="module" src="lab.js"></script></head>
+<body>
+<header class="lab-heading"><div><p class="eyebrow">RP USADOS / EXPLORACIÓN LOCAL</p><h1>Un mismo hero. Dos lienzos.</h1></div><p>La versión aprobada permanece intacta.<br>La barra de Android no se simula ni se descuenta.</p></header>
+<main class="workbench">
+<section class="viewer" aria-label="Comparación interactiva del hero">
+  <div class="toolbar"><fieldset><legend>Variante</legend><button data-variant="A" aria-pressed="true">A · Actual</button><button data-variant="B" aria-pressed="false">B · Lienzo máximo</button></fieldset>
+  <fieldset><legend>Viewport visible</legend><button data-delta="0" aria-pressed="true">Inicial</button><button data-delta="16" aria-pressed="false">+16 px</button><button data-delta="72" aria-pressed="false">+72 px</button></fieldset></div>
+  <div class="frame-wrap"><iframe id="hero-frame" title="Hero mobile de RP Usados, sandbox A/B" width="393" height="760" src="hero.html?variant=A&amp;mode=simulation&amp;small=760&amp;maximum=832"></iframe></div>
+  <p class="hint">Hacé scroll dentro del hero. Cambiar A/B conserva el mismo video y el frame solicitado. Las alturas son píxeles CSS reales del iframe.</p>
+</section>
+<aside class="inspector" aria-label="Mediciones de la comparación">
+  <h2>Escenario de prueba</h2>
+  <form id="viewport-form"><label>Ancho <input name="width" type="number" min="320" max="600" value="393" required></label><label>Altura inicial <input name="small" type="number" min="400" max="1200" value="760" required></label><button type="submit">Aplicar viewport</button></form>
+  <p class="note">Máximo simulado = inicial +72. Esto representa un cambio de viewport; no es una medida de la barra del teléfono.</p>
+  <dl class="live-metrics" id="metrics"><div><dt>Estado</dt><dd>Preparando el poster…</dd></div></dl>
+  <h2>Qué comparar</h2><p>B conserva el techo del frame y amplía ligeramente la fotografía. Revisá puerta, cartel, laterales y suelo. Texto y CTA deben quedar en el mismo lugar.</p>
+  <p class="note">El recorte se calcula sobre el frame original de 720 ×1280. El negro propio del render al final de la animación no se cuenta como un hueco de layout.</p>
+  <nav class="native-links" aria-label="Vistas nativas"><a href="hero.html?variant=A" target="_blank">Abrir A a tamaño real</a><a href="hero.html?variant=B" target="_blank">Abrir B a tamaño real</a></nav>
+  <p class="note">Las vistas a tamaño real usan SVH/LVH del navegador. B conserva A en horizontal para evitar un recorte excesivo. Para evaluar barras reales, hace falta abrirlas en Android; esta sandbox no está publicada.</p>
+</aside>
+</main></body></html>

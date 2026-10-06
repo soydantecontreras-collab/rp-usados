@@ -8,6 +8,7 @@
     function measure() {
         if (!mobile.matches) {
             root.style.removeProperty('--hero-stable-viewport');
+            root.style.removeProperty('--hero-maximum-viewport');
             return;
         }
         const probe = document.createElement('div');
@@ -19,6 +20,9 @@
             // The small viewport also fits after a reload with toolbars hidden:
             // restoring the toolbar must not push the CTA outside the envelope.
             root.style.setProperty('--hero-stable-viewport', `${small}px`);
+            probe.style.height = CSS.supports('height', '100lvh') ? '100lvh' : '100vh';
+            const maximum = Math.max(small, probe.getBoundingClientRect().height || innerHeight);
+            root.style.setProperty('--hero-maximum-viewport', `${maximum}px`);
         } finally { probe.remove(); }
     }
     try {

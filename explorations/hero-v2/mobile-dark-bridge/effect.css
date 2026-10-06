@@ -1,0 +1,12 @@
+/* Only this independent document. Geometry remains approved SVH/DVH. */
+.lower-blend,.interior-matte { display:none;pointer-events:none; }
+.catalog-content { min-height:calc(100svh - var(--header-height)); }
+html[data-viewport-mode="measurement"] { scrollbar-width:none; }
+@media(max-width:899px), (hover:none) and (pointer:coarse) {
+  .lower-blend { display:block;position:absolute;inset:auto 0 0;height:calc(100% - var(--blend-start));z-index:2;opacity:0;--blend-start:100%;background:linear-gradient(to bottom,transparent 0%,rgb(0 0 0 / .12) 30%,rgb(0 0 0 / .7) 70%,#000 98%,#000 100%); }
+  .interior-matte { display:block;position:absolute;z-index:2;opacity:0;overflow:visible; }
+  .v2[data-mode="static"] .lower-blend,.v2[data-mode="static"] .interior-matte { display:none; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .lower-blend,.interior-matte { display:none; }
+}

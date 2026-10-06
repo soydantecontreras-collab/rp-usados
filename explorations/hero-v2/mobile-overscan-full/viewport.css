@@ -1,0 +1,19 @@
+/* Independent full-page preview. No black masks or lower fade experiment. */
+.hero-overlay { position:absolute;inset:0;pointer-events:none; }
+.hero-overlay .action { pointer-events:auto; }
+html[data-viewport-mode="measurement"] { scrollbar-width:none; }
+@media(max-width:899px), (hover:none) and (pointer:coarse) {
+  .hero-stage { overflow:hidden; }
+  .v2 .hero-scene { height:100%; }
+  .hero-visual { top:0;bottom:auto;height:calc(var(--hero-maximum-viewport,100lvh) - var(--header-height) - var(--wp-bar)); }
+  .hero-overlay { top:0;bottom:auto;height:calc(var(--hero-stable-viewport,100svh) - var(--header-height) - var(--wp-bar)); }
+  .hero-video,.hero-poster { object-fit:cover!important;object-position:50% 0!important; }
+  /* A shade ending at SVH would create a seam on revealed media. The opaque
+     button remains unchanged; text stays over the original dark pavement. */
+  .hero-overlay .hero-caption { background:none; }
+}
+/* Preserve the approved full vertical video in landscape, with side letterbox.
+   Its height still fills the stable maximum-height canvas from the top. */
+@media(max-width:899px) and (orientation:landscape), (hover:none) and (pointer:coarse) and (orientation:landscape) {
+  .hero-video,.hero-poster { object-fit:contain!important; }
+}

@@ -1,0 +1,30 @@
+/* The same overlay wrapper exists on both pages; A retains approved geometry. */
+.hero-overlay { position:absolute; inset:0; pointer-events:none; }
+.hero-overlay .action { pointer-events:auto; }
+/* Desktop measurement mirrors mobile's overlay scrollbar, without changing
+   document scrolling or the native physical-test routes. */
+html[data-viewport-mode="measurement"] { scrollbar-width:none; }
+/* Minimal next section has enough document height for the approved skip action. */
+.catalog-content { min-height:calc(100svh - var(--header-height)); }
+
+@media (max-width:899px) and (orientation:portrait), (hover:none) and (pointer:coarse) and (orientation:portrait) {
+  html[data-layer-variant="B"] .hero-stage { overflow:hidden; }
+  html[data-layer-variant="B"] .hero-scene { height:100%; }
+  html[data-layer-variant="B"] .hero-visual {
+    top:0; bottom:auto;
+    height:calc(var(--hero-maximum-viewport, 100lvh) - var(--header-height) - var(--wp-bar));
+  }
+  html[data-layer-variant="B"] .hero-video,
+  html[data-layer-variant="B"] .hero-poster { object-fit:cover; object-position:50% 0; }
+  html[data-layer-variant="B"] .hero-overlay {
+    top:0; bottom:auto;
+    height:calc(var(--hero-stable-viewport, 100svh) - var(--header-height) - var(--wp-bar));
+  }
+  /* Continue the approved caption shade over actual media, without an opaque
+     black filler or moving the caption. Pixels below remain the same video. */
+  html[data-layer-variant="B"] .hero-caption::after {
+    content:""; position:absolute; top:100%; left:0; right:0;
+    height:max(0px, calc(var(--hero-maximum-viewport, 100lvh) - var(--hero-stable-viewport, 100svh)));
+    background:rgb(10 12 13 / .78); pointer-events:none;
+  }
+}

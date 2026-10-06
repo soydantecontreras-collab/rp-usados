@@ -1,0 +1,659 @@
+{
+  "homeProfiles": [
+    {
+      "profile": 375,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 5294.84375,
+          "height": 4199.453125,
+          "top": 1095.390625,
+          "width": 360
+        },
+        "copy": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 360
+        },
+        "cta": {
+          "bottom": 816,
+          "height": 50,
+          "top": 766,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 360
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 717,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 1055.390625,
+          "height": 1712.390625,
+          "top": -657,
+          "width": 360
+        },
+        "video": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 375,
+        "wrapper": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 360
+        }
+      },
+      "home": {
+        "about": "\n    \n        \n            02 / RP Usados\n            La experienciase nota en el trato.\n        \n        \n                        \n                \n                    \n                    \n                \n                El local de RP Usados Chacabuco 399 · Ciudadela\n            \n        \n        \n            RP Usados se dedica a la compra y venta de vehículos usados desde 1990. Esa trayectoria sigue presente en algo simple: el trato directo y la atención a cada consulta.\n            Elegir un auto empieza por una buena conversación. Te invitamos a contarnos qué buscás, conocer las unidades en nuestro local de Ciudadela y conversar sobre las opciones para avanzar.\n            Vení a conocer el auto.Y a conocernos.Conocé dónde estamos\n        \n    \n",
+        "arrowsInCatalog": false,
+        "cards": 9,
+        "cursorNodes": 0,
+        "finance": "\n    \n        \n            03 / Financiación y permutas\n            Busquemos la formade avanzar.\n            ¿Querés financiar una unidad o entregar tu usado? Escribinos por WhatsApp. Evaluamos cada operación de manera particular y te contamos qué opciones hay disponibles.\n        \n        \n            01Financiación y cuotas.Podés consultar por opciones de financiación o pago en cuotas. Las alternativas disponibles dependen de la unidad y de las condiciones de cada operación, y se confirman directamente con RP Usados.\n            02Tu usado como parte de pago.Podés consultar por una permuta o por entregar tu vehículo como parte de pago. La posibilidad de tomarlo y sus condiciones se definen luego de evaluar el usado y la operación.\n            Escribinos por WhatsApp con la unidad que te interesa. Si tenés un usado para entregar, contanos cuál es.Consultar opciones por WhatsApp\n            Las opciones están sujetas a evaluación y confirmación de RP Usados.\n        \n    \n",
+        "galleriesInCatalog": 0,
+        "height": 844,
+        "heroPoster": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "images": [
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          }
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7480631389344!2d-58.5395552!3d-34.6358064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81105073b3d%3A0xeb2f7afb87d47194!2sR.P.%20Usados!5e0!3m2!1ses!2sar!4v1790195787268!5m2!1ses!2sar",
+        "overflow": false,
+        "pricesInCatalog": 0,
+        "states": [
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible"
+        ],
+        "width": 375
+      }
+    },
+    {
+      "profile": 390,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 5384.84375,
+          "height": 4289.453125,
+          "top": 1095.390625,
+          "width": 375
+        },
+        "copy": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 375
+        },
+        "cta": {
+          "bottom": 816,
+          "height": 50,
+          "top": 766,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 375
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 717,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 1055.390625,
+          "height": 1712.390625,
+          "top": -657,
+          "width": 375
+        },
+        "video": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 390,
+        "wrapper": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 375
+        }
+      },
+      "home": {
+        "about": "\n    \n        \n            02 / RP Usados\n            La experienciase nota en el trato.\n        \n        \n                        \n                \n                    \n                    \n                \n                El local de RP Usados Chacabuco 399 · Ciudadela\n            \n        \n        \n            RP Usados se dedica a la compra y venta de vehículos usados desde 1990. Esa trayectoria sigue presente en algo simple: el trato directo y la atención a cada consulta.\n            Elegir un auto empieza por una buena conversación. Te invitamos a contarnos qué buscás, conocer las unidades en nuestro local de Ciudadela y conversar sobre las opciones para avanzar.\n            Vení a conocer el auto.Y a conocernos.Conocé dónde estamos\n        \n    \n",
+        "arrowsInCatalog": false,
+        "cards": 9,
+        "cursorNodes": 0,
+        "finance": "\n    \n        \n            03 / Financiación y permutas\n            Busquemos la formade avanzar.\n            ¿Querés financiar una unidad o entregar tu usado? Escribinos por WhatsApp. Evaluamos cada operación de manera particular y te contamos qué opciones hay disponibles.\n        \n        \n            01Financiación y cuotas.Podés consultar por opciones de financiación o pago en cuotas. Las alternativas disponibles dependen de la unidad y de las condiciones de cada operación, y se confirman directamente con RP Usados.\n            02Tu usado como parte de pago.Podés consultar por una permuta o por entregar tu vehículo como parte de pago. La posibilidad de tomarlo y sus condiciones se definen luego de evaluar el usado y la operación.\n            Escribinos por WhatsApp con la unidad que te interesa. Si tenés un usado para entregar, contanos cuál es.Consultar opciones por WhatsApp\n            Las opciones están sujetas a evaluación y confirmación de RP Usados.\n        \n    \n",
+        "galleriesInCatalog": 0,
+        "height": 844,
+        "heroPoster": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "images": [
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          }
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7480631389344!2d-58.5395552!3d-34.6358064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81105073b3d%3A0xeb2f7afb87d47194!2sR.P.%20Usados!5e0!3m2!1ses!2sar!4v1790195787268!5m2!1ses!2sar",
+        "overflow": false,
+        "pricesInCatalog": 0,
+        "states": [
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible"
+        ],
+        "width": 390
+      }
+    },
+    {
+      "profile": 430,
+      "hero": {
+        "cards": 9,
+        "catalog": {
+          "bottom": 5595.734375,
+          "height": 4500.34375,
+          "top": 1095.390625,
+          "width": 415
+        },
+        "copy": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 415
+        },
+        "cta": {
+          "bottom": 816,
+          "height": 50,
+          "top": 766,
+          "width": 152.59375
+        },
+        "height": 844,
+        "matteOpacity": "0.994",
+        "mattePoints": "86.00 448.00 634.00 448.00 559.00 539.00 559.00 1137.00 631.00 1237.00 89.00 1237.00 159.00 1137.00 159.00 539.00",
+        "maximum": "844px",
+        "media": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 415
+        },
+        "overflow": false,
+        "poster": true,
+        "priceCards": 0,
+        "scrollY": 717,
+        "stable": "844px",
+        "time": 1.834333,
+        "track": {
+          "bottom": 1055.390625,
+          "height": 1712.390625,
+          "top": -657,
+          "width": 415
+        },
+        "video": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+        "visualOpacity": "1",
+        "width": 430,
+        "wrapper": {
+          "bottom": 844,
+          "height": 784,
+          "top": 60,
+          "width": 415
+        }
+      },
+      "home": {
+        "about": "\n    \n        \n            02 / RP Usados\n            La experienciase nota en el trato.\n        \n        \n                        \n                \n                    \n                    \n                \n                El local de RP Usados Chacabuco 399 · Ciudadela\n            \n        \n        \n            RP Usados se dedica a la compra y venta de vehículos usados desde 1990. Esa trayectoria sigue presente en algo simple: el trato directo y la atención a cada consulta.\n            Elegir un auto empieza por una buena conversación. Te invitamos a contarnos qué buscás, conocer las unidades en nuestro local de Ciudadela y conversar sobre las opciones para avanzar.\n            Vení a conocer el auto.Y a conocernos.Conocé dónde estamos\n        \n    \n",
+        "arrowsInCatalog": false,
+        "cards": 9,
+        "cursorNodes": 0,
+        "finance": "\n    \n        \n            03 / Financiación y permutas\n            Busquemos la formade avanzar.\n            ¿Querés financiar una unidad o entregar tu usado? Escribinos por WhatsApp. Evaluamos cada operación de manera particular y te contamos qué opciones hay disponibles.\n        \n        \n            01Financiación y cuotas.Podés consultar por opciones de financiación o pago en cuotas. Las alternativas disponibles dependen de la unidad y de las condiciones de cada operación, y se confirman directamente con RP Usados.\n            02Tu usado como parte de pago.Podés consultar por una permuta o por entregar tu vehículo como parte de pago. La posibilidad de tomarlo y sus condiciones se definen luego de evaluar el usado y la operación.\n            Escribinos por WhatsApp con la unidad que te interesa. Si tenés un usado para entregar, contanos cuál es.Consultar opciones por WhatsApp\n            Las opciones están sujetas a evaluación y confirmación de RP Usados.\n        \n    \n",
+        "galleriesInCatalog": 0,
+        "height": 844,
+        "heroPoster": "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+        "images": [
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": true,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png"
+          },
+          {
+            "complete": false,
+            "lazy": "lazy",
+            "priority": "auto",
+            "src": "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png"
+          }
+        ],
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7480631389344!2d-58.5395552!3d-34.6358064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81105073b3d%3A0xeb2f7afb87d47194!2sR.P.%20Usados!5e0!3m2!1ses!2sar!4v1790195787268!5m2!1ses!2sar",
+        "overflow": false,
+        "pricesInCatalog": 0,
+        "states": [
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible",
+          "reservado",
+          "disponible",
+          "disponible",
+          "disponible"
+        ],
+        "width": 430
+      }
+    }
+  ],
+  "detailProfiles": [
+    {
+      "counter": "01 / 04",
+      "overflow": false,
+      "price": "TST 12,345.67",
+      "slides": 4,
+      "width": 375
+    },
+    {
+      "counter": "01 / 04",
+      "overflow": false,
+      "price": "TST 12,345.67",
+      "slides": 4,
+      "width": 390
+    },
+    {
+      "counter": "01 / 04",
+      "overflow": false,
+      "price": "TST 12,345.67",
+      "slides": 4,
+      "width": 430
+    }
+  ],
+  "viewport": [
+    {
+      "cards": 9,
+      "catalog": {
+        "bottom": 6015.453125,
+        "height": 4379.453125,
+        "top": 1636,
+        "width": 390
+      },
+      "copy": {
+        "bottom": 760,
+        "height": 700,
+        "top": 60,
+        "width": 390
+      },
+      "cta": {
+        "bottom": 732,
+        "height": 50,
+        "top": 682,
+        "width": 154.015625
+      },
+      "height": 760,
+      "matteOpacity": "0",
+      "mattePoints": "",
+      "maximum": "832px",
+      "media": {
+        "bottom": 832,
+        "height": 772,
+        "top": 60,
+        "width": 390
+      },
+      "overflow": false,
+      "poster": false,
+      "priceCards": 0,
+      "scrollY": 0,
+      "stable": "760px",
+      "time": 0,
+      "track": {
+        "bottom": 1596,
+        "height": 1536,
+        "top": 60,
+        "width": 390
+      },
+      "video": "",
+      "visualOpacity": "1",
+      "width": 390,
+      "wrapper": {
+        "bottom": 760,
+        "height": 700,
+        "top": 60,
+        "width": 390
+      }
+    },
+    {
+      "cards": 9,
+      "catalog": {
+        "bottom": 6031.453125,
+        "height": 4379.453125,
+        "top": 1652,
+        "width": 390
+      },
+      "copy": {
+        "bottom": 760,
+        "height": 700,
+        "top": 60,
+        "width": 390
+      },
+      "cta": {
+        "bottom": 732,
+        "height": 50,
+        "top": 682,
+        "width": 154.015625
+      },
+      "height": 776,
+      "matteOpacity": "0",
+      "mattePoints": "",
+      "maximum": "832px",
+      "media": {
+        "bottom": 832,
+        "height": 772,
+        "top": 60,
+        "width": 390
+      },
+      "overflow": false,
+      "poster": false,
+      "priceCards": 0,
+      "scrollY": 0,
+      "stable": "760px",
+      "time": 0,
+      "track": {
+        "bottom": 1612,
+        "height": 1552,
+        "top": 60,
+        "width": 390
+      },
+      "video": "",
+      "visualOpacity": "1",
+      "width": 390,
+      "wrapper": {
+        "bottom": 776,
+        "height": 716,
+        "top": 60,
+        "width": 390
+      }
+    },
+    {
+      "cards": 9,
+      "catalog": {
+        "bottom": 6087.453125,
+        "height": 4379.453125,
+        "top": 1708,
+        "width": 390
+      },
+      "copy": {
+        "bottom": 760,
+        "height": 700,
+        "top": 60,
+        "width": 390
+      },
+      "cta": {
+        "bottom": 732,
+        "height": 50,
+        "top": 682,
+        "width": 154.015625
+      },
+      "height": 832,
+      "matteOpacity": "0",
+      "mattePoints": "",
+      "maximum": "832px",
+      "media": {
+        "bottom": 832,
+        "height": 772,
+        "top": 60,
+        "width": 390
+      },
+      "overflow": false,
+      "poster": false,
+      "priceCards": 0,
+      "scrollY": 0,
+      "stable": "760px",
+      "time": 0,
+      "track": {
+        "bottom": 1668,
+        "height": 1608,
+        "top": 60,
+        "width": 390
+      },
+      "video": "",
+      "visualOpacity": "1",
+      "width": 390,
+      "wrapper": {
+        "bottom": 832,
+        "height": 772,
+        "top": 60,
+        "width": 390
+      }
+    }
+  ],
+  "mobileAssets": [
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18-poster.png",
+    "http://127.0.0.1:9470/wp-includes/css/dist/block-library/style.min.css?ver=6.8.11",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/style.css?ver=0.2.0",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/app-BCtz9LQl.css?ver=0.2.0",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/brand/whatsapp.svg",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/brand/silhouette.svg",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-BzkoBUlE.cur",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-h5rXNvWv.png",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-iOKRBKdZ.png",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-UlbLjace.cur",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/app-DbqZ2Xb5.js",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/main-DZegiSZ6.js",
+    "http://127.0.0.1:9470/wp-includes/js/wp-emoji-release.min.js?ver=6.8.11",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-mobile-portrait-crf18.mp4",
+    "http://127.0.0.1:9470/favicon.ico"
+  ],
+  "desktopAssets": [
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/poster-fast-dark-doors.png",
+    "http://127.0.0.1:9470/wp-includes/css/dist/block-library/style.min.css?ver=6.8.11",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/style.css?ver=0.2.0",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/app-BCtz9LQl.css?ver=0.2.0",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/brand/silhouette.svg",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/brand/whatsapp.svg",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-h5rXNvWv.png",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/default-BzkoBUlE.cur",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-UlbLjace.cur",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/pointer-iOKRBKdZ.png",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/manrope-DHIcAJRg.woff2",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/archivo-E0tuGl4L.woff2",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-wide-768x432.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-vento-side-768x432.jpg",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-landscape-768x512.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-portrait-576x1024.png",
+    "http://127.0.0.1:9470/wp-content/uploads/2026/10/demo-square-768x768.png",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7480631389344!2d-58.5395552!3d-34.6358064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81105073b3d%3A0xeb2f7afb87d47194!2sR.P.%20Usados!5e0!3m2!1ses!2sar!4v1790195787268!5m2!1ses!2sar",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/app-DbqZ2Xb5.js",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/institutional/local-institucional-720.webp",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/dist/assets/main-DZegiSZ6.js",
+    "http://127.0.0.1:9470/wp-includes/js/wp-emoji-release.min.js?ver=6.8.11",
+    "http://127.0.0.1:9470/wp-content/themes/rp-usados/assets/hero/v2/hero-fast-dark-doors.mp4",
+    "http://127.0.0.1:9470/favicon.ico"
+  ],
+  "checks": [
+    "9 eligible labelled DEMOs",
+    "no sold cards or catalog prices",
+    "four-slide gallery thumbnails/counter/lightbox",
+    "Escape closes lightbox",
+    "Home/detail no overflow at 375/390/430",
+    "native skip to catalog",
+    "same approved institutional copy and map",
+    "single responsive video/poster observed",
+    "0px media/CTA movement at +16/+72 in QA fixture"
+  ],
+  "limitations": [
+    "Emulated Chromium, not physical Android or Safari",
+    "Reduced-motion/no-JS styles inspected; OS media emulation unavailable in this browser session",
+    "WhatsApp number remains pending; preview does not invent recipient"
+  ]
+}

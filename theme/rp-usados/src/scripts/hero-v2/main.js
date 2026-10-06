@@ -19,29 +19,57 @@ const landscape = matchMedia('(orientation: landscape)');
 const diagnostics = window.__RP_V2__ = { encoding: document.body.dataset.encoding, state:'poster', progress:0, seeks:0, seekLatencies:[], presentations:[], errors:[], started:performance.now() };
 let media, trigger, observer, disposed = false, attempted = false, blocked = false, restored = document.readyState === 'complete';
 let device;
-let stableProgress = 0, layoutWidth = innerWidth, layoutHeight = innerHeight;
+let layoutWidth = innerWidth;
+const aperture = document.querySelector('.hero-aperture');
+const apertureShape = aperture.querySelector('polygon');
+// Source-video coordinates of the free opening, inside the leaves and handles.
+// Frame 88 is the approved last contextual pose; the scroll travel stays intact.
+const lastContextFrame = 88;
+const apertureKeys = [
+  [24,[356,635,364,635,364,646,364,902,367,910,353,910,356,902,356,646]],
+  [32,[337,633,383,633,383,647,383,895,388,917,332,917,337,895,337,647]],
+  [40,[261,622,459,622,407,648,407,900,460,947,261,947,312,900,312,648]],
+  [48,[233,600,487,600,437,630,437,938,486,969,234,969,282,938,282,630]],
+  [64,[190,557,530,557,491,587,491,996,527,1048,193,1048,229,996,229,587]],
+  [76,[147,515,573,515,524,555,524,1065,568,1145,152,1145,196,1065,196,555]],
+  [88,[86,448,634,448,559,539,559,1137,631,1237,89,1237,159,1137,159,539]],
+];
+function fitAperture() {
+  if (!mobileView.matches) return;
+  const width = visual.clientWidth, height = visual.clientHeight;
+  const fit = landscape.matches ? Math.min : Math.max;
+  const scale = fit(width / 720, height / 1280);
+  Object.assign(aperture.style, {width:`${720 * scale}px`, height:`${1280 * scale}px`, left:`${(width - 720 * scale) / 2}px`, top:'0px'});
+}
+function presentedAperture(time) {
+  if (device !== 'mobile' || !poster.hasAttribute('data-presented') || document.body.dataset.mode !== 'scroll') return;
+  const frame = Math.min(lastContextFrame, Math.round(time * 48));
+  const upper = Math.max(0, apertureKeys.findIndex(([key]) => key >= frame));
+  const b = apertureKeys[upper], a = apertureKeys[Math.max(0, upper - 1)];
+  const t = b[0] === a[0] ? 0 : Math.max(0, Math.min(1, (frame-a[0]) / (b[0]-a[0])));
+  const points = b[1].map((value, index) => (a[1][index] + (value-a[1][index]) * t).toFixed(2));
+  apertureShape.setAttribute('points', points.join(' '));
+  aperture.style.opacity = String(.994 * smooth(Math.max(0, Math.min(1, (frame-24)/22))));
+}
+const apertureObserver = new ResizeObserver(fitAperture);
+apertureObserver.observe(visual);
 function eligible() { return !reduced.matches && !navigator.connection?.saveData && !blocked; }
 const smooth = p => p * p * (3 - 2 * p);
 function ensureMedia() {
-  if (media || attempted || !eligible() || document.hidden || diagnostics.progress >= .995) return;
+  if (media || attempted || !eligible() || document.hidden || (device !== 'mobile' && diagnostics.progress >= .995)) return;
   const bounds = stage.getBoundingClientRect();
   if (bounds.bottom <= 0 || bounds.top >= innerHeight) return;
   attempted = true;
-  media = createSeekController(video, poster, diagnostics, failure, () => restored);
-  media.setProgress(diagnostics.progress);
+  media = createSeekController(video, poster, diagnostics, failure, () => restored, presentedAperture);
+  media.setProgress(device === 'mobile' ? Math.min(diagnostics.progress, lastContextFrame / 143) : diagnostics.progress);
 }
 function progress(value) {
-  // Refresh can run after CSS resized but before the orientation event. Keep the
-  // last pose from the old layout rather than mistaking the recalculated ratio for it.
-  if (innerWidth === layoutWidth && innerHeight === layoutHeight) stableProgress = value;
   diagnostics.progress = value;
   ensureMedia();
-  media?.setProgress(value);
-  // The doorway and final darkness are baked into the video, including reverse seeks.
-  // Catalog enters in native document flow through its curved top; no opacity/focus gate.
-  // Also cover a not-yet-loaded poster on refresh at the terminal scroll position.
-  // Mobile already has its approved fade baked in. Never regrade or fade it early.
-  visual.style.opacity = device === 'mobile' ? (value >= .995 ? '0' : '1') : String(1 - smooth(Math.max(0, Math.min(1, (value - .85) / .12))));
+  media?.setProgress(device === 'mobile' ? Math.min(value, lastContextFrame / 143) : value);
+  // Mobile preserves contextual doors and frame; only the free aperture darkens.
+  // Desktop retains its approved final fade. Catalog remains in native flow.
+  visual.style.opacity = device === 'mobile' ? '1' : String(1 - smooth(Math.max(0, Math.min(1, (value - .85) / .12))));
   const captionExit = smooth(Math.max(0, Math.min(1, (value - .70) / .16)));
   caption.style.opacity = String(1 - captionExit);
   caption.inert = value >= .86;
@@ -63,6 +91,8 @@ function initialize() {
   diagnostics.state = 'poster'; diagnostics.presentations = []; diagnostics.seekLatencies = []; diagnostics.seeks = 0;
   for (const key of ['presentedTime','targetTime','firstPresentedMs','loadedDataMs']) delete diagnostics[key];
   attempted = false;
+  aperture.style.opacity = '0';
+  fitAperture();
   for (const element of [visual, caption, cue, catalog]) element.style.removeProperty('opacity');
   caption.inert = false; catalog.inert = false; catalog.setAttribute('data-visible','');
   document.body.dataset.mode = eligible() ? 'scroll' : 'static';
@@ -79,25 +109,16 @@ function initialize() {
   observer.observe(stage);
 }
 
-// Preserve the requested pose across orientation/source changes while inside the hero.
-// The browser still performs native scrolling; no wheel/touch interception is used.
+// Height-only toolbar changes reveal media; width changes recapture composition.
 let resizeFrame = 0;
 function layoutChanged() {
-  const previous = stableProgress;
-  // An address-bar resize changes only viewport height. Native scroll must keep
-  // its position; restoring the pose with scrollTo here fights touch scrolling.
-  const preserve = innerWidth !== layoutWidth && document.body.dataset.mode === 'scroll' && previous > 0 && previous < .995;
   cancelAnimationFrame(resizeFrame);
   resizeFrame = requestAnimationFrame(() => {
     if (disposed) return;
     if (device !== (mobileView.matches ? 'mobile' : 'desktop')) initialize();
-    // Height-only mobile chrome changes resize the black envelope, not the
-    // visual stage or scroll travel. No refresh/reset of native scroll is needed.
     if (!mobileView.matches || innerWidth !== layoutWidth) ScrollTrigger.refresh();
-    if (preserve && eligible()) {
-      scrollTo({top: root.offsetTop - headerOffset() + previous * (root.offsetHeight-stage.offsetHeight), behavior:'instant'});
-    }
-    layoutWidth = innerWidth; layoutHeight = innerHeight;
+    fitAperture();
+    layoutWidth = innerWidth;
     ScrollTrigger.update();
   });
 }
@@ -127,6 +148,7 @@ function returned() {
 function leave(event) {
   if (event.persisted) { media?.suspend(true); return; }
   disposed = true; media?.dispose(); observer?.disconnect(); trigger?.kill();
+  apertureObserver.disconnect();
   cancelAnimationFrame(resizeFrame);
   reduced.removeEventListener('change',initialize); mobileView.removeEventListener('change',layoutChanged); landscape.removeEventListener('change',layoutChanged);
   document.removeEventListener('visibilitychange',visibility);

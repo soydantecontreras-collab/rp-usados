@@ -1,0 +1,4 @@
+- [x] Create isolated LVH media / SVH copy layout and native-scroll bundle.
+- [x] Measure crop, initial/expanded coverage and stable positions.
+- [x] Verify full document scroll, forward/reverse and reload.
+- [x] Publish independent temporary preview; verify exact public assets and main project unchanged.

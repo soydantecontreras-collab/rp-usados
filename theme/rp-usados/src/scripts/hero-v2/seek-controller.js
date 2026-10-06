@@ -1,18 +1,26 @@
 /** One outstanding seek, one latest target. Presentation, not assignment, opens the poster gate. */
-export function createSeekController(video, poster, diagnostics, onError, canReveal) {
+export function createSeekController(video, poster, diagnostics, onError, canReveal, onPresented = () => {}) {
   let desired = 0, sent = NaN, busy = false, decoded = false, suspended = false, disposed = false;
   let callback = 0, requestStarted = 0;
   let hasPresentedFrame = false;
+  let hasRevealed = false, lastNotified = NaN;
   const fps = 48, frameTolerance = .5 / fps + .002;
   const started = performance.now();
   const timeFor = p => Math.round(Math.max(0, Math.min(1, p)) * 143) / fps;
   const supported = typeof video.requestVideoFrameCallback === 'function';
   diagnostics.presentationAPI = supported ? 'requestVideoFrameCallback' : 'seeked + animation frame';
+  function notifyPresentation(time) {
+    if (time === lastNotified) return;
+    lastNotified = time;
+    onPresented(time);
+  }
   function reveal() {
     if (!disposed && canReveal() && Math.abs((diagnostics.presentedTime ?? -10) - desired) <= frameTolerance && !suspended && !video.seeking) {
       poster.setAttribute('data-presented', '');
       diagnostics.firstPresentedMs ??= performance.now() - started;
       diagnostics.state = 'ready';
+      hasRevealed = true;
+      notifyPresentation(diagnostics.presentedTime);
     }
   }
   function record(time, metadata = {}) {
@@ -22,6 +30,9 @@ export function createSeekController(video, poster, diagnostics, onError, canRev
     diagnostics.presentations.push({ at: performance.now(), time, target: desired, latency: requestStarted ? performance.now() - requestStarted : 0, ...metadata });
     if (diagnostics.presentations.length > 1200) diagnostics.presentations.shift();
     reveal();
+    // Once visible, an obsolete seek is still a real displayed frame. Keep
+    // visual companions aligned while the latest scroll target is pending.
+    if (hasRevealed && canReveal() && !suspended) notifyPresentation(time);
     if (busy && decoded && Math.abs(time - sent) <= frameTolerance) busy = false;
     pump();
   }

@@ -1,0 +1,5 @@
+- [x] Integrate approved LVH media, SVH copy and first-paint layout.
+- [x] Resolve terminal-context decision, implement frame-aligned doorway darkening.
+- [x] Verify build/PHP, responsive, reversible hero/reload and complete DEMO UI.
+- [ ] Preserve approved explorations; exclude debug and credentials; commit/push main.
+- [ ] Fresh static export and public preview QA; report precise limitations.

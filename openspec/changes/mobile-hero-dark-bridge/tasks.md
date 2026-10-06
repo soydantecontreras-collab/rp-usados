@@ -1,0 +1,8 @@
+- [x] Inspect source frames and stable geometry.
+- [x] Build isolated full-page treatment without production or media edits.
+- [x] Verify initial/opening/arrival/reverse and layout stability; review unchanged static/reduced-motion fallback paths (physical reduced-motion test not performed).
+- [x] Publish independent temporary preview and verify public output.
+- [x] Document limitations and request Android physical comparison.
+- [x] Add clear CATÁLOGO / TEST section, 3 fictitious blocks and at least 150svh.
+- [x] Verify desktop traversal and mobile 375/390/430 reaching the clear section then scrolling 600+px farther.
+- [x] Publish new temporary deployment with expanded test content; verify public traversal.

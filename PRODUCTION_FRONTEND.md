@@ -108,3 +108,32 @@ Las comprobaciones se realizaron en Edge/Chromium 154 local. No se afirma valida
 4. Horarios y condiciones específicas de financiación, si se desean publicar. Se muestran marcadores donde corresponde; no se inventaron condiciones, premios, garantías o estadísticas.
 
 Pendiente revisión del usuario, logo/contacto/stock reales y Safari/iPhone físico. No hubo deploy. El `.zip` es un entregable local, no una autorización para publicar.
+
+## Integración aprobada del overscan mobile — 06/10/2026
+
+La Home principal incorpora el canvas máximo capturado de `100lvh`, anclado
+arriba y recortado por el wrapper `100dvh`; el copy/CTA usa una capa separada
+capturada de `100svh`. La altura de ambas capas sólo se recaptura cuando cambia
+el ancho/orientación, no al ocultar barras. Sticky se establece antes del primer
+paint. Se eliminó la compensación de orientación con `scrollTo`.
+
+Con aprobación explícita del usuario, el tiempo solicitado mobile se limita al
+frame 88 (1,8333 s del MP4 original), para conservar cartel, hojas, manijas y marco
+al final del mismo tramo de scroll. Sólo el vano libre se oscurece mediante una
+geometría SVG que sigue el frame presentado por el compositor, también al
+retroceder. No hay fade completo a negro ni `opacity:0` de la escena mobile.
+La salida continúa en flujo normal hacia el puente y la curva sutil.
+
+Desktop conserva composición, recursos y curva. Ambos MP4 y posters permanecen
+intactos. Catálogo, ficha, botones, cursor, Nosotros y financiación no se
+rediseñaron. DEMO sólo existe en la instancia aislada y en el export de testing.
+
+QA de esta integración: Vite build, PHP 8.3 (26 archivos), 24 comprobaciones del
+controlador incluyendo sincronización del matte/reload; Home/ficha 375/390/430,
+desktop, galería de cuatro fotos y lightbox/teclado. En el ensayo SVH 760/LVH 832,
+imagen y CTA se desplazan 0 px al crecer +16/+72; se revelan 16/72 px de media,
+sin espacio web adicional inferior. El ensayo usa un proxy sólo de QA, no
+instrumentación entregada ni constantes específicas de un teléfono.
+
+Ver `artifacts/near-final/` y `openspec/changes/integrate-mobile-overscan/`.
+La validación física final en Android Chrome y Safari/iPhone sigue pendiente.

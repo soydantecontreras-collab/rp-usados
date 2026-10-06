@@ -17,9 +17,8 @@ function fixture(){
  }
  const v=new Video(),attrs=new Set(),poster={setAttribute:k=>attrs.add(k),removeAttribute:k=>attrs.delete(k)};
  const d={seeks:0,presentations:[],seekLatencies:[],state:'poster'};let allow=true;
- const notified=[];
- const ctl=createSeekController(v,poster,d,e=>{throw Error(e);},()=>allow,time=>notified.push(time));
- return{v,d,ctl,attrs,notified,block:()=>allow=false,unblock:()=>allow=true};
+ const ctl=createSeekController(v,poster,d,e=>{throw Error(e);},()=>allow);
+ return{v,d,ctl,attrs,block:()=>allow=false,unblock:()=>allow=true};
 }
 for(const ordering of ['seeked-first','frame-first']){
  const f=fixture();f.ctl.setProgress(.56);f.v.data();
@@ -41,12 +40,11 @@ for(const ordering of ['seeked-first','frame-first']){
  const f=fixture();f.block();f.v.data();f.v.frame(0);assert(!f.attrs.has('data-presented'));f.unblock();f.ctl.reveal();assert(f.attrs.has('data-presented'));checks+=2;f.ctl.dispose();
 }
 {
- const f=fixture();f.block();f.v.data();f.v.frame(0);
- assert.deepEqual(f.notified,[],'No companion geometry before restored page reveals video');checks++;
- f.unblock();f.ctl.reveal();assert.deepEqual(f.notified,[0],'Restoration reveals the matching companion without a new seek');checks++;
- f.ctl.setProgress(.6);f.ctl.setProgress(.2);f.v.frame(86/48);f.v.finish();
- assert.equal(f.notified.at(-1),86/48,'Even an obsolete visible frame updates companion geometry');checks++;
- f.v.finish();f.v.frame(29/48);assert.equal(f.notified.at(-1),29/48,'Reverse seeks notify the actual presented frame');checks++;
+ const f=fixture();f.ctl.setProgress(1);f.v.data();f.v.frame(0);
+ assert.equal(f.d.targetTime,143/48,'Full progress requests the last source frame, with no contextual hold');checks++;
+ f.v.finish();f.v.frame(143/48);assert(f.attrs.has('data-presented'),'Last frame can replace the poster after restoration');checks++;
+ f.ctl.setProgress(0);f.v.finish();f.v.frame(0);
+ assert.equal(f.d.presentedTime,0,'Full reverse scroll returns to the first frame');checks++;
  f.ctl.dispose();
 }
 console.log(`${checks} controller ordering assertions passed`);

@@ -111,6 +111,9 @@ Pendiente revisión del usuario, logo/contacto/stock reales y Safari/iPhone fís
 
 ## Integración aprobada del overscan mobile — 06/10/2026
 
+**Nota de versión:** el hold y matte descritos en este checkpoint histórico
+quedan reemplazados por el render mobile v3, según la sección siguiente.
+
 La Home principal incorpora el canvas máximo capturado de `100lvh`, anclado
 arriba y recortado por el wrapper `100dvh`; el copy/CTA usa una capa separada
 capturada de `100svh`. La altura de ambas capas sólo se recaptura cuando cambia
@@ -137,3 +140,27 @@ instrumentación entregada ni constantes específicas de un teléfono.
 
 Ver `artifacts/near-final/` y `openspec/changes/integrate-mobile-overscan/`.
 La validación física final en Android Chrome y Safari/iPhone sigue pendiente.
+
+## Render mobile v3 completo — preview de testing, 06/10/2026
+
+Fuente existente: `Downloads/render/RP_hero_mobile_v3_0001-0144.mp4`,
+generado después del `.blend` v3 proporcionado. No se abrió/modificó Blender,
+no se renderizó ni se aplicaron filtros visuales. La fuente ya es un MP4
+comprimido; la recodificación no recupera detalle perdido en ese archivo.
+
+Web: `hero-mobile-v3-crf18.mp4`, 720×1280, 48 fps, 144 frames / 3 segundos,
+H.264 High / yuv420p, libx264 slow CRF 18, GOP 4, sin B-frames/audio y faststart.
+Peso: 1.815.110 bytes; bitrate total 4,840 Mbps (video aprox. 4,835 Mbps).
+SSIM contra el MP4 fuente: 0,995466. Poster PNG extraído del primer frame
+de la nueva codificación. Los nombres versionados evitan reutilizar caché vieja.
+
+Se retiraron el límite de frame 88, el SVG del vano y su callback/observer.
+El progreso 0–1 ahora solicita los frames 0–143: no hay hold previo al final,
+degradado interior ni máscara artificial. El negro y las puertas son parte
+del render aprobado. Continúan intactos overscan LVH, overlays SVH, wrapper
+DVH, scroll nativo/reversible, puente y curva sutil. Desktop mantiene el
+MP4 SHA256 `f30f7e95c357e39601dfa14f2052b2bc6a6e6f49cff2d72c2598aabec01ded64`.
+
+Verificación: build Vite, 26 archivos PHP y 23 assertions del controlador,
+incluyendo presentación del último frame y regreso al primero. La preview
+completa usa unidades explícitamente DEMO; no es producción definitiva.

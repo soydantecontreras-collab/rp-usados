@@ -1,0 +1,22 @@
+{
+  "source": "C:/Users/dante.DESKTOP/Downloads/render/RP_hero_mobile_v3_0001-0144.mp4",
+  "blend": "C:/Users/dante.DESKTOP/Downloads/RP_Usados_Hero_Mobile_v3.blend",
+  "sourceSha256": "c0b82922bca5fda152788036e0ae3eb0bde7a13b2e3b703f007ee76c38543322",
+  "blendSha256": "e7aefa8b1dc621c2d7b1280fa862d493ad5a6fb4ca4f3b3155cd61534a41f393",
+  "webSha256": "c4c9e3318d90aeadef87badeee45a8ca7866a599bc93676a2f411d0b1ce5a020",
+  "width": 720,
+  "height": 1280,
+  "fps": 48,
+  "frames": 144,
+  "seconds": 3,
+  "bytes": 1815110,
+  "bitrateContainer": 4840293,
+  "bitrateVideoApprox": 4835000,
+  "crf": 18,
+  "preset": "slow",
+  "gop": 4,
+  "bframes": 0,
+  "ssimAgainstSource": 0.995466,
+  "imageFilters": [],
+  "poster": "hero-mobile-v3-crf18-poster.png"
+}

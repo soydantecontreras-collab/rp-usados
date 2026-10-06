@@ -11,7 +11,6 @@ body.admin-bar { --wp-bar:32px; }
 .hero-scene { position:relative;height:100%;width:100%; }
 .hero-overlay { position:absolute;inset:0;pointer-events:none; }
 .hero-overlay .action { pointer-events:auto; }
-.hero-aperture { display:none;position:absolute;z-index:2;opacity:0;pointer-events:none; }
 /* Loading media never changes relative -> sticky. No JS / Save-Data retain
    the original static document flow; reduced motion is static from first paint. */
 @media(prefers-reduced-motion:no-preference) {
@@ -81,7 +80,6 @@ body.admin-bar { --wp-bar:32px; }
   .hero-overlay { top:0;bottom:auto;height:calc(var(--hero-stable-viewport, 100svh) - var(--header-height) - var(--wp-bar)); }
   .transition .hero-video,.transition .hero-poster { object-fit:cover;object-position:50% 0; }
   .hero-overlay .hero-caption { background:none; }
-  .v2[data-mode="scroll"] .hero-aperture { display:block; }
   /* Preserve the existing 110svh travel while browser chrome resizes DVH.
      Capturing SVH also keeps ordinary height-only resize simulations stable. */
   .v2 { --travel:clamp(800px, calc(var(--hero-stable-viewport, 100svh) * 1.1), 1100px); }

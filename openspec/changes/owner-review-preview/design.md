@@ -4,4 +4,6 @@ Reuse the isolated WordPress snapshot exporter with an opt-in owner presentation
 
 Static-only contact links use the explicitly confirmed phone and a dedicated preview alias to include absolute per-vehicle URLs. The source theme/contact model remains unchanged. Report metadata outside the upload records fixture provenance, phone, source commit and mode. Preserve noindex and robots exclusion.
 
+General/header contact retains its generic message; vehicle consultation retains unit name and URL. Strip the development currency label TST from rendered price text without assigning an invented currency or changing its fixture value.
+
 Build -> PHP -> source commit/push -> new empty export directory -> local output inspection -> preview target deploy -> new review alias -> public QA. Do not reuse stale output, production targets or alias the production domain. Keep operative QA reports ignored; permanent procedure and scope tracked.

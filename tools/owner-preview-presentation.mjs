@@ -16,14 +16,18 @@ export function prepareOwnerPresentation(html, route, { whatsapp, origin }) {
   html = html.replace(/<div class="prose">\s*<\/div>/g, '');
   html = html.replace(/DEMO VISUAL — /g, '').replace(/ · DEMO(?: VISUAL)?/g, '');
   html = html.replace(/ &#8211; No es stock real/g, '');
+  html = html.replace(/(<p class="vehicle-price">)TST /g, '$1');
   html = html.replace(/Fotografía o patrón de prueba [^"<>]+ — NO ES STOCK REAL/g, 'Imagen');
   html = html.replace(/\/wp-content\/uploads\/\d{4}\/\d{2}\/demo-(landscape|portrait|square|wide)(?:-\d+x\d+)?\.png/g,
     (_, name) => `/wp-content/uploads/owner-presentation/${name}.svg`);
 
   const unit = html.match(/<h1\b[^>]*id="unit-title"[^>]*>([^<]+)<\/h1>/)?.[1];
-  const message = unit ? `Hola, quiero consultar por esta unidad.\n${unit}\n${origin}${route}` : 'Hola, quiero consultar con RP Usados.';
-  const contact = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
-  html = html.replace(/<a\b[^>]*data-contact-pending[^>]*>/g, tag => tag.replace(/href="[^"]*"/, `href="${attr(contact)}"`).replace(/\sdata-contact-pending/g, ''));
+  html = html.replace(/<a\b[^>]*data-contact-pending[^>]*>/g, tag => {
+    const contextual = unit && /aria-label="Consultar por WhatsApp:/.test(tag);
+    const message = contextual ? `Hola, quiero consultar por esta unidad.\n${unit}\n${origin}${route}` : 'Hola, quiero consultar con RP Usados.';
+    const contact = `https://wa.me/${whatsapp}?text=${encodeURIComponent(message)}`;
+    return tag.replace(/href="[^"]*"/, `href="${attr(contact)}"`).replace(/\sdata-contact-pending/g, '');
+  });
   html = html.replace(/<p class="pending">WhatsApp: [\s\S]*?<\/p>/g, '');
   html = html.replace(/<section id="contacto-pendiente"[\s\S]*?<\/section>/g, '');
   assert(!/DEMO VISUAL|NO ES STOCK|DATOS DE DESARROLLO|CONTENIDO DE PRUEBA| · DEMO|data-contact-pending|#contacto-pendiente/.test(html), `Presentation label/contact leak: ${route}`);

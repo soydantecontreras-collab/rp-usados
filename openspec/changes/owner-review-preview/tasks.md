@@ -1,0 +1,5 @@
+- [ ] Add opt-in presentation transforms while preserving default DEMO export.
+- [ ] Verify build/PHP, save source checkpoint and push main.
+- [ ] Generate and inspect fresh static output locally.
+- [ ] Deploy only to preview; verify public flows and record evidence.
+- [ ] Confirm clean tree and deliver source commit/URL.

@@ -15,6 +15,7 @@ Este repositorio contiene la base del sitio de **RP Usados**, una concesionaria 
 - El catálogo no muestra precios.
 - El precio se muestra únicamente en la ficha individual de cada vehículo.
 - Cada ficha individual debe tener un botón de WhatsApp específico para esa unidad.
+- WhatsApp confirmado por el cliente el 07/10/2026: +54 9 11 2534-8193 (wa.me/5491125348193). Mapa actual confirmado.
 
 ## Datos que no se pueden inventar
 
@@ -25,6 +26,8 @@ Cuando un dato sea necesario y todavía no esté validado, escribir exactamente:
 `[dato pendiente — confirmar con el cliente]`
 
 No reemplazar el marcador por ejemplos que parezcan reales. Los textos de prueba deben identificarse como datos de desarrollo y nunca publicarse.
+
+Excepción explícita autorizada 07/10/2026: la preview estática para revisión del dueño puede quitar las etiquetas visibles de prueba. Los fixtures siguen aislados, registrados internamente y fuera del inventario/paquete productivo. Esta excepción no autoriza stock ficticio en producción.
 
 ## Alcance técnico obligatorio
 

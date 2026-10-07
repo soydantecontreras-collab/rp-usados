@@ -5,9 +5,12 @@ import { execFileSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import { mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, extname, relative, resolve, sep } from 'node:path';
+import { ownerPlaceholders, prepareOwnerPresentation } from './owner-preview-presentation.mjs';
 
 const root = resolve(import.meta.dirname, '..');
 const source = process.env.RP_DEMO_SOURCE || 'http://127.0.0.1:9470';
+const ownerPresentation = process.env.RP_OWNER_PREVIEW === '1';
+const ownerContact = { whatsapp:process.env.RP_PREVIEW_WHATSAPP || '', origin:process.env.RP_OWNER_PUBLIC_ORIGIN || '' };
 const commit = execFileSync('git', ['rev-parse', 'HEAD'], { cwd:root, encoding:'utf8' }).trim();
 const suffix = commit.slice(0, 9);
 const out = resolve(root, process.argv[2] || `tools/.preview/vercel-demo-${suffix}`);
@@ -58,6 +61,7 @@ for (const route of routes) {
     assert(html.includes('DEMO VISUAL') && html.includes('DATOS DE DESARROLLO'), `Unlabelled detail: ${route}`);
   }
   html = sanitizeHtml(html);
+  if (ownerPresentation) html = prepareOwnerPresentation(html, route, ownerContact);
   for (const match of html.matchAll(/\/wp-content\/uploads\/[^\s"'<>?,]+?\.(?:png|jpe?g)/gi)) {
     const path = match[0];
     assert(/^\/wp-content\/uploads\/\d{4}\/\d{2}\/demo-(?:landscape|portrait|square|wide|vento-side|vento-rear|vento-front)(?:-\d+x\d+)?\.(?:png|jpg)$/.test(path), `Unexpected upload: ${path}`);
@@ -72,6 +76,7 @@ for (const route of routes) {
 }
 
 for (const path of uploads) await save(path.slice(1), Buffer.from(await (await fetchSource(path)).arrayBuffer()));
+if (ownerPresentation) for (const [path, svg] of ownerPlaceholders) await save(path, svg);
 await save(theme.slice(1) + 'style.css', await readFile(resolve(root, 'theme/rp-usados/style.css')));
 for (const folder of ['assets/dist/assets','assets/brand','assets/hero/v2','assets/institutional']) {
   for (const entry of await readdir(resolve(root, 'theme/rp-usados',folder), { withFileTypes:true })) {
@@ -99,6 +104,11 @@ for (const path of files.keys()) {
   }
 }
 const report = { generatedAt:new Date().toISOString(), sourceCommit:commit, branch:execFileSync('git',['branch','--show-current'],{cwd:root,encoding:'utf8'}).trim(), kind:'static-demo-preview-noindex', out:relative(root,out), routes, files:Object.fromEntries(files), totalBytes:[...files.values()].reduce((n,item)=>n+item.bytes,0), limitations:['DEMO VISUAL / NO ES STOCK REAL on every page.','No WordPress runtime or administration.','No fabricated WhatsApp recipient.','Vehicles, prices and photos are visual test fixtures, not inventory.'] };
+if (ownerPresentation) {
+  report.kind = 'static-owner-presentation-noindex';
+  report.contact = ownerContact;
+  report.limitations = ['Owner presentation: development labels removed only in exported snapshot, explicitly authorized by user.','Nine isolated fixture vehicles; no real inventory or WordPress runtime.','Original JPEG photos retained; code-generated grid placeholders reproduced without text.'];
+}
 const reportPath = resolve(root, process.env.RP_EXPORT_REPORT || 'artifacts/vercel-demo-preview/export-report.json');
 await mkdir(dirname(reportPath), {recursive:true});
 await writeFile(reportPath, JSON.stringify(report,null,2));

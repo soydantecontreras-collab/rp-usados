@@ -1,0 +1,65 @@
+/* Header-only navigation; the approved header/hero heights remain unchanged. */
+.transition .v2-header .header-navigation-desktop {
+  display:flex;gap:4px;flex-wrap:nowrap;margin-left:auto;
+}
+.header-menu,.header-menu-toggle { display:none; }
+.header-menu summary {
+  display:flex;align-items:center;justify-content:center;
+  width:44px;min-height:44px;padding:10px;list-style:none;
+  color:inherit;font:600 12px/1.4 var(--body);
+}
+.header-menu summary::-webkit-details-marker { display:none; }
+.header-menu summary:hover,.header-menu[open] summary,.header-menu-toggle:hover,.header-menu-toggle[aria-expanded="true"] { background:#252528; }
+.header-menu summary:focus-visible,.header-menu-toggle:focus-visible {
+  outline:2px solid var(--white);outline-offset:2px;
+}
+#catalog-title,#nosotros,#opciones { scroll-margin-top:12px; }
+@media(max-width:899px), (hover:none) and (pointer:coarse) {
+  :root { --header-menu-row:48px;--header-menu-gap:4px;--header-menu-padding:28px; }
+  /* Native details stays open after a link when JS is unavailable. Keep its
+     three rows clear of anchor destinations as well as the sticky header. */
+  html:has(.header-menu[open]) {
+    scroll-padding-top:calc(var(--header-height) + var(--wp-bar) + 3 * var(--header-menu-row) + 2 * var(--header-menu-gap) + var(--header-menu-padding) + 1px);
+  }
+  .transition .v2-header .header-navigation-desktop { display:none; }
+  .transition .v2-header .brand-signature { margin-left:-4px; }
+  .transition .v2-header > .action { order:2;margin-left:auto; }
+  .header-menu { display:block;margin-left:0;order:3; }
+  .header-menu[data-enhanced] { display:contents; }
+  .header-menu-toggle:not([hidden]) {
+    display:grid;place-items:center;flex-shrink:0;order:3;
+    width:44px;min-height:44px;padding:10px;
+    color:inherit;background:transparent;border:0;
+  }
+  .header-menu-toggle:is(:hover,[aria-expanded="true"]) { background:#252528; }
+  .header-hamburger { display:block;position:relative;width:20px;height:16px; }
+  .header-hamburger > span {
+    position:absolute;top:7px;left:0;width:20px;height:2px;background:currentColor;
+    transition:transform 180ms var(--ease),opacity 150ms var(--ease);
+  }
+  .header-hamburger > span:first-child { transform:translateY(-6px); }
+  .header-hamburger > span:last-child { transform:translateY(6px); }
+  :is(.header-menu[open],.header-menu-toggle[aria-expanded="true"]) .header-hamburger > span:first-child { transform:rotate(45deg); }
+  :is(.header-menu[open],.header-menu-toggle[aria-expanded="true"]) .header-hamburger > span:nth-child(2) { opacity:0; }
+  :is(.header-menu[open],.header-menu-toggle[aria-expanded="true"]) .header-hamburger > span:last-child { transform:rotate(-45deg); }
+  .transition .v2-header .header-navigation-mobile {
+    position:absolute;top:100%;left:0;right:0;
+    display:flex;flex-direction:column;align-items:stretch;
+    width:auto;margin:0;padding:12px var(--gutter) 16px;
+    background:#080809;border-bottom:1px solid #242426;gap:var(--header-menu-gap);
+  }
+  .transition .v2-header .header-navigation-mobile a {
+    display:flex;align-items:center;min-height:var(--header-menu-row);
+    padding:12px;font-size:14px;white-space:normal;
+  }
+  .header-menu[open] .header-navigation-mobile { animation:header-menu-reveal 180ms var(--ease) both; }
+  .header-menu-toggle:active { background:#252528; }
+}
+@keyframes header-menu-reveal {
+  from { opacity:0;transform:translateY(-6px); }
+  to { opacity:1;transform:translateY(0); }
+}
+@media(prefers-reduced-motion:reduce) {
+  .header-menu[open] .header-navigation-mobile { animation:none; }
+  .header-hamburger > span { transition:none; }
+}

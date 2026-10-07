@@ -1,5 +1,25 @@
 # Preview estática completa — testing, no producción
 
+## Revisión del dueño — 2026-10-07
+
+La instrucción más reciente autoriza una presentación sin carteles/textos DEMO,
+exclusivamente en el export estático. Usar RP_OWNER_PREVIEW=1, el WhatsApp
+confirmado RP_PREVIEW_WHATSAPP=5491125348193 y una URL de alias de preview
+dedicada en RP_OWNER_PUBLIC_ORIGIN. El exportador quita las etiquetas conocidas,
+reproduce los placeholders de grilla sin texto y conserva fotos/layout/medios.
+No modifica la instalación WordPress ni los fixtures originales. La procedencia
+queda documentada en el reporte externo al upload; robots/noindex se conservan.
+
+Incluye ambos headers aprobados, hamburger mobile accesible y cierre automático,
+overscan actual y mobile v4 1080x1920/48 fps, desktop 1600x900/48 fps intacto.
+WhatsApp y mapa están confirmados; las referencias históricas a contacto pendiente
+en este documento no describen esta revisión. Las condiciones comerciales exactas,
+stock real y hosting WordPress productivo siguen fuera de esta preview.
+
+Commit/push antes del export; directorio nuevo y vacío; QA de ese output y URL
+pública. Sólo target preview en el proyecto existente, sin promoción a producción.
+Los resultados operativos de esta ejecución quedan en tools/.preview/owner-review/.
+
 ## Estado actual (2026-10-05)
 
 Nueva preview autorizada: corrección aprobada del escenario mobile estable.

@@ -20,6 +20,14 @@ Commit/push antes del export; directorio nuevo y vacío; QA de ese output y URL
 pública. Sólo target preview en el proyecto existente, sin promoción a producción.
 Los resultados operativos de esta ejecución quedan en tools/.preview/owner-review/.
 
+Publicación verificada: https://rp-usados-owner-review-20261007-dante42.vercel.app/
+Fuente desplegada: fecec4eeb97dafe92e4e6fd4c345aabdf1001914.
+Output nuevo: tools/.preview/vercel-owner-fecec4e-20261007.
+Build, 26 validaciones PHP, hashes públicos, desktop y mobile 375/390/430,
+menú/anchors, recarga/reversa y galería/lightbox comprobados. Ver detalle en
+openspec/changes/owner-review-preview/verification.md. Esta preview no sustituye
+WordPress productivo; los fixtures siguen aislados aunque no llevan etiquetas visibles.
+
 ## Estado actual (2026-10-05)
 
 Nueva preview autorizada: corrección aprobada del escenario mobile estable.

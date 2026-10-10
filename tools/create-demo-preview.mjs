@@ -28,6 +28,7 @@ const records = [
 const json64 = value => Buffer.from(JSON.stringify(value)).toString('base64');
 const code = `<?php
 require '/wordpress/wp-load.php';
+wp_set_current_user(1); // Isolated fixture seeding uses the existing Playground administrator.
 require_once ABSPATH . 'wp-admin/includes/image.php';
 if (get_option('rp_local_demo_seeded')) return;
 $images = json_decode(base64_decode('${json64(images)}'), true);
@@ -69,6 +70,7 @@ const blueprint = {
   landingPage:'/',
   preferredVersions:{php:'8.3',wp:'6.8'},
   steps:[
+    {step:'activatePlugin',pluginPath:'rp-usados-security/rp-usados-security.php'},
     {step:'activateTheme',themeFolderName:'rp-usados'},
     {step:'setSiteOptions',options:{blogname:'RP Usados · DEMO VISUAL',blogdescription:'No es stock real',permalink_structure:'/%postname%/',timezone_string:'America/Argentina/Buenos_Aires'}},
     {step:'runPHP',code},

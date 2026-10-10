@@ -58,12 +58,15 @@ function rp_usados_save_vehicle( int $id ): void {
 	foreach ( rp_usados_vehicle_fields() as $key => $field ) {
 		if ( ! isset( $_POST[ $key ] ) ) { continue; }
 		$raw = wp_unslash( $_POST[ $key ] );
-		$value = rp_usados_sanitize_vehicle_value( $raw, $key );
-		if ( '' === $value && is_scalar( $raw ) && '' !== trim( (string) $raw ) ) {
+		$value = rp_usados_validate_vehicle_input( $raw, $key, $id );
+		if ( is_wp_error( $value ) ) {
 			$errors[] = $field['label'];
 			continue;
 		}
-		if ( '' === $value ) { delete_post_meta( $id, $key ); } else { update_post_meta( $id, $key, $value ); }
+		if ( '' === $value || array() === $value ) { delete_post_meta( $id, $key ); } else {
+			$previous = get_post_meta( $id, $key, true );
+			if ( false === update_post_meta( $id, $key, $value ) && $previous !== $value ) { $errors[] = $field['label']; }
+		}
 	}
 	if ( $errors ) { set_transient( 'rp_vehicle_errors_' . get_current_user_id() . '_' . $id, $errors, 120 ); }
 }

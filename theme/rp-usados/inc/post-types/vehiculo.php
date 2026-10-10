@@ -50,7 +50,8 @@ function rp_usados_register_vehicle_post_type(): void {
 			'show_ui'            => true,
 			'show_in_menu'       => true,
 			'query_var'          => true,
-			'capability_type'    => 'post',
+			'capability_type'    => array( 'vehiculo', 'vehiculos' ),
+			'capabilities'       => array( 'create_posts' => 'create_vehiculos' ),
 			'map_meta_cap'       => true,
 		)
 	);

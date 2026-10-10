@@ -1,0 +1,15 @@
+import { createRequire } from 'node:module';
+import { createWriteStream } from 'node:fs';
+import { mkdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
+const root = resolve(import.meta.dirname, '..');
+const require = createRequire(resolve(root, 'theme/rp-usados/package.json'));
+const archiver = require('archiver');
+await mkdir(resolve(root, 'dist'), { recursive: true });
+const target = resolve(root, 'dist/rp-usados-security.zip'), output = createWriteStream(target);
+const archive = archiver('zip', { zlib: { level: 9 } });
+const completed = new Promise((done, reject) => { output.on('close', done); output.on('error', reject); archive.on('error', reject); archive.on('warning', reject); });
+archive.pipe(output);
+archive.directory(resolve(root, 'plugins/rp-usados-security'), 'rp-usados-security');
+await archive.finalize(); await completed;
+console.log(`Plugin: ${target} (${archive.pointer()} bytes)`);

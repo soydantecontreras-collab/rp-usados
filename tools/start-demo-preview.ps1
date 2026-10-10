@@ -4,9 +4,11 @@ $nodeCommand = (Get-Command node -ErrorAction Stop).Source
 & $nodeCommand (Join-Path $PSScriptRoot 'create-demo-preview.mjs') | Out-Null
 if ($LASTEXITCODE -ne 0) { throw 'No se pudo generar la preview demo.' }
 $arguments = @(
-    '"tools/node_modules/@wp-playground/cli/wp-playground.js"', 'server',
+    '"tools/playground.mjs"', 'server',
     '--mount-dir', ('"' + (Join-Path $projectRoot 'theme/rp-usados') + '"'),
     '"/wordpress/wp-content/themes/rp-usados"',
+    '--mount-dir', ('"' + (Join-Path $projectRoot 'plugins/rp-usados-security') + '"'),
+    '"/wordpress/wp-content/plugins/rp-usados-security"',
     '--blueprint', 'tools/.preview/rich-demo/blueprint.json', '--port', '9470',
     '--workers', '6', '--wp', '6.8', '--php', '8.3',
     '--define-bool', 'WP_DEBUG', 'true', '--define-bool', 'DISABLE_WP_CRON', 'true'

@@ -28,6 +28,34 @@ function rp_usados_stock_labels(): array {
 	return array( 'disponible' => __( 'Disponible', 'rp-usados' ), 'reservado' => __( 'Reservado', 'rp-usados' ), 'vendido' => __( 'Vendido', 'rp-usados' ) );
 }
 
+/** Validate the request shape before sanitization can erase its intent. */
+function rp_usados_validate_vehicle_input( $value, string $key, int $vehicle_id = 0 ) {
+	$fields = rp_usados_vehicle_fields();
+	if ( ! isset( $fields[ $key ] ) ) { return new WP_Error( 'rp_unknown_field', 'Campo no permitido.' ); }
+	if ( 'gallery' === $fields[ $key ]['kind'] ) {
+		if ( is_string( $value ) ) { $value = '' === trim( $value ) ? array() : explode( ',', $value ); }
+		if ( ! is_array( $value ) || ! array_is_list( $value ) ) { return new WP_Error( 'rp_gallery_shape', 'Galería inválida.' ); }
+		$limit = function_exists( 'rp_usados_security_media_limits' ) ? rp_usados_security_media_limits()['images'] : 20;
+		$is_admin = function_exists( 'rp_usados_security_is_administrator' ) && rp_usados_security_is_administrator( get_current_user_id() );
+		if ( ! $is_admin && count( $value ) > $limit ) { return new WP_Error( 'rp_gallery_limit', 'Demasiadas imágenes.' ); }
+		$ids = array();
+		foreach ( $value as $raw ) {
+			if ( ! is_int( $raw ) && ! is_string( $raw ) ) { return new WP_Error( 'rp_gallery_id', 'ID de imagen inválido.' ); }
+			$raw = trim( (string) $raw );
+			$id = filter_var( $raw, FILTER_VALIDATE_INT, array( 'options' => array( 'min_range' => 1 ) ) );
+			if ( false === $id || ! wp_attachment_is_image( $id ) || 'attachment' !== get_post_type( $id ) ) { return new WP_Error( 'rp_gallery_id', 'ID de imagen inválido.' ); }
+			if ( $vehicle_id && function_exists( 'rp_usados_security_can_use_attachment' ) && ! rp_usados_security_can_use_attachment( get_current_user_id(), $id, $vehicle_id ) ) { return new WP_Error( 'rp_gallery_permission', 'Imagen no autorizada.' ); }
+			$ids[] = $id;
+		}
+		return array_values( array_unique( $ids ) );
+	}
+	if ( ! is_string( $value ) && ! is_int( $value ) && ! is_float( $value ) ) { return new WP_Error( 'rp_field_shape', 'El campo requiere un valor simple.' ); }
+	if ( 'boolean' === $fields[ $key ]['kind'] && ! in_array( (string) $value, array( '0', '1' ), true ) ) { return new WP_Error( 'rp_field_value', 'Valor inválido.' ); }
+	$clean = rp_usados_sanitize_vehicle_value( $value, $key );
+	if ( '' === $clean && '' !== trim( (string) $value ) ) { return new WP_Error( 'rp_field_value', 'Valor inválido.' ); }
+	return $clean;
+}
+
 /** Never turn a missing or invalid datum into a plausible commercial value. */
 function rp_usados_sanitize_vehicle_value( $value, string $key ) {
 	$fields = rp_usados_vehicle_fields();
@@ -76,7 +104,10 @@ function rp_usados_register_vehicle_meta(): void {
 			'type' => 'gallery' === $field['kind'] ? 'array' : 'string',
 			'single' => true,
 			'show_in_rest' => false,
-			'sanitize_callback' => 'rp_usados_sanitize_vehicle_value',
+			'sanitize_callback' => static function ( $value, $meta_key ) {
+				$validated = rp_usados_validate_vehicle_input( $value, $meta_key );
+				return is_wp_error( $validated ) ? null : $validated;
+			},
 			'auth_callback' => static function ( $allowed, $meta_key, $post_id ) { return current_user_can( 'edit_post', $post_id ); },
 		) );
 	}

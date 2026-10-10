@@ -6,6 +6,10 @@
   },
   "steps": [
     {
+      "step": "activatePlugin",
+      "pluginPath": "rp-usados-security/rp-usados-security.php"
+    },
+    {
       "step": "activateTheme",
       "themeFolderName": "rp-usados"
     },

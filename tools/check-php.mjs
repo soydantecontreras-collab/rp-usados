@@ -24,6 +24,8 @@ async function checkDirectory(directory) {
 }
 try {
   await checkDirectory(resolve('theme/rp-usados'));
+  await checkDirectory(resolve('plugins/rp-usados-security'));
+  await checkDirectory(resolve('tests/security'));
   console.log(`PHP 8.3: ${count} archivos sin errores de sintaxis.`);
 } finally {
   php.exit();

@@ -1,2 +1,5 @@
 allowBuilds:
   fs-ext-extra-prebuilt: false
+overrides:
+  # Playground pins 4.22.2. This upstream Express patch admits fixed qs naturally.
+  '@wp-playground/cli@3.1.57>express': 4.22.3

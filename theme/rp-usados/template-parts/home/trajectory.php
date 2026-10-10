@@ -5,7 +5,6 @@ $institutional_media = RP_USADOS_URL . '/assets/institutional/local-instituciona
 <section id="nosotros" class="heritage section" aria-labelledby="heritage-title">
     <div class="wrap heritage-grid">
         <header class="heritage-heading">
-            <p class="label">02 / RP Usados</p>
             <h2 id="heritage-title">La experiencia<br>se nota en el trato.</h2>
         </header>
         <div class="heritage-visual">

@@ -27,6 +27,6 @@ add_filter( 'body_class', static function ( array $classes ): array {
 add_action( 'wp_head', static function () {
     if ( ! is_front_page() ) { return; }
     $root = RP_USADOS_URL . '/assets/hero/v2/';
-    printf( '<link rel="preload" as="image" fetchpriority="high" href="%s" media="(min-width: 900px) and (hover: hover), (min-width: 900px) and (pointer: fine)">', esc_url( $root . 'poster-fast-dark-doors.png' ) );
+    printf( '<link rel="preload" as="image" fetchpriority="high" href="%s" media="(min-width: 900px) and (hover: hover), (min-width: 900px) and (pointer: fine)">', esc_url( $root . 'hero-desktop-1080-crf18-poster.png' ) );
     printf( '<link rel="preload" as="image" fetchpriority="high" href="%s" media="(max-width: 899px), (hover: none) and (pointer: coarse)">', esc_url( $root . 'hero-mobile-v4-1080-crf18-poster.png' ) );
 }, 2 );

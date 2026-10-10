@@ -1,9 +1,9 @@
 import {createRequire} from 'node:module';
-import {writeFile} from 'node:fs/promises';
+import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 const require=createRequire('C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
 const {chromium}=require('playwright'),b=await chromium.launch({channel:'msedge',headless:true,ignoreDefaultArgs:['--disable-back-forward-cache']});
-const HOME='http://127.0.0.1:9400/',report={checks:[],restores:[],limits:['Visibility states are injected: headless tabs all report visible.','Physical Safari/iPhone unavailable; Chromium mobile emulation.']};
+const HOME=process.env.RP_HERO_QA_URL||'http://127.0.0.1:9470/',OUT=process.env.RP_HERO_QA_OUT||'artifacts/hero-reload';await mkdir(OUT,{recursive:true});const report={checks:[],restores:[],limits:['Visibility states are injected: headless tabs all report visible.','Physical Safari/iPhone unavailable; Chromium mobile emulation.']};
 const check=(name,ok)=>{assert(ok,name);report.checks.push(name);};
 const ready=p=>p.waitForFunction(()=>window.__RP_V2__?.state==='ready'&&document.querySelector('.hero-poster').hasAttribute('data-presented')&&!document.querySelector('video').seeking&&Math.abs(__RP_V2__.presentedTime-__RP_V2__.targetTime)<.013,null,{timeout:10000});
 const pose=async(p,v)=>{await p.evaluate(v=>{const h=document.querySelector('.hero-track'),s=document.querySelector('.hero-stage');scrollTo({top:h.offsetTop-document.querySelector('header').offsetHeight+(h.offsetHeight-s.offsetHeight)*v,behavior:'instant'});},v);await p.waitForFunction(v=>Math.abs(__RP_V2__.progress-v)<.015,v);};
@@ -12,8 +12,8 @@ try{
   const c=await b.newContext({viewport:{width,height:844},isMobile:true,hasTouch:true,reducedMotion:'reduce'}),p=await c.newPage(),requests=[];p.on('request',r=>requests.push(r.url()));
   await p.goto(HOME);await p.waitForFunction(()=>window.__RP_V2__);await p.reload();await p.waitForFunction(()=>window.__RP_V2__);
   check(width+': reduced motion stays static, no MP4',!requests.some(u=>u.includes('.mp4'))&&await p.locator('video').evaluate(v=>!v.currentSrc));
-  check(width+': correct mobile poster',await p.locator('.hero-poster').evaluate(e=>e.currentSrc.includes('portrait')&&!e.hasAttribute('data-presented')));
-  await p.locator('header nav a').click();check(width+': reduced motion catalog reachable',await p.locator('#catalogo').evaluate(e=>document.activeElement===e));await c.close();
+  check(width+': correct mobile poster',await p.locator('.hero-poster').evaluate(e=>e.currentSrc.includes('mobile-v4-1080')&&!e.hasAttribute('data-presented')));
+  await p.locator('[data-skip]').click();check(width+': reduced motion catalog reachable',await p.locator('#catalogo').evaluate(e=>document.activeElement===e));await c.close();
  }
  for(const hiddenInitially of [true,false]){
   const c=await b.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),p=await c.newPage();
@@ -35,7 +35,7 @@ try{
  check('history back restores frame and progress',Math.abs(await p.evaluate(()=>__RP_V2__.progress)-.56)<.015);report.restores.push(await p.evaluate(()=>({pages:__pages,navigation:performance.getEntriesByType('navigation')[0].type})));
  await p.evaluate(()=>dispatchEvent(new PageTransitionEvent('pagehide',{persisted:true})));await pose(p,.3);
  await p.evaluate(()=>dispatchEvent(new PageTransitionEvent('pageshow',{persisted:true})));await ready(p);check('persisted lifecycle resumes controller',true);
- await p.locator('header nav a').click();await p.waitForFunction(()=>__RP_V2__.progress===1);await pose(p,.4);await ready(p);check('return from catalog resumes video',true);
+ await p.evaluate(()=>scrollTo(0,0));await ready(p);await p.locator('[data-skip]').click();await p.waitForFunction(()=>__RP_V2__.progress===1);await pose(p,.4);await ready(p);check('return from catalog resumes video',true);
  report.restores.at(-1).touchAfterRestore=await p.evaluate(()=>({points:navigator.maxTouchPoints,coarse:matchMedia('(pointer:coarse)').matches}));
  await c.close();
  // Chromium BFCache restores maxTouchPoints=0 in this emulation environment.
@@ -43,7 +43,7 @@ try{
  const rotated=await b.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true}),r=await rotated.newPage();
  await r.goto(HOME);await ready(r);await pose(r,.4);await ready(r);
  await r.setViewportSize({width:932,height:430});
- await r.waitForFunction(()=>innerWidth===932&&matchMedia('(pointer:coarse)').matches&&document.querySelector('video').currentSrc.includes('portrait')&&__RP_V2__.device==='mobile');
+ await r.waitForFunction(()=>innerWidth===932&&matchMedia('(pointer:coarse)').matches&&document.querySelector('video').currentSrc.includes('mobile-v4-1080')&&__RP_V2__.device==='mobile');
  await ready(r);check('orientation retains vertical source on touch device',true);
  await r.setViewportSize({width:390,height:844});await ready(r);await rotated.close();
  for(const mode of ['no-rvfc','error']){
@@ -55,4 +55,4 @@ try{
   else{await p.waitForFunction(()=>__RP_V2__?.state==='fallback');check('real media failure retains poster',await p.locator('.hero-poster').evaluate(e=>!e.hasAttribute('data-presented')));}
   await c.close();
  }
-}finally{await writeFile('artifacts/hero-reload/lifecycle-report.json',JSON.stringify(report,null,2));await b.close();console.log(report.checks.length+' lifecycle checks passed');}
+}finally{await writeFile(OUT+'/lifecycle-report.json',JSON.stringify(report,null,2));await b.close();console.log(report.checks.length+' lifecycle checks passed');}

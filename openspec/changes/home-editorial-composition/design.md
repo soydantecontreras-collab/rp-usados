@@ -1,0 +1,3 @@
+Keep the current type, color, borders and CTA. Above 960px, heading/intro use the section width, followed by an asymmetric financing/support grid. Bank and financiera text may share columns on wide desktop. Below 960px, preserve DOM reading order: financing, permutas, consignaciones, WhatsApp.
+Delete identifier markup rather than hiding it with CSS. Remove only the optional "Tu visita" label from location; preserve map, address and links. Remove unused institutional selectors for deleted numbering. The hero's scroll instruction is functional, not an eyebrow.
+Manual Spec workflow follows existing openspec/AGENTS.md; no CLI/dependency installation for this bounded task.

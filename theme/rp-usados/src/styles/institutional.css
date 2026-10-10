@@ -1,7 +1,6 @@
 /* Institutional photo/narrative only; other home components keep their approved design. */
 .heritage-grid { grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr); column-gap:clamp(40px,6vw,96px); row-gap:30px; align-items:start; }
 .heritage-heading { grid-column:1; grid-row:1; align-self:end; }
-.heritage-heading .label { color:#d4d8d3; margin-bottom:22px; }
 .heritage-heading h2 { font-size:clamp(38px,4.15vw,60px); line-height:1.08; max-width:15ch; }
 .heritage-copy { grid-column:1; grid-row:2; }
 .heritage .heritage-copy>p { max-width:45ch; margin:0; color:#c7cfca; font-size:16px; line-height:1.75; }
@@ -16,38 +15,49 @@
 .heritage-invitation { margin-top:32px; padding-top:24px; border-top:1px solid #65706a; display:flex; flex-direction:column; align-items:flex-start; gap:22px; }
 .heritage .heritage-invitation>p { margin:0; color:#edf0eb; font-size:16px; line-height:1.5; }
 .heritage-invitation .action { margin:0; }
-.options-intro { align-self:start; }
+.options-grid { display:block; }
+.options-intro { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:clamp(36px,5vw,80px); align-items:start; margin-bottom:44px; }
 .options-intro h2 { font-size:clamp(36px,4.1vw,58px); line-height:1.1; }
-.options-intro>p:not(.label) { margin-top:28px; max-width:42ch; color:#444a49; line-height:1.75; }
-.options-details { border-bottom:1px solid var(--border); }
-.options-details .service { grid-template-columns:32px 1fr; gap:20px; padding-block:26px 30px; }
-.options-details .service-no { color:var(--rp-red); }
+.options-intro>p { max-width:42ch; color:#444a49; line-height:1.75; }
+.options-details { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); column-gap:clamp(36px,5vw,80px); border-bottom:1px solid var(--border); }
+.options-details .service { display:block; padding-block:26px 30px; }
 .options-details .service h3 { font-size:clamp(23px,2.1vw,29px); line-height:1.25; }
 .options-details .service p { max-width:48ch; color:#48504e; line-height:1.7; }
-.options-contact { display:flex; flex-direction:column; align-items:flex-start; gap:20px; padding:26px 0 20px; border-top:1px solid var(--border); }
+.options-details .service-body,.options-secondary { min-width:0; }
+.options-details .financing-routes { display:grid; gap:28px; margin-top:22px; }
+.options-details .financing-route h4 { margin:0 0 8px; font:600 15px/1.4 var(--body); }
+.options-details .financing-route p { margin-top:0; }
+.options-contact { grid-column:1 / -1; display:flex; align-items:center; justify-content:space-between; gap:36px; padding:26px 0 20px; border-top:1px solid var(--border); }
 .options-contact p { max-width:45ch; font-size:15px; line-height:1.65; }
-.options-contact .action { margin:0; }
-.options-details .options-conditions { padding-bottom:24px; font-size:12px; line-height:1.6; color:#505954; max-width:48ch; }
+.options-contact .action { margin:0; flex-shrink:0; }
+.options-details .options-conditions { grid-column:1 / -1; padding-bottom:24px; font-size:12px; line-height:1.6; color:#505954; }
+@media(min-width:1100px) {
+  .options-details .financing-routes { grid-template-columns:repeat(2,minmax(0,1fr)); }
+}
+@media(max-width:960px) {
+  .options-intro,.options-details { display:block; }
+  .options-intro { margin-bottom:32px; }
+  .options-intro>p { margin-top:22px; max-width:55ch; }
+  .options-contact { flex-direction:column; align-items:flex-start; gap:20px; }
+}
 @media(max-width:900px) {
-  .heritage-grid,.options-grid { column-gap:40px; }
+  .heritage-grid { column-gap:40px; }
   .heritage-heading h2 { font-size:40px; }
   .heritage .heritage-copy>p.heritage-lead { font-size:17px; }
 }
 @media(max-width:760px) {
-  .heritage-grid,.options-grid { grid-template-columns:1fr; }
+  .heritage-grid { grid-template-columns:1fr; }
   .heritage-heading { grid-column:1; grid-row:1; }
   .heritage-visual { grid-column:1; grid-row:2; }
   .heritage-copy { grid-column:1; grid-row:3; }
   .heritage-grid { row-gap:28px; }
   .heritage-heading h2 { max-width:17ch; font-size:clamp(36px,7vw,46px); }
   .heritage .heritage-copy>p { max-width:55ch; }
-  .options-intro>p:not(.label) { margin-top:22px; }
   .options-contact .action { max-width:100%; }
 }
 @media(max-width:430px) {
   .heritage-media figcaption { display:block; font-size:10px; }
   .heritage-media figcaption span { display:block; text-align:left; margin-top:4px; }
   .heritage-invitation .action,.options-contact .action { width:100%; }
-  .options-details .service { grid-template-columns:24px 1fr; gap:12px; }
   .options-contact .action { padding-inline:16px; gap:10px; font-size:12px; justify-content:center; }
 }

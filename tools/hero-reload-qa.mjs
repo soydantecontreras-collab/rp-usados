@@ -38,10 +38,10 @@ try{
     try{
      await ready(p);const preparedMs=performance.now()-started;
      const data=await p.evaluate(()=>({progress:__RP_V2__.progress,presented:__RP_V2__.presentedTime,target:__RP_V2__.targetTime,events:__QA_VIDEO__.events,frames:__QA_VIDEO__.frames,plays:__QA_VIDEO__.plays,errors:__QA_VIDEO__.errors,source:document.querySelector('video').currentSrc,readyState:document.querySelector('video').readyState}));
-     assert(Math.abs(data.progress-position)<.015,'restored progress');assert(data.source.includes('hero-mobile-portrait-crf18.mp4'),'mobile source');
+     assert(Math.abs(data.progress-position)<.015,'restored progress');assert(data.source.includes('hero-mobile-v4-1080-crf18.mp4'),'mobile source');
      assert(data.plays===0&&data.errors.length===0,'no autoplay or rejected promises');
      const seek=data.events.find(e=>e.type==='seeking');assert(!seek||data.frames[0]?.at<=seek.at,'initial presentation before first seek');
-     assert(videoResponses.every(v=>v.url.includes('hero-mobile-portrait-crf18.mp4')),'only mobile downloaded');
+     assert(videoResponses.every(v=>v.url.includes('hero-mobile-v4-1080-crf18.mp4')),'only mobile downloaded');
      for(const value of [.18,.73,.35,0]){await pose(p,value);await ready(p);assert(Math.abs(await p.evaluate(()=>__RP_V2__.progress)-value)<.015,'forward/reverse progress');}
      // Coalesce a burst into the last target, without queuing obsolete seeks.
      await p.evaluate(()=>{const h=document.querySelector('.hero-track'),s=document.querySelector('.hero-stage'),offset=document.querySelector('header').offsetHeight;for(const v of [.84,.13,.62,.22])scrollTo({top:h.offsetTop-offset+(h.offsetHeight-s.offsetHeight)*v,behavior:'instant'});});

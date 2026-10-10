@@ -1,0 +1,7 @@
+- [x] Inspect working state, tests, theme entry points and isolate fixtures.
+- [x] Complete Home/detail/mobile/responsive/accessibility/network regressions and browser visual review.
+- [x] Confirm CPT states/data, prices/WhatsApp, optional fields and lazy image loading.
+- [x] Correct reproducible bugs only and rerun affected checks (no product bug found; stale test baselines updated).
+- [x] Complete build/manifest/PHP/package/source/media validation.
+- [x] Review cleanup/ignore/staged diff and preserve useful documentation.
+- [x] Prepare reviewed Git checkpoint; commit/push/equal-HEAD/clean-tree evidence is delivered by the final Git transaction and response. Stop after push.

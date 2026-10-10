@@ -1,0 +1,5 @@
+# Verification strategy
+
+Use the existing isolated rich-demo WordPress blueprint mounted to the live theme; set only the already confirmed contact in this disposable fixture configuration. Fixtures stay outside real inventory and package. Update outdated assertions in existing test scripts to current approved assets/copy/menu. Use desktop Chromium/Edge automated regression tests and in-app browser visual checks, at 1920/1440/1280/intermediate/tablet/375/390/430, plus reduced-motion/no-JS/media-failure paths. Record browser/emulation limits; do not reopen Safari investigation without a reproducible bug.
+
+Audit backend registration/metadata/security and fixture state queries read-only. Report failed external requests separately from actual local 404/JS failures. Preserve useful docs/evidence; remove unused iOS diagnostic executables/routes, keep reports. Do not delete existing Blender work or approved exploration references. Source sequences and large intermediates remain outside Git or ignored. Validate package/build/manifest/PHP before a reviewed stage/commit/push. Do not touch admin workflow.

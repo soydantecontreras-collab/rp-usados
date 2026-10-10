@@ -1,0 +1,4 @@
+- [x] Remove section identifiers and internal service numbering.
+- [x] Implement desktop composition with unchanged approved copy and contact helper.
+- [x] Verify local desktop/tablet and mobile 375/390/430, overflow, spacing and preserved headings.
+- [x] Build, validate PHP and source scope; record evidence without deploy.

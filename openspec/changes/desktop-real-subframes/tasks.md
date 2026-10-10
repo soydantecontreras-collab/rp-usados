@@ -1,0 +1,4 @@
+- [x] Identify exact approved source by historical checksum and inspect original timeline/settings.
+- [x] Calculate 144 real half-frame evaluations and explain sampling before rendering.
+- [x] Render external sequence without saving source or touching original PNGs/web.
+- [x] Verify all 144 PNGs, resolution, completeness, first/last and source preservation.

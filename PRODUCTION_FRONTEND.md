@@ -2,6 +2,17 @@
 
 Implementación del 27/09/2026. Sin deploy. Respaldo previo a cambios: **c84025a**.
 
+Actualización local 09/10/2026: desktop sustituido por `hero-desktop-1080-crf18.mp4`,
+1920×1080, 48 fps, 144 frames / 3 s exactos, H.264 High/yuv420p, slow/CRF18,
+GOP4, sin B-frames/audio, faststart. Peso 6.697.013 bytes (6,70 MB), bitrate
+aproximado 17,86 Mbps. Poster `hero-desktop-1080-crf18-poster.png` extraído del
+primer frame codificado. Se conservan el tratamiento #080809 del vano con puertas
+y marco visibles, fade 2,55–2,90 s y mapping JS. Sólo se actualizan referencias
+desktop, dimensiones intrínsecas y preload; mobile permanece idéntico. Secuencia
+fuente externa y máscaras auxiliares no forman parte del repositorio. Build/PHP
+válidos; no QA general, commit, push ni deploy en esta actualización. Los resultados
+y pesos del QA histórico más abajo corresponden a sus versiones anteriores.
+
 Actualización local 05/10/2026: envolvente negra mobile en 100dvh y escena visual
 compartida por media/copy/CTA con altura 100svh capturada antes del primer paint.
 Sólo cambios de ancho restablecen esa altura; los cambios de barras no recentran

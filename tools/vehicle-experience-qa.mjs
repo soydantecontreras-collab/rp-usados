@@ -44,7 +44,7 @@ try {
     check(`${profile.name}: initial detail and four gallery photos`,await page.locator('.gallery-slide').count()===4&&await page.locator('.unit-heading h1').isVisible());
     check(`${profile.name}: price only in detail`,(await page.locator('.unit-price .vehicle-price').innerText()).includes('TST'));
     check(`${profile.name}: specific WhatsApp copy`,(await page.locator('.unit-panel .action-whatsapp').innerText()).includes('Vento'));
-    check(`${profile.name}: no fake recipient`,await page.locator('a[href^="https://wa.me/"]').count()===0);
+    check(`${profile.name}: confirmed contextual WhatsApp`,await page.locator('.unit-panel .action-whatsapp').evaluate(link=>{const url=new URL(link.href);return url.pathname==='/5491125348193'&&url.searchParams.get('text').includes('Vento')&&url.searchParams.get('text').includes('/vehiculos/demo-vento/');}));
     check(`${profile.name}: no overflow`,await page.evaluate(()=>document.documentElement.scrollWidth<=document.documentElement.clientWidth));
     await page.screenshot({path:`${out}/detail-${profile.name}.png`});
     if(!profile.mobile){

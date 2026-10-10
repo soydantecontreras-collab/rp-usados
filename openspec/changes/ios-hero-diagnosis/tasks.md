@@ -1,0 +1,5 @@
+- [x] Inspect approved source and public geometry; preserve runtime/media.
+- [x] Build full-page independent probes for units, safe areas, DOM, crop and media events.
+- [x] Run WebKit device-size matrix and Chromium/Android reference; record limitations.
+- [x] Publish independent temporary diagnostic preview if physical evidence is required.
+- [x] Deliver confirmed/probable causes and minimal proposal; final fix remains unapproved.

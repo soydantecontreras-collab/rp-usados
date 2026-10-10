@@ -1,0 +1,5 @@
+- [x] Revalidate 144 source PNGs and trace old desktop encoding, masks, references and preloads.
+- [x] Produce matching 1080p masks with original treatment/subframe cadence.
+- [x] Encode desktop MP4 and extract corresponding poster; validate stream and treatment.
+- [x] Replace desktop references/preload only; keep mobile and scroll source hashes intact.
+- [x] Run build, manifest check, affected PHP syntax and document measured output.

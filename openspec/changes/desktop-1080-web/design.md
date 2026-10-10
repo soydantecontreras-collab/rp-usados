@@ -1,0 +1,5 @@
+# Existing pipeline at full resolution
+
+Inputs are external PNGs 0001..0144, already validated by hashes, headers, complete decoder and visual inspection. Existing 1600x900 mattes used the historical fitted sampling 1+i*71/143; regenerating the same masks at 1920x1080 using 1+i*.5 avoids edge misalignment. Run approved mask scripts in disposable background Blender processes against exact historical source backup. No creative scene saves or edits.
+
+Composite aperture minus opaque doors/jambs, blur radius scaled proportionally from .5 to .6px, dark color #080809, terminal fade 2.55..2.90 seconds. Keep x264 slow/CRF18, GOP4/no B-frames, existing SDR metadata (BT709 matrix/primaries, sRGB transfer, limited range). Extract poster directly from encoded first frame. New unique desktop filenames avoid stale cache; retain old provisional assets as reference. Update only hero PHP reference/dimensions and desktop poster preload in frontend.php, no script/style changes. Store intermediates outside versioned assets and never include source PNGs in repository.

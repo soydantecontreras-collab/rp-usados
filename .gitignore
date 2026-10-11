@@ -7,6 +7,7 @@
 # Generated assets and distributable packages.
 theme/rp-usados/assets/dist/*
 !theme/rp-usados/assets/dist/.gitkeep
+plugins/rp-usados-security/assets/dist/
 dist/*
 !dist/.gitkeep
 
@@ -17,6 +18,9 @@ wp-content/uploads/
 wp-content/cache/
 wp-content/upgrade/
 tools/.preview/
+screenshots/
+screenshots-temp/
+temporary-screenshots/
 *.sql
 *.sqlite
 *.sqlite3
@@ -29,6 +33,8 @@ tools/.preview/
 .npmrc
 .pnpmrc
 auth.json
+access.json
+accounts.json
 credentials*.json
 secrets*.json
 *.pem

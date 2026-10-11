@@ -10,6 +10,6 @@ const target = resolve(root, 'dist/rp-usados-security.zip'), output = createWrit
 const archive = archiver('zip', { zlib: { level: 9 } });
 const completed = new Promise((done, reject) => { output.on('close', done); output.on('error', reject); archive.on('error', reject); archive.on('warning', reject); });
 archive.pipe(output);
-archive.directory(resolve(root, 'plugins/rp-usados-security'), 'rp-usados-security');
+archive.glob('**/*', { cwd: resolve(root, 'plugins/rp-usados-security'), dot: true, ignore: ['node_modules/**', 'src/**', 'package*.json', 'pnpm-lock.yaml', 'vite.config.js', '.env*'] }, { prefix: 'rp-usados-security' });
 await archive.finalize(); await completed;
 console.log(`Plugin: ${target} (${archive.pointer()} bytes)`);

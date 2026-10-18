@@ -1,0 +1,7 @@
+- [x] Implement private route/auth, guest CSRF, real cookies, recovery and safe wp-admin redirect.
+- [x] Implement validation/service, publication/state, automatic title, slug/legacy preservation and concurrency checks.
+- [x] Implement private REST/schema/capabilities/no-store.
+- [x] Implement branded responsive templates, image queue/reordering and native POST fallback.
+- [x] Build isolated plugin assets without changing public assets.
+- [x] Run real security/HTTP, responsive and public regression tests.
+- [x] Document local access, captures, verification and hosting limitations; no commit/push/deploy.

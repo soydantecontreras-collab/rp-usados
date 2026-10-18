@@ -5,6 +5,7 @@
 .yarn/
 
 # Generated assets and distributable packages.
+plugins/rp-usados-security/assets/gestion/
 theme/rp-usados/assets/dist/*
 !theme/rp-usados/assets/dist/.gitkeep
 dist/*

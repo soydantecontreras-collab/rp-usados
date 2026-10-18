@@ -10,6 +10,7 @@ const target = resolve(root, 'dist/rp-usados-security.zip'), output = createWrit
 const archive = archiver('zip', { zlib: { level: 9 } });
 const completed = new Promise((done, reject) => { output.on('close', done); output.on('error', reject); archive.on('error', reject); archive.on('warning', reject); });
 archive.pipe(output);
-archive.directory(resolve(root, 'plugins/rp-usados-security'), 'rp-usados-security');
+for (const file of ['rp-usados-security.php', 'README.md']) archive.file(resolve(root, 'plugins/rp-usados-security', file), { name: `rp-usados-security/${file}` });
+for (const directory of ['inc', 'templates', 'assets/gestion']) archive.directory(resolve(root, 'plugins/rp-usados-security', directory), `rp-usados-security/${directory}`);
 await archive.finalize(); await completed;
 console.log(`Plugin: ${target} (${archive.pointer()} bytes)`);

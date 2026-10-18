@@ -4,7 +4,7 @@ import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { root } from './check-manifests.mjs';
 import { packages } from './package-config.mjs';
-import { shippingFiles, zipEntries } from './package-utils.mjs';
+import { shippingFiles, zipEntries, canonicalSource } from './package-utils.mjs';
 test('shipping allowlists contain only runtime files and the two approved hero resources', async () => {
   for (const pkg of packages) {
     const files = await shippingFiles(pkg);
@@ -16,6 +16,13 @@ test('shipping allowlists contain only runtime files and the two approved hero r
 });
 test('ZIP reader refuses non-archives and truncated headers', () => {
   assert.throws(() => zipEntries(Buffer.from('not a ZIP')), /Invalid ZIP/);
+});
+
+test('release text is canonical LF while binary assets remain byte-identical', () => {
+  assert(canonicalSource('template.php', Buffer.from('uno\r\ndos\r\n')).equals(Buffer.from('uno\ndos\n')));
+  const binary = Buffer.from([0, 13, 10, 255, 13, 10]);
+  assert(canonicalSource('poster.png', binary).equals(binary));
+  assert(canonicalSource('video.mp4', binary).equals(binary));
 });
 test('private/public manifests reference only present build files', async () => {
   for (const pkg of packages) assert(JSON.parse(await readFile(new URL(`../${pkg.build}/.vite/manifest.json`, import.meta.url), 'utf8')));

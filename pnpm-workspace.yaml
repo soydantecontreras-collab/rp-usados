@@ -1,0 +1,3 @@
+# Root commands are independent; the three products retain their own lockfiles.
+packages:
+  - '.'

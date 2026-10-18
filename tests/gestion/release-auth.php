@@ -64,4 +64,3 @@ $retry = rp_usados_gestion_save( array( 'portada' => $pending_images['portada'],
 rp_gestion_check( 'release explicit retry saves retained photo associations', ! is_wp_error( $retry ) && $retry['portada'] === $own_image && in_array( $own_image, $retry['galeria'], true ) );
 $_SERVER = $original_server;
 $_COOKIE = $original_cookies;
-

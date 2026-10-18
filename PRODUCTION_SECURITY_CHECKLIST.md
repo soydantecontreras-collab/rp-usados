@@ -31,6 +31,7 @@ Ejecutar `pnpm verify:rc` y conservar su reporte identificado por commit. Si una
 - [ ] Comparar el commit/tag, SHA-256 de ZIP y manifests con lo que se va a instalar. Revisar diff y archivos nuevos, no sólo que Git esté limpio.
 - [ ] Buscar secretos también en el historial si hubo una exposición. Un secreto publicado debe rotarse; borrarlo del último commit no basta.
 - [ ] Mantener cuenta técnica Administrador y cuenta del dueño `rp_stock_manager` separadas, individuales y con contraseñas robustas. No entregar una cuenta de Playground.
+- [ ] Preparar 2FA para la cuenta Administrador y guardar códigos de recuperación fuera de Git. Si se exige 2FA al gestor, comprobar expresamente la compatibilidad del proveedor con el login propio basado en `wp_signon()`; no asumir que un formulario OTP de wp-login funciona automáticamente en `/gestion`.
 - [ ] Probar mínimo privilegio real del gestor: sin entradas/páginas, plugins, themes, settings, usuarios o código. Redirigir wp-admin es UX, no la única barrera de permisos.
 - [ ] No crear usuarios reales ni importar inventario sin autorización del cliente. Asegurar que fixtures y cualquier presentación DEMO no se mezclen con stock productivo.
 - [ ] Revisar campos/contacto: WhatsApp `5491125348193` y mapa confirmados; ninguna información pendiente se reemplaza por ejemplos comerciales inventados.
@@ -52,6 +53,7 @@ Ejecutar `pnpm verify:rc` y conservar su reporte identificado por commit. Si una
 - [ ] Servidor/CDN/plugins excluyen `/gestion*`, REST privado, autenticados, non-GET y login. Aplicar [CACHE_POLICY.md](CACHE_POLICY.md) y no asumir que un header PHP alcanza.
 - [ ] WAF/rate limiting de infraestructura protege las superficies nativas que correspondan, incluido `wp-login.php`. El límite del login propio no cubre automáticamente todos los logins de WordPress. No bloquear PATCH, multipart, `X-WP-Nonce`, REST o rutas técnicas necesarias.
 - [ ] XML-RPC se evalúa según uso real: restringir/deshabilitar si no se utiliza y registrar la decisión; no bloquear REST completo.
+- [ ] Revisar Application Passwords de WordPress: el panel no las necesita. Revocar las no utilizadas y restringir su creación/uso según la política del hosting, preservando la autenticación REST por cookies/nonces. Si existe una integración legítima, documentar cuenta, alcance y rotación sin copiar su clave al repositorio.
 - [ ] Correo saliente y recuperación nativa probados; credenciales SMTP fuera del repositorio. Los fallos de correo tienen responsable de resolución.
 - [ ] Backups de DB + uploads + código/configuración, retención acordada, copia externa y restauración ensayada. El backup comercial anunciado por el hosting debe comprobarse en el plan contratado.
 - [ ] Cabeceras de seguridad revisadas sin romper mapa, video o fuentes. El panel ya tiene CSP propia; no trasladarla ciegamente al frontend público, que integra Google Maps.

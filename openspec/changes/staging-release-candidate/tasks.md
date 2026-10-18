@@ -8,7 +8,7 @@
 - [x] Add/test private caching policy and safe stock invalidation event.
 ## 3. Verification and handoff
 - [x] Run service/security/HTTP/public/responsive regression and technical checks.
-- [ ] Verify clean-clone builds and installable archives; no fixtures/secrets.
+- [x] Verify clean-clone builds and installable archives; no fixtures/secrets.
 - [x] Complete deploy/security/cache/backup/stock/handoff guides.
 - [x] Review final scope, release notes and residual staging requirements.
 ## 4. Release procedure

@@ -42,7 +42,7 @@ npx --yes pnpm@10.34.7 check
 
 Playwright está fijado en las herramientas y usa su Chromium instalado. En CI Linux, instalar además sus bibliotecas de sistema con `pnpm --dir tools exec playwright install --with-deps chromium`. `RP_BROWSER_CHANNEL=msedge` o `chrome` permite usar explícitamente esos navegadores para una comprobación adicional; no es un requisito del proyecto.
 
-Para desarrollar los assets públicos: `pnpm --dir theme/rp-usados dev`. Para los del panel: `pnpm --dir plugins/rp-usados-security dev`. Vite y Playground escuchan sólo en loopback por defecto. No versionar la configuración local de `wp-config.php` ni credenciales.
+Para trabajar sobre la preview WordPress, `pnpm --dir theme/rp-usados exec vite build --watch` o `pnpm --dir plugins/rp-usados-security exec vite build --watch` recompilan al guardar; refrescar el navegador para leer el manifest nuevo. El router del panel consume el build, no conecta automáticamente al servidor HMR. El modo `dev` público requiere configurar explícitamente `RP_USADOS_VITE_DEV_SERVER` en el WordPress local; nunca en producción. Vite y Playground escuchan sólo en loopback por defecto. No versionar `wp-config.php` ni credenciales.
 
 ## Preview y comprobaciones reproducibles
 
@@ -68,6 +68,11 @@ pnpm package
 - `test:public`: inicia su propia instancia en **9543** con stock DEMO aislado; recorre hero, navegación, catálogo, ficha, galería, fallback y reduced motion.
 - `audit:all`: audita las dependencias de tema, plugin y herramientas.
 - `package`: genera y verifica **`dist/rp-usados.zip`** y **`dist/rp-usados-security.zip`**, con allowlist de runtime, manifests y recursos compilados. Comprueba dos escrituras idénticas, timestamps fijos y contenido completo. `dist/release-manifest.json` registra tamaños, hashes, commit y si el checkout tenía cambios.
+
+El texto de los paquetes se normaliza a LF, igual que el contrato de Git; videos,
+imágenes y fuentes conservan sus bytes. Así un checkout antiguo de Windows con
+CRLF y un clon nuevo producen el mismo ZIP. Los límites de workspace se definen
+explícitamente para no heredar otra instalación pnpm de una carpeta superior.
 - `test:install`: instala ambos ZIP en un WordPress limpio, comprueba activación, manifests, assets y Home sin stock DEMO. Ejecutar después de `package`.
 
 `pnpm verify:rc` ejecuta la secuencia completa, incluido build, QA HTTP y pública. No iniciar servidores manuales antes de ese comando. Los puertos ocupados producen un error; nunca se reutiliza una instancia ajena.

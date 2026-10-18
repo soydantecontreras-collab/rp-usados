@@ -8,6 +8,11 @@ import { root, builds, manifestFiles } from './check-manifests.mjs';
 const require = createRequire(resolve(root, 'theme/rp-usados/package.json'));
 const archiver = require('archiver');
 export const fixedDate = new Date('2000-01-01T00:00:00Z');
+/** Match Git's LF checkout contract even when an existing Windows tree contains CRLF. */
+export function canonicalSource(file, bytes) {
+  return ['.php', '.css', '.js', '.json', '.txt', '.md', '.svg'].includes(extname(file))
+    ? Buffer.from(bytes.toString('utf8').replace(/\r\n/g, '\n')) : bytes;
+}
 export async function shippingFiles(pkg) {
   const files = [...pkg.files];
   async function walk(path, extensions) {
@@ -28,10 +33,10 @@ export async function writePackage(pkg, target) {
   const done = new Promise((complete, reject) => { output.once('close', complete); output.once('error', reject); archive.once('error', reject); archive.once('warning', reject); });
   archive.pipe(output);
   const files = await shippingFiles(pkg);
-  for (const file of files) archive.append(await readFile(resolve(root, pkg.directory, file)), { name: `${pkg.name}/${file}`, date: fixedDate, mode: 0o100644 });
+  for (const file of files) archive.append(canonicalSource(file, await readFile(resolve(root, pkg.directory, file))), { name: `${pkg.name}/${file}`, date: fixedDate, mode: 0o100644 });
   await archive.finalize(); await done;
   const bytes = await readFile(target);
-  return { package: pkg.name, file: target, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex'), files };
+  return { package: pkg.name, file: `${pkg.name}.zip`, bytes: bytes.length, sha256: createHash('sha256').update(bytes).digest('hex'), files };
 }
 /** Inflate every central-directory entry; truncated ZIPs cannot pass a listing-only check. */
 export function zipEntries(bytes) {
@@ -58,7 +63,8 @@ export async function verifyPackage(pkg, target) {
   if (JSON.stringify(entries.map(entry => entry.name)) !== JSON.stringify(expected.map(file => `${pkg.name}/${file}`))) throw new Error(`${pkg.name}: ZIP contents differ from shipping allowlist.`);
   for (const entry of entries) {
     if (entry.time !== 0 || entry.date !== 10273) throw new Error(`Non-reproducible timestamp in ${entry.name}`);
-    const source = await readFile(resolve(root, pkg.directory, entry.name.slice(pkg.name.length + 1)));
+    const name = entry.name.slice(pkg.name.length + 1);
+    const source = canonicalSource(name, await readFile(resolve(root, pkg.directory, name)));
     if (!entry.content.equals(source)) throw new Error(`ZIP differs from source: ${entry.name}`);
   }
   return entries.length;

@@ -1,0 +1,5 @@
+# Stop workspace discovery here even when cloned inside another pnpm workspace.
+packages:
+  - '.'
+allowBuilds:
+  esbuild: true

@@ -1,5 +1,11 @@
 # Reconstrucción privada de gestión
 
+Nota de continuidad 18/10/2026: informe histórico de la fuente aprobada
+`30b39bf`. Ya está integrado en main; las mejoras objetivas respecto de la
+implementación anterior se registran en
+`docs/decision/20261018_gestion-comparison.md`. Para comandos y límites actuales,
+usar `README.md`, `PROJECT_HANDOFF.md` y `PRODUCTION_DEPLOY.md`.
+
 Base: `47e96a9090f273026c5c7c747cfad5aad3bcd82c`.
 Rama de trabajo: `gestion-rebuild`. Reconstrucción aprobada para versionar en
 esta rama, sin merge a `main` ni deploy. No modifica el tema.

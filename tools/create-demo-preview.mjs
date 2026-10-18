@@ -4,7 +4,7 @@ import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 
 const root = resolve(import.meta.dirname, '..');
-const output = resolve(root, 'tools/.preview/rich-demo');
+const output = resolve(process.env.RP_DEMO_OUT || resolve(root, 'tools/.preview/rich-demo'));
 await mkdir(output, { recursive: true });
 const images = {};
 for (const name of ['landscape', 'portrait', 'square', 'wide']) {
@@ -74,6 +74,7 @@ const blueprint = {
     {step:'activateTheme',themeFolderName:'rp-usados'},
     {step:'setSiteOptions',options:{blogname:'RP Usados · DEMO VISUAL',blogdescription:'No es stock real',permalink_structure:'/%postname%/',timezone_string:'America/Argentina/Buenos_Aires'}},
     {step:'runPHP',code},
+    {step:'runPHP',code:`<?php require '/wordpress/wp-load.php'; wp_set_current_user(1); set_theme_mod('rp_whatsapp_numero','5491125348193'); $records=[]; foreach(get_posts(['post_type'=>'vehiculo','post_status'=>'publish','numberposts'=>-1]) as $post){$records[]=['id'=>$post->ID,'state'=>get_post_meta($post->ID,'rp_estado_stock',true),'meta'=>['rp_kilometraje'=>get_post_meta($post->ID,'rp_kilometraje',true)],'gallery'=>get_post_meta($post->ID,'rp_galeria_ids',true)?:[]];} file_put_contents('/wordpress/qa-state.json',wp_json_encode(['cpt'=>post_type_exists('vehiculo'),'records'=>$records]));`},
     {step:'mkdir',path:'/wordpress/wp-content/mu-plugins'},
     {step:'writeFile',path:'/wordpress/wp-content/mu-plugins/rp-local-demo.php',data:banner},
   ],

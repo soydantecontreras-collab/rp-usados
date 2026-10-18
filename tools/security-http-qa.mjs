@@ -1,14 +1,16 @@
 /** Actual cookies, native admin-AJAX uploads and REST. Disposable WordPress only. */
-import { createRequire } from 'node:module';
+import { chromium, browserOptions } from './browser-runtime.mjs';
 import { spawn } from 'node:child_process';
 import { mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
+import { isolatedRuntimeEnv } from './runtime-env.mjs';
 
 const root = resolve(import.meta.dirname, '..'), out = resolve(root, 'tools/.preview/security-http');
 await mkdir(out, { recursive: true });
 await rm(resolve(out, 'accounts.json'), { force: true });
-const blueprint = { steps: [
+await rm(resolve(out, 'report.json'), { force: true });
+const blueprint = { preferredVersions: { php: '8.3', wp: '6.8' }, steps: [
   { step: 'activatePlugin', pluginPath: 'rp-usados-security/rp-usados-security.php' },
   { step: 'activateTheme', themeFolderName: 'rp-usados' },
   { step: 'setSiteOptions', options: { permalink_structure: '/%postname%/' } },
@@ -18,7 +20,7 @@ await writeFile(resolve(out, 'blueprint.json'), JSON.stringify(blueprint));
 const port = Number(process.env.RP_SECURITY_HTTP_PORT || 9532), base = `http://127.0.0.1:${port}`;
 const args = ['--experimental-wasm-jspi', resolve(root, 'tools/playground.mjs'), 'server', '--no-login', '--port', String(port), '--workers', '2', '--wp', '6.8', '--php', '8.3', '--blueprint', resolve(out, 'blueprint.json')];
 for (const [local, remote] of [['theme/rp-usados','/wordpress/wp-content/themes/rp-usados'], ['plugins/rp-usados-security','/wordpress/wp-content/plugins/rp-usados-security'], ['tests/security','/security-tests'], ['tools/demo-fixtures','/security-fixtures'], ['tools/.preview/security-http','/security-output']]) args.push('--mount-dir', resolve(root, local), remote);
-const child = spawn(process.execPath, args, { cwd: root, stdio: ['ignore','pipe','pipe'] });
+const child = spawn(process.execPath, args, { cwd: root, stdio: ['ignore','pipe','pipe'], windowsHide: true, env: await isolatedRuntimeEnv(out) });
 let output = '', browser;
 const ready = new Promise((done, reject) => {
   child.on('error', reject);
@@ -30,9 +32,7 @@ const checks = [], check = (name, result) => { assert(result, name); checks.push
 try {
   await Promise.race([ready, new Promise((_, reject) => { const timer = setTimeout(() => reject(new Error('Fixture readiness deadline exceeded')), 120000); timer.unref(); })]);
   const fixture = JSON.parse(await readFile(resolve(out, 'accounts.json'), 'utf8'));
-  const require = createRequire(process.env.RP_PLAYWRIGHT_PACKAGE || 'C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
-  const { chromium } = require('playwright');
-  browser = await chromium.launch({ channel: 'msedge', headless: true });
+  browser = await chromium.launch(browserOptions());
   const plain = await browser.newContext();
   // Playground's first request completes a one-time boot redirect. Use a GET,
   // otherwise a redirected POST is converted to GET by the HTTP client.
@@ -52,7 +52,9 @@ try {
     await Promise.all([page.waitForNavigation(), page.locator('#wp-submit').click()]);
     const response = await page.goto(`${base}/wp-admin/post.php?post=${fixture.vehicle}&action=edit`);
     if (role === 'subscriber') {
-      check('HTTP subscriber native editor denied', response.status() === 403);
+      // Native post.php may use wp_die()'s default 500 for this capability denial.
+      // Require the explicit denial and absence of the editor, never accept arbitrary 500s.
+      check('HTTP subscriber native editor denied', [403, 500].includes(response.status()) && (await page.locator('body').innerText()).includes('Sorry, you are not allowed to edit this item.') && await page.locator('#rp-vehicle-data').count() === 0);
       await context.close(); continue;
     }
     check('HTTP manager native vehicle editor allowed', response.status() === 200 && await page.locator('#rp-vehicle-data').count() === 1);

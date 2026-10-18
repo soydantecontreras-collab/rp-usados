@@ -21,6 +21,20 @@ function rp_usados_gestion_format_price( array $v ): string {
 	return '' !== $v['precio'] ? $v['moneda'] . ' ' . number_format( (float) $v['precio'], str_contains( $v['precio'], '.' ) ? 2 : 0, ',', '.' ) : 'Sin precio cargado';
 }
 
+/** Keep already uploaded, authorized pending photos available for an explicit retry. */
+function rp_usados_gestion_pending_error( WP_Error $error, array $values, int $id ): WP_Error {
+	$data = (array) $error->get_error_data();
+	$cover = (int) ( $values['portada'] ?? 0 );
+	$gallery = array();
+	foreach ( (array) ( $values['galeria'] ?? array() ) as $image ) {
+		if ( rp_usados_gestion_attachment_allowed( (int) $image, $id ) ) { $gallery[] = (int) $image; }
+	}
+	if ( $cover && ! rp_usados_gestion_attachment_allowed( $cover, $id ) ) { $cover = 0; }
+	$data['pending_images'] = array( 'portada' => $cover, 'galeria' => $gallery );
+	$error->add_data( $data );
+	return $error;
+}
+
 function rp_usados_gestion_post_form( int $id ) {
 	if ( ! wp_verify_nonce( is_string( $_POST['_rp_nonce'] ?? null ) ? $_POST['_rp_nonce'] : '', 'rp_gestion_save' ) ) { return rp_usados_gestion_error( 'rp_csrf', 'La solicitud venció. Recargá el formulario.', 403 ); }
 	$values = wp_unslash( $_POST['rp_vehicle'] ?? array() );
@@ -58,6 +72,8 @@ function rp_usados_gestion_post_form( int $id ) {
 	$new_cover = count( array_filter( $batch, static fn( $entry ) => 'portada_archivo' === $entry['name'] ) );
 	$existing = array_unique( array_filter( array_merge( $pre['galeria'], $new_cover ? array() : array( $pre['portada'] ) ) ) );
 	if ( $new_cover > 1 || count( $existing ) + count( $batch ) > 20 ) { return rp_usados_gestion_error( 'rp_gallery_limit', 'Máximo 20 imágenes distintas, incluida una sola portada.', 422 ); }
+	// Use normalized values, while retaining the requested publication and original revision.
+	$values = array_merge( $pre, array( 'publicacion' => $values['publicacion'], 'revision' => $values['revision'] ?? '' ) );
 	// File inputs work without JS. Uploads stay pending on validation/save failure.
 	foreach ( $batch as $entry ) {
 			$name = $entry['name'];
@@ -67,12 +83,13 @@ function rp_usados_gestion_post_form( int $id ) {
 			$request->set_body_params( array( 'vehiculo' => (string) $id ) );
 			$request->set_file_params( array( 'foto' => $file ) );
 			$result = rp_usados_gestion_upload( $request );
-			if ( is_wp_error( $result ) ) { return $result; }
+			if ( is_wp_error( $result ) ) { return rp_usados_gestion_pending_error( $result, $values, $id ); }
 			$image = $result->get_data();
 			if ( 'portada_archivo' === $name ) { $values['portada'] = $image['id']; }
 			else { $values['galeria'][] = $image['id']; }
 	}
-	return rp_usados_gestion_save( $values, $id );
+	$saved = rp_usados_gestion_save( $values, $id );
+	return is_wp_error( $saved ) && $batch ? rp_usados_gestion_pending_error( $saved, $values, $id ) : $saved;
 }
 
 add_action( 'template_redirect', static function () {
@@ -122,6 +139,12 @@ add_action( 'template_redirect', static function () {
 					if ( is_string( $submitted_revision ) && preg_match( '/^[a-f0-9]{64}$/D', $submitted_revision ) ) { $vehicle['revision'] = $submitted_revision; }
 					// Preserve scalar text only; image IDs/revision remain authoritative.
 					foreach ( wp_unslash( $_POST['rp_vehicle'] ) as $key => $value ) { if ( isset( $vehicle[ $key ] ) && is_scalar( $value ) && ! in_array( $key, array( 'portada', 'galeria', 'revision', 'id', 'publicacion' ), true ) ) { $vehicle[ $key ] = (string) $value; } }
+					$pending = $error->get_error_data()['pending_images'] ?? null;
+					if ( is_array( $pending ) ) {
+						$vehicle['portada'] = $pending['portada'];
+						$vehicle['galeria'] = $pending['galeria'];
+						$vehicle['imagenes'] = array_map( 'rp_usados_gestion_image', array_values( array_unique( array_filter( array_merge( array( $vehicle['portada'] ), $vehicle['galeria'] ) ) ) ) );
+					}
 				}
 			}
 		} else { $view = 'denied'; $error = rp_usados_gestion_error( 'rp_route', 'Página no encontrada.', 404 ); status_header( 404 ); }

@@ -12,6 +12,7 @@ defined( 'ABSPATH' ) || exit;
 define( 'RP_USADOS_SECURITY_VERSION', '1.1.0' );
 require_once __DIR__ . '/inc/roles.php';
 require_once __DIR__ . '/inc/media.php';
+require_once __DIR__ . '/inc/cache.php';
 require_once __DIR__ . '/inc/gestion/service.php';
 require_once __DIR__ . '/inc/gestion/auth.php';
 require_once __DIR__ . '/inc/gestion/rest.php';

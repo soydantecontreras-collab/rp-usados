@@ -1,0 +1,26 @@
+{
+  "name": "rp-usados",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.34.7",
+  "engines": { "node": ">=24 <25", "pnpm": ">=10 <11" },
+  "scripts": {
+    "setup": "node tools/project-tasks.mjs setup",
+    "build": "node tools/project-tasks.mjs build",
+    "check": "node tools/project-tasks.mjs check",
+    "test": "node --test tools/hero-seek-controller.test.mjs tools/security-network.test.mjs tools/package.test.mjs tools/clean-preview.test.mjs",
+    "test:security": "node tools/security-tests.mjs",
+    "test:cache": "node tools/cache-tests.mjs",
+    "test:install": "node tools/package-install-tests.mjs",
+    "test:gestion": "node tools/gestion-tests.mjs",
+    "test:http": "node tools/gestion-http-runner.mjs",
+    "test:public": "node tools/public-http-runner.mjs",
+    "test:security-http": "node tools/security-http-qa.mjs",
+    "browsers:install": "pnpm --dir tools exec playwright install chromium",
+    "preview:gestion": "node tools/gestion-preview.mjs",
+    "audit:all": "node tools/project-tasks.mjs audit",
+    "package": "node tools/package-release.mjs",
+    "clean:preview": "node tools/clean-preview.mjs",
+    "verify:rc": "node tools/project-tasks.mjs verify"
+  }
+}

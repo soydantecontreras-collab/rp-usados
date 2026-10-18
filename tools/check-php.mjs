@@ -23,10 +23,10 @@ async function checkDirectory(directory) {
   }
 }
 try {
-  await checkDirectory(resolve('theme/rp-usados'));
-  await checkDirectory(resolve('plugins/rp-usados-security'));
-  await checkDirectory(resolve('tests/security'));
-  await checkDirectory(resolve('tests/gestion'));
+  const root = resolve(import.meta.dirname, '..');
+  await checkDirectory(resolve(root, 'theme/rp-usados'));
+  await checkDirectory(resolve(root, 'plugins/rp-usados-security'));
+  await checkDirectory(resolve(root, 'tests'));
   console.log(`PHP 8.3: ${count} archivos sin errores de sintaxis.`);
 } finally {
   php.exit();

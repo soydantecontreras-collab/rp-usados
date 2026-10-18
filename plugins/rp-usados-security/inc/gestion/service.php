@@ -4,7 +4,7 @@ defined( 'ABSPATH' ) || exit;
 
 function rp_usados_gestion_access(): bool {
 	$id = get_current_user_id();
-	return $id && ( rp_usados_security_is_administrator( $id ) || rp_usados_security_is_manager( $id ) ) && current_user_can( 'edit_vehiculos' );
+	return $id && function_exists( 'rp_usados_validate_vehicle_input' ) && post_type_exists( 'vehiculo' ) && ( rp_usados_security_is_administrator( $id ) || rp_usados_security_is_manager( $id ) ) && current_user_can( 'edit_vehiculos' );
 }
 
 function rp_usados_gestion_error( string $code, string $message, int $status = 400, array $fields = array() ): WP_Error {
@@ -80,7 +80,7 @@ function rp_usados_gestion_validate( array $payload, int $id = 0 ) {
 	}
 	if ( isset( $payload['descripcion'] ) ) {
 		if ( ! is_string( $payload['descripcion'] ) || strlen( $payload['descripcion'] ) > 50000 ) { $errors['descripcion'] = 'Descripción inválida o demasiado extensa.'; }
-		else { $values['descripcion'] = sanitize_textarea_field( $payload['descripcion'] ); }
+		else { $values['descripcion'] = wp_kses_post( $payload['descripcion'] ); }
 	}
 	if ( array_key_exists( 'portada', $payload ) ) {
 		$raw = $payload['portada'];

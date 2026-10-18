@@ -1,12 +1,10 @@
 /** Final regression against disposable local WordPress fixtures, never live stock. */
-import {createRequire} from 'node:module';
+import {chromium,browserOptions} from './browser-runtime.mjs';
 import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const require=createRequire(process.env.RP_PLAYWRIGHT_PACKAGE||'C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
-const {chromium}=require('playwright');
 const base=process.env.RP_DEMO_URL||'http://127.0.0.1:9470',out=process.env.RP_QA_OUT||'tools/.preview/final-closure';
 await mkdir(out,{recursive:true});
-const browser=await chromium.launch({channel:'msedge',headless:true});
+const browser=await chromium.launch(browserOptions());
 const report={base,browser:browser.version(),checks:[],profiles:[],limitations:['Touch and viewport emulation; physical Android/Safari browser chrome not reproduced.','Fixtures isolated from production inventory.']};
 const check=(name,value)=>{assert(value,name);report.checks.push(name);};
 const ready=p=>p.waitForFunction(()=>window.__RP_V2__?.state==='ready'&&document.querySelector('.hero-poster').hasAttribute('data-presented')&&!document.querySelector('video').seeking&&Math.abs(__RP_V2__.presentedTime-__RP_V2__.targetTime)<.013,null,{timeout:15000});

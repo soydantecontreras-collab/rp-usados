@@ -6,7 +6,14 @@ require_once ABSPATH . 'wp-admin/includes/image.php';
 // Load the native REST client only in this disposable test site's admin.
 // It emits WordPress' normal cookie-session nonce, not a custom auth endpoint.
 wp_mkdir_p( WP_CONTENT_DIR . '/mu-plugins' );
-file_put_contents( WP_CONTENT_DIR . '/mu-plugins/rp-http-test.php', '<?php add_action("admin_enqueue_scripts", static function () { wp_enqueue_script("wp-api"); });' );
+// This isolated legacy suite exercises native WordPress form/upload capabilities.
+// Disable ONLY the navigation redirect here, never any role, nonce or media policy.
+// The /gestion HTTP suite separately asserts the real manager redirect is active.
+// This MU plugin is created inside the disposable test filesystem, not the package.
+file_put_contents( WP_CONTENT_DIR . '/mu-plugins/rp-http-test.php', '<?php
+add_action("admin_enqueue_scripts", static function () { wp_enqueue_script("wp-api"); });
+add_action("admin_init", static function () { remove_action("admin_init", "rp_usados_gestion_redirect_admin"); }, -100);
+' );
 $accounts = array();
 foreach ( array( 'manager' => 'rp_stock_manager', 'subscriber' => 'subscriber' ) as $name => $role ) {
 	$password = wp_generate_password( 32 );

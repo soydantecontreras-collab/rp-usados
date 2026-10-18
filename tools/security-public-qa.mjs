@@ -1,15 +1,13 @@
 /** Public regression after permissions change; isolated local DEMO instance only. */
-import { createRequire } from 'node:module';
+import { chromium, browserOptions } from './browser-runtime.mjs';
 import { mkdir, writeFile } from 'node:fs/promises';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
-const require = createRequire(process.env.RP_PLAYWRIGHT_PACKAGE || 'C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
-const { chromium } = require('playwright');
 const base = process.env.RP_DEMO_URL || 'http://127.0.0.1:9470', out = 'tools/.preview/security-public';
 await mkdir(out, { recursive: true });
 const changes = execFileSync('git', ['diff', '--name-only', 'a3cc84c33ee72968f4158fdddb6346ce6823f52c', '--', 'theme/rp-usados'], { encoding: 'utf8' }).trim().split('\n');
 assert(!changes.some(path => /\/src\/|\/assets\/media\/|\.php$/.test(path) && !/\/inc\/(post-types\/vehiculo|vehicle-admin|vehicle-data)\.php$/.test(path)), 'Public templates/assets changed outside security scope');
-const browser = await chromium.launch({ channel: 'msedge', headless: true }), checks = [], profiles = [];
+const browser = await chromium.launch(browserOptions()), checks = [], profiles = [];
 const check = (name, result) => { assert(result, name); checks.push(name); };
 try {
   for (const [width, height] of [[1440,900], [375,812], [390,844], [430,932]]) {

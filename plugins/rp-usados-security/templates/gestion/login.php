@@ -5,4 +5,5 @@
 <label>Contraseña<input name="password" type="password" autocomplete="current-password" required></label>
 <button type="button" class="button password-toggle" data-password>Mostrar contraseña</button>
 <button type="submit" class="button button-primary">Iniciar sesión</button>
+<p><a href="<?php echo esc_url( wp_lostpassword_url( home_url( '/gestion/' ) ) ); ?>">Olvidé mi contraseña</a></p>
 </form></section>

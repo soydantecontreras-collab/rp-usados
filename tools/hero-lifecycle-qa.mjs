@@ -1,8 +1,7 @@
-import {createRequire} from 'node:module';
+import {chromium,browserOptions} from './browser-runtime.mjs';
 import {mkdir,writeFile} from 'node:fs/promises';
 import assert from 'node:assert/strict';
-const require=createRequire('C:/Users/dante.DESKTOP/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json');
-const {chromium}=require('playwright'),b=await chromium.launch({channel:'msedge',headless:true,ignoreDefaultArgs:['--disable-back-forward-cache']});
+const b=await chromium.launch(browserOptions({ignoreDefaultArgs:['--disable-back-forward-cache']}));
 const HOME=process.env.RP_HERO_QA_URL||'http://127.0.0.1:9470/',OUT=process.env.RP_HERO_QA_OUT||'artifacts/hero-reload';await mkdir(OUT,{recursive:true});const report={checks:[],restores:[],limits:['Visibility states are injected: headless tabs all report visible.','Physical Safari/iPhone unavailable; Chromium mobile emulation.']};
 const check=(name,ok)=>{assert(ok,name);report.checks.push(name);};
 const ready=p=>p.waitForFunction(()=>window.__RP_V2__?.state==='ready'&&document.querySelector('.hero-poster').hasAttribute('data-presented')&&!document.querySelector('video').seeking&&Math.abs(__RP_V2__.presentedTime-__RP_V2__.targetTime)<.013,null,{timeout:10000});

@@ -42,15 +42,33 @@ Excepción explícita autorizada 07/10/2026: la preview estática para revisión
 
 ## Estado actual y límites de fase
 
+Estado de cierre, 18/10/2026: frontend público y hero final aprobados; no rediseñar
+ni rerenderizar. La base `47e96a9` se integra con `/gestion` aprobado de
+`gestion-rebuild` (`30b39bf`), conservando la implementación desktop anterior en
+`gestion-original-desktop`. El candidato `v1.0.0-rc1` significa código preparado
+para staging, NO producción certificada. La operación vigente se describe en
+`PROJECT_HANDOFF.md`, `PRODUCTION_DEPLOY.md` y `PRODUCTION_SECURITY_CHECKLIST.md`.
+El panel privado vive en el plugin; tema/CPT/campos públicos se conservan. Nunca
+importar fixtures, cuentas o DB de pruebas al inventario real. Hosting, dominio,
+cuenta del dueño, SMTP y stock requieren datos/validación externa. No comprar,
+desplegar, cambiar DNS ni inventar accesos sin autorización explícita.
+
 Actualización aprobada 27/09/2026: Hero V2 A desktop y render vertical mobile cerrados; Stage 1 / Iteración 02 es la fuente visual productiva, con Manrope + Archivo. La Home normal usa prerender responsive, negro, puente web, curva sutil y catálogo completo del CPT sin filtros/destacados/precios. Esta actualización sustituye la dirección visual provisional descrita más abajo. No rediseñar ni rerenderizar heroes, no volver a Three.js, no deploy sin aprobación. Ver `PRODUCTION_FRONTEND.md` para implementación y datos pendientes. Usar frontend-design-codex y ui-ux-pro-max para este frontend, sin skills redundantes.
 
-La fase actual está autorizada por el pedido de continuación: primera versión de la Home, catálogo dinámico y ficha individual con administración nativa. Aplicar el concepto “Trayectoria en movimiento” con la paleta provisional negro/rojo/blanco indicada por el cliente. No crear stock, imágenes de vehículos ni contenido comercial ficticio.
+La primera versión y su exploración “Trayectoria en movimiento” son antecedentes
+históricos, no instrucciones para rehacer el frontend cerrado. No crear stock,
+imágenes de vehículos ni contenido comercial ficticio.
 
 Las fotografías actuales del local tomadas por el dueño fueron recibidas como referencia el 22 de septiembre de 2026. Tienen prioridad sobre Street View para colores, fachada, cartel, materiales y estado actual; Street View sólo es referencia secundaria para geometría, proporciones y contexto urbano. Ante diferencias, prevalecen las fotos actuales: el acceso de la esquina es negro en ellas, aunque aparece rojo en Street View. Consultar `VISUAL_REFERENCES.md` y sus archivos de referencia.
 
-Logo original, fotografías y datos confirmados de unidades, video o render aprobado, WhatsApp y condiciones específicas siguen pendientes. La falta de estos materiales no bloquea esta versión visual: dejar espacios intencionales y el marcador de dato pendiente donde sea necesario. Instagram @rpusados es una referencia pública aportada por el usuario, no una confirmación de sus horarios o teléfono.
+WhatsApp, mapa, foto institucional, heroes y copy de servicios ya están
+confirmados; no tratarlos como pendientes. Faltan datos y fotografías de stock
+real, cuenta del dueño e infraestructura. Instagram @rpusados no confirma
+horarios ni otros datos comerciales.
 
-Usar frontend-design primero y apple-design para principios. La primera auditoría design-qa de la Home sin stock quedó autorizada y completada; repetirla cuando se incorporen stock y media reales.
+Para cambios visuales futuros expresamente autorizados, usar
+frontend-design-codex y ui-ux-pro-max; no skills redundantes ni una nueva dirección
+creativa por iniciativa del agente. Repetir QA al incorporar stock y media reales.
 
 ## Enfoque de desarrollo
 

@@ -68,5 +68,6 @@ foreach ( array( array( 'GET', '/vehiculos' ), array( 'GET', '/vehiculos/' . $id
 	$request->set_header( 'X-WP-Nonce', 'bad' );
 	rp_gestion_check( $route[0] . ' ' . $route[1] . ' nonce rejected', rest_do_request( $request )->get_status() >= 400 );
 }
+require __DIR__ . '/release-auth.php';
 file_put_contents( '/gestion-output/service-report.json', wp_json_encode( array( 'passed' => count( $checks ), 'checks' => $checks, 'wp' => get_bloginfo( 'version' ), 'php' => PHP_VERSION ) ) );
 echo 'GESTION_SERVICE_PASSED=' . count( $checks );

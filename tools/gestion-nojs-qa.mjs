@@ -1,14 +1,12 @@
-import { createRequire } from 'node:module';
+import { chromium, browserOptions } from './browser-runtime.mjs';
 import { readFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import assert from 'node:assert/strict';
 const root = resolve(import.meta.dirname, '..');
-const fixture = JSON.parse(await readFile(resolve(root,'tools/.preview/gestion/accounts.json'),'utf8'));
-const require = createRequire(process.env.RP_PLAYWRIGHT_PACKAGE || resolve(root,'tools/package.json'));
-const { chromium } = require('playwright');
-const browser = await chromium.launch({channel:'msedge',headless:true});
+const fixture = JSON.parse(await readFile(resolve(process.env.RP_GESTION_OUT || resolve(root,'tools/.preview/gestion'),'accounts.json'),'utf8'));
+const browser = await chromium.launch(browserOptions());
 const context = await browser.newContext({javaScriptEnabled:false}); const page = await context.newPage();
-const base = 'http://127.0.0.1:9540';
+const base = `http://127.0.0.1:${process.env.RP_GESTION_PORT || 9540}`;
 try {
   await page.goto(base+'/gestion/'); await page.locator('.login-form [name=usuario]').fill(fixture.accounts.manager.login); await page.locator('.login-form [name=password]').fill(fixture.accounts.manager.password);
   await Promise.all([page.waitForNavigation(),page.locator('.login-form [type=submit]').click()]);

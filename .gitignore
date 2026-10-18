@@ -8,6 +8,8 @@
 theme/rp-usados/assets/dist/*
 !theme/rp-usados/assets/dist/.gitkeep
 plugins/rp-usados-security/assets/dist/
+# Preserved local assets from the original desktop prototype; never packaged.
+plugins/rp-usados-security/assets/gestion/
 dist/*
 !dist/.gitkeep
 

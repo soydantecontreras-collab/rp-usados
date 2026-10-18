@@ -1,5 +1,10 @@
 # Base de seguridad de RP Usados
 
+Nota de continuidad 18/10/2026: este informe describe el checkpoint histórico
+`47e96a9`. El plugin actual incluye el panel privado aprobado y las mejoras del
+release candidate; consultar `PROJECT_HANDOFF.md` y
+`PRODUCTION_SECURITY_CHECKLIST.md` para la operación vigente.
+
 Implementación local sobre `a3cc84c33ee72968f4158fdddb6346ce6823f52c`.
 Sin `/gestion`, UI nueva, login custom, endpoints nuevos, deploy, commit o push.
 No cambia el frontend aprobado, CPT slug, campos almacenados, stock ni assets.

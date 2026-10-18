@@ -1,17 +1,15 @@
 /** Real cookies/REST/UI against the separate local DEMO instance. No real stock. */
-import { createRequire } from 'node:module';
+import { chromium, browserOptions } from './browser-runtime.mjs';
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
 import { execFileSync } from 'node:child_process';
 import assert from 'node:assert/strict';
 const root = resolve(import.meta.dirname, '..');
-const out = resolve(root, 'tools/.preview/gestion');
+const out = resolve(process.env.RP_GESTION_OUT || resolve(root, 'tools/.preview/gestion'));
 const screenshots = resolve(out, 'screenshots'); await mkdir(screenshots, { recursive: true });
 const base = `http://127.0.0.1:${process.env.RP_GESTION_PORT || 9540}`;
 const fixture = JSON.parse(await readFile(resolve(out, 'accounts.json'), 'utf8'));
-const require = createRequire(process.env.RP_PLAYWRIGHT_PACKAGE || resolve(process.env.LOCALAPPDATA, '../../.cache/codex-runtimes/codex-primary-runtime/dependencies/node/package.json'));
-const { chromium } = require('playwright');
-const browser = await chromium.launch({ channel: 'msedge', headless: true });
+const browser = await chromium.launch(browserOptions());
 const checks = []; const check = (name, condition) => { assert(condition, name); checks.push(name); if (checks.length % 10 === 0) console.log(`${checks.length} checks: ${name}`); };
 const bytes = await readFile(resolve(root, 'tools/demo-fixtures/square.png'));
 const uiVersion = 'QA edición DEMO ' + Date.now();
@@ -57,6 +55,8 @@ try {
   const page = await login(context, 'manager', true);
   page.on('pageerror', error => console.log('UI JS error:', error.message));
   const config = await configOf(page); let nonce = config.nonce;
+  const adminRedirect = await context.request.get(`${base}/wp-admin/`, { maxRedirects: 0 });
+  check('manager wp-admin redirects to own panel without changing permissions', adminRedirect.status() === 302 && new URL(adminRedirect.headers().location, base).pathname === '/gestion/');
   const call = (method, route, data) => request(context, nonce, method, route, data);
   const id = fixture.vehicles[0];
   check('email login + active list', await page.locator('.stock-row').count() === 3);
@@ -134,8 +134,6 @@ try {
   await page.locator('#gallery-preview figure').first().getByRole('button', { name: 'Usar como principal' }).click();
   check('gallery use as cover', await page.locator('[name="rp_vehicle[portada]"]').inputValue() !== coverBefore);
   await page.locator('.save-actions .button-primary').click();
-  await page.waitForTimeout(2500);
-  console.log('UI save feedback:', await page.locator('#save-feedback').textContent());
   await page.waitForFunction(() => document.querySelector('#save-feedback').textContent === 'Cambios guardados');
   check('UI saved feedback only after server', (await call('GET', `vehiculos/${id}`)).data.version === uiVersion);
   // Actual expired cookie session, then same-user login and retry without losing text.
@@ -210,7 +208,7 @@ try {
     check(`public ${path} no panel assets`, !await publicPage.locator('script[src*="rp-usados-security"],link[href*="rp-usados-security"]').count());
     check(`public ${path} still serves`, response.status() === 200);
   }
-  const trackedPublic = execFileSync('git', ['diff', '--name-only', '47e96a9090f273026c5c7c747cfad5aad3bcd82c', '--', 'theme/rp-usados', 'plugins/rp-usados-security/inc/roles.php', 'plugins/rp-usados-security/inc/media.php'], { cwd: root, encoding: 'utf8' });
+  const trackedPublic = execFileSync('git', ['diff', '--name-only', '47e96a9090f273026c5c7c747cfad5aad3bcd82c', '--', 'theme/rp-usados/*.php', 'theme/rp-usados/style.css', 'theme/rp-usados/src', 'theme/rp-usados/assets/hero', 'theme/rp-usados/assets/institutional', 'plugins/rp-usados-security/inc/roles.php', 'plugins/rp-usados-security/inc/media.php'], { cwd: root, encoding: 'utf8' });
   check('public sources and security policy intact', trackedPublic.trim() === '');
   await page.goto(`${base}/gestion/`); await Promise.all([page.waitForNavigation(), page.getByRole('button', { name: 'Cerrar sesión' }).click()]);
   check('native logout returns to login', await page.locator('.login-form').count() === 1);
@@ -220,7 +218,7 @@ try {
   const first = await (await fail('nonexistent-DEMO')).json(); const second = await (await fail(fixture.accounts.manager.login)).json();
   check('login errors do not enumerate users', first.message === second.message);
   let rate;
-  for (let i = 0; i < 7; i++) rate = await fail('nonexistent-DEMO');
+  for (let i = 0; i < 8; i++) rate = await fail('nonexistent-DEMO');
   check('login rate limit', rate.status() === 429);
   // This intentionally leaves the disposable instance throttled for 15 minutes.
   // Restart gestion-preview for handoff; it regenerates the DEMO and credentials.

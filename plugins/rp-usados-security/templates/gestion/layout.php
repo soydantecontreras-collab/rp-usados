@@ -11,6 +11,7 @@
 <header class="masthead"><div class="shell masthead-inner">
 <a class="brand" href="<?php echo esc_url( home_url( '/gestion/' ) ); ?>">RP USADOS<span>Gestión de stock</span></a>
 <?php if ( is_user_logged_in() ) : ?>
+<a class="button button-dark" href="<?php echo esc_url( home_url( '/' ) ); ?>" target="_blank" rel="noopener">Ver sitio</a>
 <form method="post" class="logout"><input type="hidden" name="accion" value="logout"><?php wp_nonce_field( 'rp_gestion_logout', '_rp_nonce', false ); ?><button class="button button-dark" type="submit">Cerrar sesión</button></form>
 <?php else : ?><span class="private-label">Acceso privado</span><?php endif; ?>
 </div></header>

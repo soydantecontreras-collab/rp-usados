@@ -1,14 +1,12 @@
 /** Capture only, no stock writes. Requires the isolated DEMO runtime running. */
-import { createRequire } from 'node:module';
+import { chromium, browserOptions } from './browser-runtime.mjs';
 import { readFile, mkdir, writeFile } from 'node:fs/promises';
 import { resolve } from 'node:path';
-const root = resolve(import.meta.dirname, '..'), out = resolve(root, 'tools/.preview/gestion');
+const root = resolve(import.meta.dirname, '..'), out = resolve(process.env.RP_GESTION_OUT || resolve(root, 'tools/.preview/gestion'));
 const screenshots = resolve(out, 'screenshots'); await mkdir(screenshots, { recursive: true });
 const fixture = JSON.parse(await readFile(resolve(out, 'accounts.json'), 'utf8'));
-const require = createRequire(process.env.RP_PLAYWRIGHT_PACKAGE || resolve(root, 'tools/package.json'));
-const { chromium } = require('playwright');
 const base = `http://127.0.0.1:${process.env.RP_GESTION_PORT || 9540}`;
-const browser = await chromium.launch({ channel: 'msedge', headless: true });
+const browser = await chromium.launch(browserOptions());
 const context = await browser.newContext({ viewport: { width: 1440, height: 1000 } });
 const page = await context.newPage(); const errors = []; page.on('pageerror', error => errors.push(error.message));
 try {

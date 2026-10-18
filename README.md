@@ -1,12 +1,23 @@
 # RP Usados
 
-Tema productivo local de RP Usados: Hero V2 responsive aprobado y frontend Stage 1 / Iteración 02 conectados al CPT existente. Sin deploy ni stock comercial ficticio. Ver [`PRODUCTION_FRONTEND.md`](PRODUCTION_FRONTEND.md) para preview, QA, archivos y datos pendientes. Las exploraciones y V1 se conservan como referencia, fuera de la ejecución productiva.
+Sitio WordPress y panel privado de stock de RP Usados. Incluye el frontend público aprobado —Hero V2 prerender desktop/mobile, catálogo y ficha— y `/gestion`, construido sobre usuarios, permisos y datos reales de WordPress. Estado: candidato de entrega `v1.0.0-rc1`; no implica un deploy ni autorización de producción. Los vehículos DEMO pertenecen únicamente a las instancias de revisión y tests.
+
+## Guías actuales de entrega
+
+- [Entrega y mapa del proyecto](PROJECT_HANDOFF.md).
+- [Despliegue en WordPress](PRODUCTION_DEPLOY.md).
+- [Seguridad de producción](PRODUCTION_SECURITY_CHECKLIST.md).
+- [Carga de stock real](STOCK_ONBOARDING.md).
+- [Backups y recuperación](BACKUP_RESTORE.md).
+- [Caché pública, privacidad e invalidación](CACHE_POLICY.md).
+
+Las exploraciones, V1 y documentos de iteraciones anteriores se conservan como historia. No son otra implementación productiva.
 
 ## Stack
 
 - WordPress, tema clásico personalizado en PHP.
 - CPT `vehiculo`, sin WooCommerce ni builders.
-- Administración nativa para datos, estados, precio individual, galería y WhatsApp por unidad.
+- Panel privado `/gestion` en plugin propio; autenticación, permisos y Media nativos de WordPress.
 - SCSS y JavaScript compilados con Vite.
 - pnpm con lockfiles versionados.
 - WordPress Playground para la vista local y las comprobaciones PHP.
@@ -15,57 +26,68 @@ La separación entre lógica reutilizable y frontend reemplazable está document
 
 ## Preparar otra PC
 
-Requisitos: Git, Node.js 22.12 o posterior, pnpm y una instalación de WordPress; WordPress Playground puede sustituir la instalación local para desarrollo rápido.
+Requisitos: Git y **Node.js 24.x** (`.nvmrc`). La versión de pnpm fijada es **10.34.7** (`packageManager`). Este quickstart funciona en PowerShell y Linux/macOS, sin instalar globalmente pnpm, PHP, WordPress, Edge ni dependencias de Codex:
 
 ```bash
-git clone <URL-del-repositorio>
-cd rp-usados/theme/rp-usados
-pnpm install --frozen-lockfile
-pnpm build
+git clone https://github.com/soydantecontreras-collab/rp-usados.git
+cd rp-usados
+npx --yes pnpm@10.34.7 install --frozen-lockfile
+npx --yes pnpm@10.34.7 run setup
+npx --yes pnpm@10.34.7 browsers:install
+npx --yes pnpm@10.34.7 build
+npx --yes pnpm@10.34.7 check
 ```
 
-Copiar o vincular `theme/rp-usados/` a `wp-content/themes/rp-usados/`, activar el tema y guardar una vez **Ajustes > Enlaces permanentes**. La portada usa `front-page.php`.
+`pnpm run setup` instala por separado tema, plugin y herramientas mediante sus tres lockfiles. Escribir **`run setup`**: `pnpm setup` sin `run` es otro comando del gestor de paquetes. Si no tenés pnpm instalado, podés ejecutar cada comando mediante `npx --yes pnpm@10.34.7`, por ejemplo `npx --yes pnpm@10.34.7 run setup`.
 
-Para desarrollo de assets:
+Playwright está fijado en las herramientas y usa su Chromium instalado. En CI Linux, instalar además sus bibliotecas de sistema con `pnpm --dir tools exec playwright install --with-deps chromium`. `RP_BROWSER_CHANNEL=msedge` o `chrome` permite usar explícitamente esos navegadores para una comprobación adicional; no es un requisito del proyecto.
+
+Para desarrollar los assets públicos: `pnpm --dir theme/rp-usados dev`. Para los del panel: `pnpm --dir plugins/rp-usados-security dev`. Vite y Playground escuchan sólo en loopback por defecto. No versionar la configuración local de `wp-config.php` ni credenciales.
+
+## Preview y comprobaciones reproducibles
 
 ```bash
-cd theme/rp-usados
-pnpm dev
+pnpm preview:gestion
 ```
 
-En el `wp-config.php` local, y nunca en el repositorio:
-
-```php
-define( 'RP_USADOS_VITE_DEV_SERVER', 'http://localhost:5173' );
-```
-
-## Vista temporal con WordPress Playground
+Abre una instancia WordPress desechable en `http://127.0.0.1:9540/gestion/`. Las cuentas aleatorias están en `tools/.preview/gestion/accounts.json`, fuera del webroot y de Git. Ctrl+C detiene el proceso y elimina ese archivo. Los vehículos están identificados como datos DEMO; nunca se importan en producción. Para instalar en WordPress propio, usar los dos ZIP y seguir las guías de producción.
 
 ```bash
-cd tools
-pnpm install --frozen-lockfile
-cd ..
-./tools/start-preview.ps1
-```
-
-La vista queda disponible en `http://127.0.0.1:9400/`. El blueprint crea una instalación temporal, activa el tema y no carga inventario ficticio. En macOS/Linux puede ejecutarse directamente la CLI indicada en `tools/start-preview.ps1`, adaptando las rutas.
-
-## Compilar, comprobar y empaquetar
-
-```bash
-cd theme/rp-usados
-pnpm build
+pnpm test:security
+pnpm test:gestion
+pnpm test:cache
+pnpm test:http
+pnpm test:public
+pnpm audit:all
 pnpm package
 ```
 
-El ZIP instalable se genera en `dist/rp-usados.zip`. Los assets compilados, el ZIP, dependencias y estado local no se versionan porque se regeneran desde las fuentes y lockfiles.
+- `check`: sintaxis JS/PHP, tests de seek/red/paquetes y verificación de ambos manifests.
+- Los tests PHP ejecutan WordPress/PHP reales en Playground aislado. No necesitan una base de datos externa.
+- `test:http`: inicia su propia instancia en **9542**, comprueba login, permisos, formularios, imágenes y responsive, y la detiene incluso si falla el test.
+- `test:public`: inicia su propia instancia en **9543** con stock DEMO aislado; recorre hero, navegación, catálogo, ficha, galería, fallback y reduced motion.
+- `audit:all`: audita las dependencias de tema, plugin y herramientas.
+- `package`: genera y verifica **`dist/rp-usados.zip`** y **`dist/rp-usados-security.zip`**, con allowlist de runtime, manifests y recursos compilados. Comprueba dos escrituras idénticas, timestamps fijos y contenido completo. `dist/release-manifest.json` registra tamaños, hashes, commit y si el checkout tenía cambios.
+- `test:install`: instala ambos ZIP en un WordPress limpio, comprueba activación, manifests, assets y Home sin stock DEMO. Ejecutar después de `package`.
 
-Desde la raíz, con la vista local activa:
+`pnpm verify:rc` ejecuta la secuencia completa, incluido build, QA HTTP y pública. No iniciar servidores manuales antes de ese comando. Los puertos ocupados producen un error; nunca se reutiliza una instancia ajena.
+
+Los informes y capturas quedan en `tools/.preview/`, ignorados por Git. Para revisar una limpieza explícita de una única preview detenida:
 
 ```bash
-node tools/check-php.mjs
-node tools/production-qa.mjs
+pnpm clean:preview --path=tools/.preview/<directorio>
+pnpm clean:preview --path=tools/.preview/<directorio> --remove
 ```
+
+El primer comando es un dry-run. El segundo rechaza procesos activos registrados y rutas externas; no barre temporales del sistema ni borra renders, archivos Blender o documentación.
+
+## CI
+
+`.github/workflows/ci.yml` verifica Windows y Ubuntu con Node 24/pnpm fijado: instalación frozen, build, sintaxis, manifests, tests PHP/JS, caché, audit y ZIP. La regresión de navegador completa puede activarse con `workflow_dispatch` y `browser_tests`; usa Chromium y sus propias instancias WordPress desechables. No hace deploy ni utiliza usuarios o stock reales. Las instalaciones iniciales necesitan acceso a npm, WordPress y la descarga oficial de Playwright.
+
+Los jobs de CI también instalan los ZIP en WordPress limpio y adjuntan ambos
+paquetes y su manifest como artifacts descargables durante 30 días. La release
+candidate conserva sus entregables aparte; no se versionan ZIPs en Git.
 
 ## Seguridad y datos
 

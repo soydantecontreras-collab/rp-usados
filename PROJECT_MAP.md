@@ -1,4 +1,11 @@
-# RP Usados — mapa para continuidad y reemplazo del frontend
+# RP Usados — mapa de responsabilidades
+
+Estado vigente 18/10/2026: el frontend está aprobado y cerrado. Este mapa describe
+separación de responsabilidades, no autorización para reemplazar diseño. La
+guía actual de continuidad es `PROJECT_HANDOFF.md`; `PRODUCTION_DEPLOY.md` explica
+la instalación. `/gestion` reside en `plugins/rp-usados-security/inc/gestion/`
+y sus templates/assets propios; `inc/cache.php` concentra la frontera privada
+de caché y la invalidación genérica de stock. El CPT permanece en el tema.
 
 Actualización: el reemplazo autorizado ya está implementado localmente. Ver `PRODUCTION_FRONTEND.md`. Las clasificaciones siguientes describen los contratos preservados; la Home activa usa catálogo completo y Hero V2, no destacados ni V1. `inc/frontend.php` contiene adaptadores de presentación y el tamaño completo del archivo; los módulos de datos/administración siguen intactos.
 
@@ -48,6 +55,10 @@ Claves que deben permanecer compatibles: post type `vehiculo`, slug `vehiculos`,
 - `tools/`: WordPress Playground, validación PHP, smoke tests y evidencia de QA.
 - `dist/`: salida regenerable; no versionada salvo `.gitkeep`.
 
-## Regla para el futuro rediseño
+## Contratos que no deben romperse
 
-Se puede reemplazar por completo `template-parts/home/`, `src/styles/`, `front-page.php`, `header.php`, `footer.php` y el markup de las plantillas de vehículo. Antes de hacerlo, conservar las llamadas a las funciones `rp_usados_*`, las guardas de precio, la selección por estado y destacado, la galería y el CTA específico de WhatsApp. El frontend nuevo debe seguir funcionando sin JavaScript y sin mostrar precios en listados.
+No reemplazar presentación sin un pedido explícito. Cualquier mantenimiento debe
+preservar llamadas `rp_usados_*`, ausencia de precios en listados, exclusión de
+vendidos, galerías, CTA contextual y mejoras progresivas. Destacados y filtros
+no forman parte del catálogo público aprobado. La lógica y assets del panel
+privado no deben cargarse en el frontend público ni viceversa.
